@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
      <Header></Header>
-      <AppNavigation></AppNavigation>
+      <main className='application-contain'><AppNavigation></AppNavigation></main>
     </div>
   );
 }
