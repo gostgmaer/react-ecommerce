@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { navitem } from '../../Assets/StaticData/navigation'
 import { MdShoppingBag, MdAccountCircle, MdShoppingCart, MdSearch } from "react-icons/md";
 import './Header.scss'
+import Anouncement from '../Anouncement/Anouncement';
 const Header = () => {
   return (
     <header className='Header'>
@@ -24,7 +25,7 @@ const Header = () => {
         </div>
         <div className='headerCenter'>
           <div class="form-group">
-            <label>GostStore</label>
+            <Link to={'/'}>GostStore</Link>
           </div>
 
         </div>
@@ -42,9 +43,7 @@ const Header = () => {
         </div>
 
       </nav>
-      <div className='headertext'>
-        <p>  loremLaborum nisi do cillum amet id aliqua.</p>
-      </div>
+     <Anouncement></Anouncement>
     </header>
   )
 }

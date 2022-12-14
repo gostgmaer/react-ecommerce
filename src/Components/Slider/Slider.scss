@@ -1,0 +1,19 @@
+.Slider{
+    .sliderWrapper{
+        position: relative;
+        height: calc(100vh - 90px);
+        width: 100vw;
+        overflow-x: hidden;
+        .sliderContainer{
+
+        }
+        .arrow{
+            position: absolute;
+            width: 100%;
+            padding: 0 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
