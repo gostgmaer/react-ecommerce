@@ -1,0 +1,83 @@
+.Header {
+    background-color: rgb(61, 60, 60);
+    color: white;
+    .navigationheader {
+        display: flex;
+        justify-content: space-around;
+       // padding: 20px;
+        align-items: center;
+        font-size: 20px;
+
+
+        .leftsideHeader {
+            .headerNav{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                margin-block-start: 10px;
+                margin-block-end: 10px;
+                gap: 20px;
+                padding-inline-start: 0;
+                margin-left: 0 !important;
+                .headernavItem{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .active{
+                        color: rgb(190, 188, 188);
+                    }
+                }
+
+            }
+        }
+        
+        .logo {
+            img{
+                height: 20px;
+            }
+        }
+
+        .rightSideHeader {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .headerNav{
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                margin-block-start: 10px;
+                margin-block-end: 10px;
+                gap: 20px;
+                padding-inline-start: 0;
+                margin-left: 0 !important;
+                .headernavItem{
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    .active{
+                        color: rgb(157, 154, 154);
+                    }
+                }
+
+            }
+
+            .rightSiteheaderElementone{
+                display: flex;
+                gap: 20px;
+                
+            }
+            a{
+                color: white;
+                text-decoration: none;
+                cursor: pointer;
+            }
+            .rightSiteheaderElementtwo{
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+        }
+    }
+}
