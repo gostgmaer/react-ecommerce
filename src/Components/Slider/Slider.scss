@@ -1,14 +1,35 @@
 .Slider {
     .sliderWrapper {
-        position: relative;
-        // height: calc(100vh - 90px);
+        height: calc(100vh - 90px);
         width: 100vw;
-        overflow-x: hidden;
+        position: relative;
+        overflow: hidden;
 
         .sliderContainer {
-            height: calc(100vh - 90px);
+
+            // height: calc(100vh - 90px);
             background-color: rgb(16, 127, 224);
-            overflow-x: hidden;
+
+            display: flex;
+            width: 500vw;
+            transition: 1s;
+
+
+            .sliderWrapper {
+
+
+
+
+                img {
+
+                    //    width: 100%;height: 100%;
+                    object-fit: cover;
+                    width: 100vw;
+                    height: 100%;
+                    // height: calc(100vh - 90px);
+
+                }
+            }
         }
 
         .arrow {
@@ -21,8 +42,16 @@
             align-items: center;
             justify-content: space-between;
             color: white;
-            div{
-                svg{
+
+            div {
+                cursor: pointer;
+                background-color: beige;
+                padding: 5px;
+                border-radius: 50%;
+                color: black;
+                opacity: 0.5;
+
+                svg {
                     width: 30px;
                     height: 30px;
                 }
