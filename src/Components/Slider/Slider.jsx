@@ -3,11 +3,15 @@ import './Slider.scss'
 
 import { MdOutlineArrowBack, MdOutlineArrowForward } from 'react-icons/md'
 import { data } from '../../Assets/StaticData/Data'
+import SliderCard from '../inSlideCard/SliderCard'
 
 
 const Slider = () => {
   const [transsession, settranssession] = useState('-100');
   const [currentSlider, setCurrentSlider] = useState(0);
+
+
+ 
 
   const SliderPrivious = () => {
     setCurrentSlider(currentSlider === 0 ? 4 : (previous) => previous - 1);
@@ -15,7 +19,7 @@ const Slider = () => {
   }
 
   const SliderNext = () => {
-    setCurrentSlider(currentSlider === 4 ? 0 : (next) => next  + 1);
+    setCurrentSlider(currentSlider === 4 ? 0 : (next) => next + 1);
 
   }
 
@@ -29,7 +33,9 @@ const Slider = () => {
 
               <img src={item.attributes.image.large} alt="" />
 
-              <div className="infoContainer"></div>
+              <div className="infoContainer">
+               <SliderCard></SliderCard>
+              </div>
             </div>
           })}
 
