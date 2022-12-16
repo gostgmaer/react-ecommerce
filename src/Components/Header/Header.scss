@@ -106,7 +106,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        min-height: 55px;
+        min-height: 75px;
 
         .headerLeft {
             font-size: 16px;
@@ -175,7 +175,7 @@
 
         .headerRight {
             display: flex;
-            gap: 20px;
+            gap: 5px;
             align-items: center;
 
             .btn {
@@ -185,23 +185,22 @@
                 border: none;
                 cursor: pointer;
                 text-decoration: none;
-                color: black;
+                color: rgb(81, 81, 81);
+                svg{
+                    width: 25px;
+                    height: 25px;
+                }
 
             }
 
-            .form-icon {
+            .cart-icon {
                 position: relative;
+                cursor: pointer;
 
-                .cart-icon {
-                    cursor: pointer;
-
-                    svg {
-                        width: 20px;
-                        height: 20px;
-                    }
-
+                svg {
+                    width: 25px;
+                    height: 25px;
                 }
-
                 span {
 
                     position: absolute;
@@ -218,6 +217,7 @@
 
                     left: 10px;
                 }
+
             }
         }
     }

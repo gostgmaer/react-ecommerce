@@ -1,3 +1,166 @@
-.Signin{
-    
+.Signin {
+    background-color: #fff9f9;
+    //  min-height: 700px;
+    height: calc(100vh - 110px);
+    min-width: 700px;
+    // height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 1, 1, 0.08);
+    display: flex;
+    align-items: center;
+
+
+    .login-wrapper {
+        margin: 0 auto;
+        width: 400px;
+        height: calc(100vh - 200px);
+        // transform: translateY(40%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+    }
+
+
+    h1 {
+        margin: 20px 0 10px 0;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .login-form {
+        width: 70%;
+        margin-bottom: 15px;
+
+        div {
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            align-items: center;
+           
+            margin: 10px;
+
+            input {
+                width: 80%;
+                font-size: 1.1rem;
+                border-bottom: 1px solid gray !important;
+                font-weight: 300;
+                // padding: 7px 0;
+                margin: 10px;
+                border: none;
+                background-color: inherit;
+            }
+            input:focus-visible{
+                border: none;
+                outline: none;
+            }
+        }
+        .fpass{
+            text-align: right;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+        }
+       
+    }
+    .login-form-btn{
+
+        .login-btn{
+            color: #fff9f9 !important;
+            background-color: blue !important;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .alternative-signup{
+        font-size: 15px;
+        a{
+            color: rgb(0, 110, 255);
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+    .login-alter-btn{
+        margin: 10px;
+        button{
+            width: 30px;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+    h4 {
+        margin: 20px 0 5px 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
+    //   input {
+    //     width: 80%;
+    //     font-size:1.1rem;
+    //     font-weight: 300;
+    //     padding: 7px 0;
+    //     border: none;
+    //     background-color: inherit;
+    //   }
+
+    //   .username-input, .password-input {
+    //     width: 90%;
+    //     border-bottom: 1px solid #a4a4a4;
+    //   }
+
+    //   i {
+    //     width: 10%;
+    //     color: rgba(0,0,0,0.3);
+    //     padding-right: 7px;
+    //   }
+
+    //   .login-form>p {
+    //     width: 90%;
+    //     font-size: 1.1rem;
+    //     text-align: right;
+    //     margin-top: 5px;
+    //     font-weight: 300;
+    //   }
+
+    //   .login-btn {
+    //     border: none;
+    //     padding: 7px 20px;
+    //     width: 50%;
+    //     border-radius: 10px;
+    //     font-size: 1.2rem;
+    //     background-image: linear-gradient(43deg, hsla(340,100%,76%,1) 0%, hsla(269,100%,77%,1) 100%);
+    //     color: white;
+    //     font-weight: 600;
+    //   }
+
+    //   .alternative-signup {
+    //     width: 70%;
+    //     margin: 20px 0;
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //   }
+    //   .alternative-signup>p {
+    //     width: 90%;
+    //     font-size: 1.1rem;
+    //     text-align: center;
+    //     margin-bottom: 5px;
+    //     font-weight: 300;
+    //   }
+    //   span {
+    //     font-size: 1.1rem;
+    //     font-weight: 600;
+    //     color: hsl(269deg 26% 47%);
+    //   }
 }

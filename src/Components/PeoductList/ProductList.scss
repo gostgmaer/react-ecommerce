@@ -1,0 +1,23 @@
+.ProductList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+}
+
+.productlistcontainer {
+    .heading {
+        font-size: 24px;
+        color: rgb(41, 41, 41);
+        margin-top: 20px;
+    }
+
+    .ecommerce-pList {
+
+        .ProductList {
+            list-style: none;
+        }
+    }
+}
