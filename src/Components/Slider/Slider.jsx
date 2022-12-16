@@ -14,12 +14,12 @@ const Slider = () => {
  
 
   const SliderPrivious = () => {
-    setCurrentSlider(currentSlider === 0 ? 4 : (previous) => previous - 1);
+    setCurrentSlider(currentSlider === 0 ? 1 : (previous) => previous - 1);
 
   }
 
   const SliderNext = () => {
-    setCurrentSlider(currentSlider === 4 ? 0 : (next) => next + 1);
+    setCurrentSlider(currentSlider === 1 ? 0 : (next) => next + 1);
 
   }
 

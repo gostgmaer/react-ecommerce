@@ -2,11 +2,12 @@
   text-align: center;
 }
 .application-contain{
-  min-height: calc(100vh - 90px);
+  min-height: calc(100vh - 110px);
   background-color: #efefef;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 .App-logo {
   height: 40vmin;
