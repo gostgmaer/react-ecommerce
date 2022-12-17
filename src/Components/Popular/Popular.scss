@@ -3,4 +3,14 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    margin: 20px;
+    .cardClass{
+        .banner-inner {
+            .banner-bg{
+                height: 250px;
+                width: 33%;
+            }
+        }
+    }
+
 }

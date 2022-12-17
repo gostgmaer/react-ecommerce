@@ -1,10 +1,7 @@
-// jsconfig.json at project root
 
 {
     "compilerOptions": {
       "jsx": "react",
-      // "module": "ES6",
-      // "jsx": "preserve",
       "checkJs": true
     },
     "exclude": ["node_modules", "**/node_modules/*"]

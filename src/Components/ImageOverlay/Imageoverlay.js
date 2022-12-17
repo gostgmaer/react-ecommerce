@@ -1,12 +1,14 @@
 // @ts-nocheck
-import React from "react";
+import React, { useState } from "react";
 // @ts-ignore
-import { MdArrowRight, MdOutlineArrowLeft } from "react-icons/md";
+import { MdArrowRight, MdClose, MdOutlineArrowLeft } from "react-icons/md";
 import { Bars } from "react-loader-spinner";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import "./Imageoverlay.scss";
 
 const Imageoverlay = () => {
+  const [imageIndex, setimageIndex] = useState(0);
+
   const {
     isImageLitebox,
     setIsImageLitebox,
@@ -20,26 +22,54 @@ const Imageoverlay = () => {
   const handleClick = (e) => {
     setIsImageLitebox(!isImageLitebox);
   };
+
+  console.log(lightboxData);
   return (
     <>
-      <div className="overlay dismiss" onClick={handleClick}>
-        {loading ? (
-          <Bars width={''} height = '200'></Bars>
-        ) : (
-          <img src={lightboxData.image} alt="bigger pic" />
-        )}
-        <span className="dismiss" onClick={handleClick}>
-          X
-        </span>
-        <div className="overlay-arrows_left">
-          <div>
-            <MdOutlineArrowLeft></MdOutlineArrowLeft>
+      <div className="overlay-image-container">
+        <div class="overlaywrapper">
+          <div class="overlayHeading">
+            <h3></h3>
+            <span className="dismiss" onClick={handleClick}>
+              <MdClose></MdClose>
+            </span>
           </div>
-        </div>
-        <div className="overlay-arrows_right">
-          <div>
-            <MdArrowRight></MdArrowRight>
+          <div class="overlayBody">
+            <div class="overlaymainImage">
+              {/* {lightboxData?.['newImage']?.map((img,index)=>{
+            return  < >
+            <img src={img}  key={index} class="small-img" alt="" />
+          </>
+           })} */}
+              <img
+                src={lightboxData?.["newImage"][imageIndex]}
+                class="main-img"
+                alt="bigger pic"
+              />
+            </div>
+            <div class="overlayallimages">
+              <ul>
+                {lightboxData?.["newImage"]?.map((img, index) => {
+                  return (
+                    <li onClick={() => setimageIndex(index)} key={index}>
+                      <img src={img} class="small-img" alt="" />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           </div>
+
+          <div class="arrow">
+            <span  onClick={()=>setimageIndex(imageIndex===0?setimageIndex(lightboxData['newImage'].lenght):setimageIndex(imageIndex-1))}>
+              <MdOutlineArrowLeft></MdOutlineArrowLeft>
+            </span>
+
+            <span  onClick={()=>setimageIndex(imageIndex===lightboxData['newImage'].lenght?setimageIndex(0):setimageIndex(imageIndex+1))}>
+              <MdArrowRight></MdArrowRight>
+            </span>
+          </div>
+          <div class="overlayfooter"></div>
         </div>
       </div>
     </>

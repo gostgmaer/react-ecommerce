@@ -4,19 +4,35 @@ import Imageoverlay from '../../Components/ImageOverlay/Imageoverlay.js'
 import ProductList from '../../Components/PeoductList/ProductList.js'
 import Popular from '../../Components/Popular/Popular.jsx'
 import Slider from '../../Components/Slider/Slider.jsx'
+import { useGlobalContext } from '../../States/GlobalContext/Context.js'
+import QualityBlock from './QualityBlock.js'
 import WelcomeBlock from './ShopWelcome/WelcomeBlock.js'
+import Specialoffcer from './Specialoffcer.js'
 
 const Homepage = () => {
+
+
+  const {
+    isImageLitebox,
+    setIsImageLitebox,
+    loading,
+    setloading,
+    setLightboxData,
+    lightboxData,
+    calculateDiscount,
+  } = useGlobalContext();
   return (
     <div className='Homepage'>
       <div className='homeWrapper'>
       <Slider></Slider>
-      <Popular></Popular>
+      {/* <Popular></Popular> */}
       <WelcomeBlock></WelcomeBlock>
       <Category></Category>
-      <ProductList title={'Featured'} ></ProductList>
+      <ProductList title={1} ></ProductList>
+      <Specialoffcer></Specialoffcer>
+      <QualityBlock></QualityBlock>
       
-     
+      {isImageLitebox ? <Imageoverlay></Imageoverlay> : ""}
       </div>
     </div>
   )

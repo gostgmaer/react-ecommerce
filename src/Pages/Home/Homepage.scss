@@ -9,5 +9,65 @@
     margin: auto;
     .col-inner{
         padding: 20px 15%;
+        padding: 20px 200px;
+    background: beige;
     }
+}
+
+.Specialoffcer{
+    position: relative;
+   overflow: hidden;
+    .spacialoffcer-bg{
+        img{
+          //  object-fit: contain;
+            height: 100vh;
+            width: 100vw;
+        }
+    }
+
+    .spacialoffer-content{
+        position: absolute;
+        left: 50vw;
+        top: 20%;
+        //color: white;
+        text-align: start;
+        z-index: 11;
+
+    }
+
+}
+
+
+.QualityBlock{
+    padding: 20px;
+    background-color: #eeeeee;
+    width: 100vw;
+    .elementor-row{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin: 20px 100px;
+    .elementor-image-box-wrapper{
+        width: 24%;
+        figure{
+            img{
+                width: 35%;
+            }
+        }
+        .elementor-image-box-content{
+            h5,p{
+                margin-block-end: 10px;
+                margin-block-start: 10px;
+            }
+            .elementor-image-box-title{
+                font-size: 20px;
+            }
+            .elementor-image-box-description{
+                font-size: 16px;
+            }
+        }
+    }
+    }
+   
 }

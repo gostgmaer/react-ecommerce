@@ -1,10 +1,12 @@
 import React from "react";
+import '../Homepage.scss'
+
 
 const WelcomeBlock = () => {
   return (
     <div className="WelcomeBlock">
-      <div class="col-inner text-center">
-          <h2 class="uppercase">
+      <div className="col-inner text-center">
+          <h2 className="uppercase">
             <span>Welcome to our Shop</span>
           </h2>
           <p>
@@ -13,17 +15,17 @@ const WelcomeBlock = () => {
             volutpat.
           </p>{" "}
          <div className="welcomeBtn"> <a
-            href="http://about-us?style=layout-fullscreen-fashion"
-            target="_self"
-            class="button primary is-outline is-small"
+            href="/"
+           
+            className="btn"
            >
             {" "}
             <span>About us</span>{" "}
           </a>
           <a
-            href="https://flatsome3.uxthemes.com/shop/?style=layout-fullscreen-fashion"
+            href="/"
             target="_self"
-            class="button primary is-small"
+            className="btn"
            >
            
             <span>Shop now</span>{" "}
