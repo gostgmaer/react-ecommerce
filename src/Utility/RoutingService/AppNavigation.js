@@ -5,6 +5,7 @@ import Homepage from '../../Pages/Home/Homepage'
 import Product from '../../Pages/Product/Product'
 import Registration from '../../Pages/Registration/Registration'
 import Signin from '../../Pages/Signin/Signin'
+import SingleProduct from '../../Pages/SingleProduct/SingleProduct'
 import Wishlist from '../../Pages/Wishlist/Wishlist'
 
 
@@ -24,7 +25,7 @@ const AppNavigation = () => {
             <Route 
 // @ts-ignore
             element={<Wishlist></Wishlist>} path='/wishlist' ></Route>
-            <Route path='/product/:id' element={<Product></Product>}></Route>
+            <Route path='/product/:id' element={<SingleProduct></SingleProduct>}></Route>
           
         </Routes>
         
