@@ -1,15 +1,17 @@
 import React from 'react'
 import { MdAdd, MdMinimize } from 'react-icons/md'
+import { Data } from '../../Assets/StaticData/productFile'
+import { MdClose } from 'react-icons/md';
 
-
+console.log(Data);
 
 const CartTable = () => {
-    const TableList = () => {
+    const TableList = ({ item }) => {
         return (<React.Fragment>
             <tr>
                 <td className="align-middle">
-                    <img src="" alt="" /> Product Name</td>
-                <td className="align-middle">$150</td>
+                    <img src={item.newImage[0]} alt="" /> {item.Name}</td>
+                <td className="align-middle">$ {item['Regular price']}</td>
                 <td className="align-middle">
                     <div className="input-group quantity mx-auto" >
                         <button className="btn btn-minus" >
@@ -22,7 +24,7 @@ const CartTable = () => {
                     </div>
                 </td>
                 <td className="align-middle">$150</td>
-                <td className="align-middle"><button className="btn btn-remove"><i className="fa fa-times"></i></button></td>
+                <td className="align-middle"><button className="btn btn-remove"><MdClose></MdClose></button></td>
             </tr>
         </React.Fragment>)
     }
@@ -41,7 +43,8 @@ const CartTable = () => {
                     </tr>
                 </thead>
                 <tbody className="tbody">
-                    <TableList></TableList>
+                    {Data.sampleData.filter(data => data['Is featured?'] === 1).map((item) => <TableList key={item.ID} item={item} ></TableList>)}
+
 
                 </tbody>
             </table>

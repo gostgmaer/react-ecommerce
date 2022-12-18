@@ -54,17 +54,17 @@ const ProductCard = ({ item }) => {
           <div className="shop-summary-wrap">
             <div className="product-category">{item.category} </div>
             <a href="/" className="product-title">
-              {item.Name.substring(0, 30)}...
+              {item.Name.substring(0, 24)}...
             </a>
             <div className="price">
               <bdi>
                 ₹<span className="original"> {item["Regular price"]}</span>
               </bdi>
               <bdi>
-                ₹<span className="sale">{item['Sale price']}</span>
+                ₹<span className="sale">{item['Sale price']+5}</span>
               </bdi>
               <span className="discount">
-                {calculateDiscount(item["Regular price"], item['Sale price'])}% off
+                {calculateDiscount(item["Regular price"], item['Sale price']+5)}% off
               </span>
             </div>
             <div className="itembtn">
