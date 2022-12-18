@@ -12,20 +12,20 @@ const Category = () => {
                             src="https://ajax-filters-bc.diviengine.com/sampledata/images/Bag1.jpg"
                             alt=""
                         />
-                        <button> <Link className="link" to={`products/1`}>Sale</Link> </button>
+                        <button> <Link className="link" to={`products`}>Sale</Link> </button>
                     </div>{" "}
                     <div className="row"> <img
                         src="https://ajax-filters-bc.diviengine.com/sampledata/images/Bag1.jpg"
                         alt=""
                     />
-                        <button> <Link className="link" to={`products/2`}>MAN</Link> </button></div>
+                        <button> <Link className="link" to={`products`}>MAN</Link> </button></div>
                 </div>
                 <div className="col">
                     <div className="row"> <img
                         src="https://ajax-filters-bc.diviengine.com/sampledata/images/Bag1.jpg"
                         alt=""
                     />
-                        <button> <Link className="link" to={`products/3`}>women</Link> </button></div>
+                        <button> <Link className="link" to={`products`}>women</Link> </button></div>
                 </div>
                 <div className="col col-l">
                     <div className="row">

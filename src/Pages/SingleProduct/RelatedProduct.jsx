@@ -1,19 +1,18 @@
 import React from 'react'
 import { products } from '../../Assets/StaticData/Data'
+import { Data } from '../../Assets/StaticData/productFile'
 
 import ProductCard from '../../Components/ProductCard/ProductCard'
 import { useGlobalContext } from '../../States/GlobalContext/Context'
 
 
-const RelatedProduct = ({id}) => {
-  const {singleProduct} = useGlobalContext()
-  console.log(singleProduct);
-
+const RelatedProduct = ({ id }) => {
+  const { singleProduct } = useGlobalContext()
   return (
     <div className='RelatedProduct'>
-      <div className="reatedheading">Related Product {}</div>
+      <div className="reatedheading">Related Product { }</div>
       <ul className="relatedProductwrapper">
-        {(products.filter((data)=>data?.category===singleProduct?.['0']?.category)).map((item)=><ProductCard  key={item.id} item={item} ></ProductCard>)}
+        {(Data.sampleData.filter((data) => data?.Categories === singleProduct?.Categories)).map((item) => <ProductCard key={item.ID} item={item} ></ProductCard>)}
       </ul>
 
     </div>

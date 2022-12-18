@@ -1,8 +1,10 @@
 import React from 'react'
 // @ts-ignore
 import { Route, Routes } from 'react-router-dom'
+import CartPage from '../../Pages/Cart/CartPage'
 import Homepage from '../../Pages/Home/Homepage'
 import Product from '../../Pages/Product/Product'
+import Products from '../../Pages/Products/Products'
 import Registration from '../../Pages/Registration/Registration'
 import Signin from '../../Pages/Signin/Signin'
 import SingleProduct from '../../Pages/SingleProduct/SingleProduct'
@@ -26,7 +28,9 @@ const AppNavigation = () => {
 // @ts-ignore
             element={<Wishlist></Wishlist>} path='/wishlist' ></Route>
             <Route path='/product/:id' element={<SingleProduct></SingleProduct>}></Route>
-          
+            <Route path='/cart' element={<CartPage></CartPage>}></Route>
+            <Route path='/products' element={<Products></Products>} ></Route>
+
         </Routes>
         
 

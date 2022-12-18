@@ -1,0 +1,58 @@
+.Cart {
+    width: 100%;
+
+
+    .cartWrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+
+        .colleft {
+            //margin-top: 50px;
+            margin: 50px 0 0 50px;
+
+            .CartTable {
+                .table {
+                    width: 100%;
+                    tr {
+                        /* Styling the border. */
+                        border: 1.5px solid blue;
+                    }
+
+                    .thead {
+                        tr {
+                            th {}
+                        }
+
+                    }
+
+                    .tbody {
+                        width: 100%;
+
+                        tr {
+                            td {
+                                // display: flex;
+                                // align-items: center;
+                                /* Styling the border. */
+                               // border: 1.5px solid blue;
+
+                                img {
+                                    height: 30px;
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+        .colRight {
+            margin: 50px 50px 0 0;
+
+            .CartRight {}
+        }
+    }
+}

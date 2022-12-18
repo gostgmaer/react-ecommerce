@@ -44,26 +44,27 @@ const ProductCard = ({ item }) => {
         <div className="cardBlock">
           <div className="thumbnail-wrap">
             <Link to={`/product/${item.ID}`} className="">
-              {item["newImage"].map((item, index) => (
+              {/* {item["newImage"].map((item, index) => (
                 <img key={index} src={item} className="attachment" alt="" />
-              ))}
+              ))} */}
+              <img  src={item.newImage[0]} className="attachment" alt="" />
             </Link>
             <span className="onsale">Sale!</span>
           </div>
           <div className="shop-summary-wrap">
             <div className="product-category">{item.category} </div>
             <a href="/" className="product-title">
-              {item.Name.substring(0, 30)}...
+              {item.Name.substring(0, 24)}...
             </a>
             <div className="price">
               <bdi>
-                ₹<span className="original"> {item.price + 223}</span>
+                ₹<span className="original"> {item["Regular price"]}</span>
               </bdi>
               <bdi>
-                ₹<span className="sale">{item.price}</span>
+                ₹<span className="sale">{item['Sale price']+5}</span>
               </bdi>
               <span className="discount">
-                {calculateDiscount(item.price + 223, item.price)}% off
+                {calculateDiscount(item["Regular price"], item['Sale price']+5)}% off
               </span>
             </div>
             <div className="itembtn">
