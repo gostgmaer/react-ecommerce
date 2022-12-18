@@ -20,7 +20,6 @@ const AppProvider = ({ children }) => {
   const calculateDiscount=(original,sale)=>{
     let onePercent = original/100;
     let diff = original-sale;
-    let discount = diff/onePercent;
    return (diff/onePercent).toFixed(1);
   
   }

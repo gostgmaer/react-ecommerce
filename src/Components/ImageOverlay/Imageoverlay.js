@@ -18,12 +18,22 @@ const Imageoverlay = () => {
     lightboxData,
   } = useGlobalContext();
 
-  console.log(lightboxData);
   const handleClick = (e) => {
     setIsImageLitebox(!isImageLitebox);
   };
 
-  console.log(lightboxData);
+  // const overlayIncrease = () => {
+  //   let images = lightboxData.newImage;
+  //   console.log(imageIndex);
+  //   // console.log(lightboxData["newImage"].length-1);
+
+  //   // console.log( imageIndex + 1);
+  // };
+
+  // const overlaydecress = () => {
+  //   console.log(lightboxData["newImage"].length);
+  // };
+  // console.log(lightboxData);
   return (
     <>
       <div className="overlay-image-container">
@@ -36,13 +46,8 @@ const Imageoverlay = () => {
           </div>
           <div class="overlayBody">
             <div class="overlaymainImage">
-              {/* {lightboxData?.['newImage']?.map((img,index)=>{
-            return  < >
-            <img src={img}  key={index} class="small-img" alt="" />
-          </>
-           })} */}
               <img
-                src={lightboxData?.["newImage"][imageIndex]}
+                src={lightboxData?.newImage[imageIndex]}
                 class="main-img"
                 alt="bigger pic"
               />
@@ -61,11 +66,21 @@ const Imageoverlay = () => {
           </div>
 
           <div class="arrow">
-            <span  onClick={()=>setimageIndex(imageIndex===0?setimageIndex(lightboxData['newImage'].lenght):setimageIndex(imageIndex-1))}>
+            <span
+              onClick={() =>
+                imageIndex === 0
+                  ? setimageIndex(lightboxData.newImage.length - 1)
+                  : setimageIndex(imageIndex - 1)
+              }>
               <MdOutlineArrowLeft></MdOutlineArrowLeft>
             </span>
 
-            <span  onClick={()=>setimageIndex(imageIndex===lightboxData['newImage'].lenght?setimageIndex(0):setimageIndex(imageIndex+1))}>
+            <span
+              onClick={() =>
+                imageIndex === lightboxData.newImage.length - 1
+                  ? setimageIndex(0)
+                  : setimageIndex(imageIndex + 1)
+              }>
               <MdArrowRight></MdArrowRight>
             </span>
           </div>

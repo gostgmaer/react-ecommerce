@@ -16,9 +16,9 @@ const Header = () => {
     <header className="Header">
       <nav className="navigationheader">
         <div className="headerLeft">
-          <div class="form-group">
-            <select class="custom-select" name="language" id="language">
-              <option selected value="en">
+          <div className="form-group">
+            <select className="custom-select" name="language" id="language">
+              <option defaultValue={'en'}>
                 {" "}
                 En
               </option>
@@ -26,10 +26,10 @@ const Header = () => {
               <option value="hi">Hi</option>
             </select>
           </div>
-          <div class="form-group search">
+          <div className="form-group search">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               name="searchItem"
               id="searchItem"
               aria-describedby="helpId"
@@ -41,15 +41,15 @@ const Header = () => {
           </div>
         </div>
         <div className="headerCenter">
-          <div class="form-group">
+          <div className="form-group">
             <Link to={"/"}>GostStore</Link>
           </div>
         </div>
         <div className="headerRight">
-          <Link to={"/signin"} class="btn">
+          <Link to={"/signin"} className="btn">
             <MdPerson></MdPerson>
           </Link>
-          <Link to={"/wishlist"} class="btn">
+          <Link to={"/wishlist"} className="btn">
             <MdFavorite></MdFavorite>
           </Link>
 

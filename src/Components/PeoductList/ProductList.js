@@ -16,13 +16,9 @@ import "./ProductList.scss";
 
 const ProductList = ({ title }) => {
   console.log(Data);
-
-
-
   const { isImageLitebox, setIsImageLitebox, setLightboxData, lightboxData } =
   useGlobalContext();
 
-  console.log(products);
   return (
     <div className="productlistcontainer">
 

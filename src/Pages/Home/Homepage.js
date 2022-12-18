@@ -32,7 +32,7 @@ const Homepage = () => {
       <Specialoffcer></Specialoffcer>
       <QualityBlock></QualityBlock>
       
-      {isImageLitebox ? <Imageoverlay></Imageoverlay> : ""}
+    
       </div>
     </div>
   )
