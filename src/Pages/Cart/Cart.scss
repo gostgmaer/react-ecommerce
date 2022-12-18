@@ -1,0 +1,24 @@
+.Cart{
+    width: 100%;
+
+
+    .cartWrapper{
+        display: flex;
+    justify-content: space-between;
+    align-items: start;
+        .colleft{
+            //margin-top: 50px;
+            margin: 50px 0 0 50px;
+            .CartTable{
+
+            }
+
+        }
+        .colRight{
+            margin: 50px 50px 0 0;
+            .CartRight{
+
+            }
+        }
+    }
+}
