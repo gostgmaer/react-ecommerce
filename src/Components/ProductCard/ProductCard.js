@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   MdExpand,
   MdFavorite,
@@ -23,31 +23,31 @@ const ProductCard = ({ item }) => {
     setLightboxData,
     lightboxData,
     calculateDiscount,
+    onclickOpenImageLightBox,
   } = useGlobalContext();
 
   item["newImage"] = item["Images"].split(",");
+
+  const [hoverImage, setHoverImage] = useState(0);
+
+const applyHover = () =>{
+
+  setHoverImage(1)
+
+}
+
   // console.log(item);
-  const onclickOpenImageLightBox = (id) => {
-    // console.log(Data.sampleData.find((data) => data.ID === id));
-    // let obj = products.find(data => data.id === id);
-    setloading(true);
-    setLightboxData(Data.sampleData.find((data) => data.ID === id));
-    // // console.log(obj);
-    setIsImageLitebox(true);
-    setloading(false);
-    // console.log(lightboxData);
-  };
 
   return (
     <React.Fragment>
       <li className="list-card-item">
         <div className="cardBlock">
           <div className="thumbnail-wrap">
-            <Link to={`/product/${item.ID}`} className="">
+            <Link to={`/product/${item.ID}`}  className="">
               {/* {item["newImage"].map((item, index) => (
                 <img key={index} src={item} className="attachment" alt="" />
               ))} */}
-              <img  src={item.newImage[0]} className="attachment" alt="" />
+              <img src={item.newImage[hoverImage]} className={`imagezoom`} onMouseOver={()=>{item.newImage.length>1&&setHoverImage(1)}} onMouseLeave={()=>setHoverImage(0)} alt="" />
             </Link>
             <span className="onsale">Sale!</span>
           </div>
@@ -61,10 +61,14 @@ const ProductCard = ({ item }) => {
                 ₹<span className="original"> {item["Regular price"]}</span>
               </bdi>
               <bdi>
-                ₹<span className="sale">{item['Sale price']+5}</span>
+                ₹<span className="sale">{item["Sale price"] + 5}</span>
               </bdi>
               <span className="discount">
-                {calculateDiscount(item["Regular price"], item['Sale price']+5)}% off
+                {calculateDiscount(
+                  item["Regular price"],
+                  item["Sale price"] + 5
+                )}
+                % off
               </span>
             </div>
             <div className="itembtn">
@@ -85,8 +89,6 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
       </li>
-
-      
     </React.Fragment>
   );
 };

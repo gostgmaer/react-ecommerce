@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Data } from '../../Assets/StaticData/productFile'
 
 
 
 const LeftFilter = () => {
 
+
+
   let uniqueAges = Array.from(new Set(Data?.sampleData?.map((item) => item.Categories)));
   uniqueAges  = uniqueAges.filter(function(e){return e}); 
-  console.log(uniqueAges);
+  
   return (
     <div className='LeftFilter'>
       <div className="bycategories">

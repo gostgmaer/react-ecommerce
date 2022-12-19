@@ -12,7 +12,7 @@ const RelatedProduct = ({ id }) => {
     <div className='RelatedProduct'>
       <div className="reatedheading">Related Product { }</div>
       <ul className="relatedProductwrapper">
-        {(Data.sampleData.filter((data) => data?.Categories === singleProduct?.Categories)).map((item) => <ProductCard key={item.ID} item={item} ></ProductCard>)}
+        {(Data.sampleData.filter((data) => data?.Categories === singleProduct?.Categories)).slice(0, 4).map((item) => <ProductCard key={item.ID} item={item} ></ProductCard>)}
       </ul>
 
     </div>

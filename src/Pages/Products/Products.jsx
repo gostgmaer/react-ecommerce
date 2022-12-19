@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LeftFilter from './LeftFilter'
 import Pagination from './Pagination'
 import ProductList from './ProductList'
@@ -11,6 +11,11 @@ import TopSort from './TopSort'
 
 
 const Products = () => {
+
+
+
+
+
   return (
     <div className='Products'>
       <div className="productWrapper">
@@ -18,7 +23,7 @@ const Products = () => {
           <div className="col">
             <LeftFilter></LeftFilter>
           </div>
-          
+
           <div className="col col-lg">
             <div className='sort'>
               <TopSort></TopSort>
