@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import {
   MdExpand,
   MdFavorite,
@@ -27,6 +27,15 @@ const ProductCard = ({ item }) => {
   } = useGlobalContext();
 
   item["newImage"] = item["Images"].split(",");
+
+  const [hoverImage, setHoverImage] = useState(0);
+
+const applyHover = () =>{
+
+  setHoverImage(1)
+
+}
+
   // console.log(item);
 
   return (
@@ -34,11 +43,11 @@ const ProductCard = ({ item }) => {
       <li className="list-card-item">
         <div className="cardBlock">
           <div className="thumbnail-wrap">
-            <Link to={`/product/${item.ID}`} className="">
+            <Link to={`/product/${item.ID}`}  className="">
               {/* {item["newImage"].map((item, index) => (
                 <img key={index} src={item} className="attachment" alt="" />
               ))} */}
-              <img src={item.newImage[0]} className="attachment" alt="" />
+              <img src={item.newImage[hoverImage]} className={`imagezoom`} onMouseOver={()=>{item.newImage.length>1&&setHoverImage(1)}} onMouseLeave={()=>setHoverImage(0)} alt="" />
             </Link>
             <span className="onsale">Sale!</span>
           </div>

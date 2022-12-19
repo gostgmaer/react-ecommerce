@@ -11,27 +11,25 @@ import "./ProductList.scss";
 // const data = require('json!../../Assets/StaticData/productFile.json');
 // @ts-ignore
 
-
-
-
 const ProductList = ({ title }) => {
   console.log(Data);
   const { isImageLitebox, setIsImageLitebox, setLightboxData, lightboxData } =
-  useGlobalContext();
+    useGlobalContext();
 
   return (
     <div className="productlistcontainer">
-
-      <div className="heading">{title===0&&'Featured'} Products</div>
+      <div className="heading">{title === 0 && "Featured"} Products</div>
 
       <div className="ecommerce-pList">
         <ul className="ProductList">
-          {((Data.sampleData).filter(newData=>newData["Is featured?"]===title)).map((item) => (
-            <ProductCard key={item.ID} item={item}></ProductCard>
-          ))}
+          {Data.sampleData
+            .filter((newData) => newData["Is featured?"] === title)
+            .slice(0, 4)
+            .map((item) => (
+              <ProductCard key={item.ID} item={item}></ProductCard>
+            ))}
         </ul>
       </div>
-     
     </div>
   );
 };
