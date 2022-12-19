@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect, useContext } from "react";
+import { Data } from "../../Assets/StaticData/productFile";
 // @ts-ignore
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
@@ -9,6 +10,27 @@ const AppProvider = ({ children }) => {
   const [keyword, setkeyword] = useState("");
   const [loading, setloading] = useState(true);
   const [singleProduct, setSingleProduct] = useState(null);
+  const [imageIndex, setimageIndex] = useState(0);
+  const [indexPage, setIndexPage] = useState(1);
+  const [filterPrice, setFilterPrice] = useState(0);
+  const [caterory, setCaterory] = useState('');
+  const [tag, setTag] = useState('');
+  const [attributes, setAttributes] = useState('');
+
+
+
+
+
+
+
+
+  const onclickOpenImageLightBox = (id) => {
+    console.log(id);
+    setloading(true);
+    setLightboxData(Data.sampleData.find((data) => data.ID === id));
+    setIsImageLitebox(true);
+    setloading(false);
+  };
 
   const openSidebar = () => {
     setisSidebar(true);
@@ -30,8 +52,8 @@ const AppProvider = ({ children }) => {
         openSidebar,
         closeSidebar,
         isImageLitebox,setIsImageLitebox,setLightboxData,lightboxData,isSidebar,setisSidebar,
-        setkeyword,calculateDiscount,
-        loading,singleProduct, setSingleProduct,
+        setkeyword,calculateDiscount,onclickOpenImageLightBox,
+        loading,singleProduct, setSingleProduct,imageIndex, setimageIndex,
 
         setloading,
       }}>

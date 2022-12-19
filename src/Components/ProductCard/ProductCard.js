@@ -23,20 +23,11 @@ const ProductCard = ({ item }) => {
     setLightboxData,
     lightboxData,
     calculateDiscount,
+    onclickOpenImageLightBox,
   } = useGlobalContext();
 
   item["newImage"] = item["Images"].split(",");
   // console.log(item);
-  const onclickOpenImageLightBox = (id) => {
-    // console.log(Data.sampleData.find((data) => data.ID === id));
-    // let obj = products.find(data => data.id === id);
-    setloading(true);
-    setLightboxData(Data.sampleData.find((data) => data.ID === id));
-    // // console.log(obj);
-    setIsImageLitebox(true);
-    setloading(false);
-    // console.log(lightboxData);
-  };
 
   return (
     <React.Fragment>
@@ -47,7 +38,7 @@ const ProductCard = ({ item }) => {
               {/* {item["newImage"].map((item, index) => (
                 <img key={index} src={item} className="attachment" alt="" />
               ))} */}
-              <img  src={item.newImage[0]} className="attachment" alt="" />
+              <img src={item.newImage[0]} className="attachment" alt="" />
             </Link>
             <span className="onsale">Sale!</span>
           </div>
@@ -61,10 +52,14 @@ const ProductCard = ({ item }) => {
                 ₹<span className="original"> {item["Regular price"]}</span>
               </bdi>
               <bdi>
-                ₹<span className="sale">{item['Sale price']+5}</span>
+                ₹<span className="sale">{item["Sale price"] + 5}</span>
               </bdi>
               <span className="discount">
-                {calculateDiscount(item["Regular price"], item['Sale price']+5)}% off
+                {calculateDiscount(
+                  item["Regular price"],
+                  item["Sale price"] + 5
+                )}
+                % off
               </span>
             </div>
             <div className="itembtn">
@@ -85,8 +80,6 @@ const ProductCard = ({ item }) => {
           </div>
         </div>
       </li>
-
-      
     </React.Fragment>
   );
 };

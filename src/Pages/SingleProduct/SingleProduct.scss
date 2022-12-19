@@ -152,11 +152,13 @@
 
             .Bigitem {
                 position: relative;
+              
 
                 img {
                     height: 320px;
                     //  width: 320px;
                     object-fit: cover;
+                    // transition: 1s;
 
                 }
 
@@ -168,6 +170,7 @@
                     overflow-y: auto;
 
                     li {
+                        cursor: pointer;
                         img {
                             height: 50px;
                             object-fit: cover;

@@ -7,11 +7,11 @@ import { useGlobalContext } from "../../States/GlobalContext/Context";
 import "./Imageoverlay.scss";
 
 const Imageoverlay = () => {
-  const [imageIndex, setimageIndex] = useState(0);
-
   const {
     isImageLitebox,
     setIsImageLitebox,
+    imageIndex,
+    setimageIndex,
     loading,
     setloading,
     setLightboxData,
@@ -21,19 +21,6 @@ const Imageoverlay = () => {
   const handleClick = (e) => {
     setIsImageLitebox(!isImageLitebox);
   };
-
-  // const overlayIncrease = () => {
-  //   let images = lightboxData.newImage;
-  //   console.log(imageIndex);
-  //   // console.log(lightboxData["newImage"].length-1);
-
-  //   // console.log( imageIndex + 1);
-  // };
-
-  // const overlaydecress = () => {
-  //   console.log(lightboxData["newImage"].length);
-  // };
-  // console.log(lightboxData);
   return (
     <>
       <div className="overlay-image-container">
