@@ -1,3 +1,121 @@
-.Registration{
-    
+.Registration {
+   // background-color: #fff9f9;
+    //  min-height: 700px;
+    min-height: calc(100vh - 110px);
+    max-height: auto;
+    min-width: 700px;
+    // height: 100vh;
+    width: 100vw;
+    background-color: rgba(1, 1, 1, 0.582);
+    display: flex;
+    align-items: center;
+
+
+
+
+
+    .signup-wrapper {
+        overflow: hidden;
+        margin: 0 auto;
+        width: 400px;
+        height: calc(100vh - 200px);
+        // transform: translateY(40%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 0px 0 31px 0px rgb(0 0 0 / 10%);
+    }
+
+
+    h1 {
+        margin: 20px 0 10px 0;
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .signup-form {
+        width: 70%;
+        margin-bottom: 15px;
+
+        div {
+            display: flex;
+            align-content: space-around;
+            justify-content: center;
+            align-items: center;
+
+            margin: 10px;
+
+            input {
+                width: 80%;
+                font-size: 1.1rem;
+                border-bottom: 1px solid gray !important;
+                font-weight: 300;
+                // padding: 7px 0;
+                margin: 10px;
+                border: none;
+                background-color: inherit;
+            }
+
+            input:focus-visible {
+                border: none;
+                outline: none;
+            }
+        }
+
+        .fpass {
+            text-align: right;
+            font-weight: 500;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+    }
+
+    .signup-form-btn {
+
+        .signup-btn {
+            color: #fff9f9 !important;
+            background-color: blue !important;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .alternative-signup {
+        font-size: 15px;
+
+        a {
+            color: rgb(0, 110, 255);
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+
+    .signup-alter-btn {
+        margin: 10px;
+
+        button {
+            width: 30px;
+            height: 30px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(0, 0, 0);
+            margin: 5px;
+            cursor: pointer;
+            border: none;
+            border-radius: 50%;
+        }
+    }
+
+    h4 {
+        margin: 20px 0 5px 0;
+        font-size: 1.5rem;
+        font-weight: 300;
+    }
+
 }

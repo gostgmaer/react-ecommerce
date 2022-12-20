@@ -27,10 +27,10 @@ const CartRight = () => {
                     </div>
                     <div className="total-block">
                         <div className="Total">
-                            <h5>Total</h5>
-                            <h5>$160</h5>
+                            <span>Total</span>
+                            <span>$160</span>
                         </div>
-                        <button className="btn btn-checkout">Proceed To Checkout</button>
+                        <div className='btn-block'><button className="btn btn-checkout">Proceed To Checkout</button></div>
                     </div>
                 </div>
             </div>
