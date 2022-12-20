@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useContext } from "react";
 import { Data } from "../../Assets/StaticData/productFile";
 // @ts-ignore
@@ -13,19 +12,17 @@ const AppProvider = ({ children }) => {
   const [imageIndex, setimageIndex] = useState(0);
   const [indexPage, setIndexPage] = useState(1);
   const [filterPrice, setFilterPrice] = useState(0);
-  const [caterory, setCaterory] = useState('');
-  const [tag, setTag] = useState('');
-  const [attributes, setAttributes] = useState('');
-
-
-
-
-
-
-
+  const [caterory, setCaterory] = useState("");
+  const [tag, setTag] = useState("");
+  const [attributes, setAttributes] = useState("");
+  const [gender, setGender] = useState("");
+  const [discount, setDiscount] = useState("");
+  const [brand, setBrand] = useState("");
+  const [avaliability, setAvaliability] = useState(null);
+  const [sortproduct, setSortproduct] = useState("");
 
   const onclickOpenImageLightBox = (id) => {
-    console.log(id);
+   
     setloading(true);
     setLightboxData(Data.sampleData.find((data) => data.ID === id));
     setIsImageLitebox(true);
@@ -39,23 +36,50 @@ const AppProvider = ({ children }) => {
     setisSidebar(false);
   };
 
-  const calculateDiscount=(original,sale)=>{
-    let onePercent = original/100;
-    let diff = original-sale;
-   return (diff/onePercent).toFixed(1);
-  
-  }
+  const calculateDiscount = (original, sale) => {
+    let onePercent = original / 100;
+    let diff = original - sale;
+    return (diff / onePercent).toFixed(1);
+  };
 
   return (
     <AppContext.Provider
       value={{
         openSidebar,
         closeSidebar,
-        isImageLitebox,setIsImageLitebox,setLightboxData,lightboxData,isSidebar,setisSidebar,
-        setkeyword,calculateDiscount,onclickOpenImageLightBox,
-        loading,singleProduct, setSingleProduct,imageIndex, setimageIndex,
-
+        isImageLitebox,
+        setIsImageLitebox,
+        setLightboxData,
+        lightboxData,
+        isSidebar,
+        setisSidebar,
+        setkeyword,
+        calculateDiscount,
+        onclickOpenImageLightBox,
+        attributes,
+        setAttributes,
+        gender,
+        setGender,
+        loading,
+        singleProduct,
+        setSingleProduct,
+        indexPage,
+        setIndexPage,
+        filterPrice,
+        setFilterPrice,
+        caterory,
+        setCaterory,
+        imageIndex,
+        setimageIndex,
         setloading,
+        discount,
+        setDiscount,
+        brand,
+        setBrand,
+        avaliability,
+        setAvaliability,
+        sortproduct,
+        setSortproduct,
       }}>
       {children}
     </AppContext.Provider>

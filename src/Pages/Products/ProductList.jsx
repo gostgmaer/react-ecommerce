@@ -13,7 +13,7 @@ const ProductList = () => {
     <div className='ProductList'>
       <div className="listWrapper">
         <ul className="ProductList">
-          {(Data?.sampleData.slice(0, 20)).map((item) => (
+          {((Data?.sampleData).slice(0, 20)).map((item) => (
             <ProductCard key={item.ID} item={item}></ProductCard>
           ))}
         </ul>
