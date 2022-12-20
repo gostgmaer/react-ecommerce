@@ -8,51 +8,177 @@
         align-items: start;
 
         .colleft {
+            flex: 4;
             //margin-top: 50px;
-            margin: 50px 0 0 50px;
+            margin: 50px 0;
 
             .CartTable {
-                .table {
-                    width: 100%;
-                    tr {
-                        /* Styling the border. */
-                        border: 1.5px solid blue;
-                    }
-
-                    .thead {
-                        tr {
-                            th {}
+              
+                .table-responsive {
+                    min-height: .01%;
+                    overflow-x: auto;
+                    
+    
+    
+                    .table {
+                        width: 85%;
+                        margin: auto;
+                        max-width: 100%;
+                        background-color: #fff;
+                        border-collapse: collapse;
+                        border: 1px solid #ddd;
+    
+                        thead {
+                            th {
+                                border-bottom: 1px solid #ddd;
+                                border-right: 1px solid #ddd;
+                                color: #555;
+                                font-size: 18px;
+                                padding: 5px 0;
+                                text-align: center;
+                            }
                         }
-
-                    }
-
-                    .tbody {
-                        width: 100%;
-
-                        tr {
+    
+                        tbody {
                             td {
-                                // display: flex;
-                                // align-items: center;
-                                /* Styling the border. */
-                               // border: 1.5px solid blue;
-
-                                img {
-                                    height: 30px;
-
+                                max-width: 20%;
+                                vertical-align: middle;
+                                border-right: 1px solid #ccc;
+                                text-align: center;
+                                padding: 5px;
+                                line-height: 1.42857143;
+    
+                                border-top: 1px solid #ddd;
+                                span{
+                                    
+                                   
+                                }
+                                .quantity{
+                                    width: 20px;
+                                }
+                                img{
+                                    width: 50px;
+    
+                                }
+                                div{
+    
+                                }
+                                .aa-add-to-cart-btn{
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                   
+                                    span{
+                                        background-color: #ccc;
+                                        padding: 5px 10px;
+                                        border-radius: 5px;
+                                    }
                                 }
                             }
                         }
                     }
                 }
+                // .table {
+                //     width: 100%;
+                //     tr {
+                //         /* Styling the border. */
+                //         border: 1.5px solid blue;
+                //     }
+
+                //     .thead {
+                //         tr {
+                //             th {}
+                //         }
+
+                //     }
+
+                //     .tbody {
+                //         width: 100%;
+
+                //         tr {
+                //             td {
+                //                 // display: flex;
+                //                 // align-items: center;
+                //                 /* Styling the border. */
+                //                // border: 1.5px solid blue;
+
+                //                 img {
+                //                     height: 30px;
+
+                //                 }
+                //             }
+                //         }
+                //     }
+                // }
 
             }
 
         }
 
         .colRight {
+            flex: 1;
             margin: 50px 50px 0 0;
 
-            .CartRight {}
+            .CartRight {
+                .cartSummery{
+                    margin: 50px 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                   // align-items: end;
+                    gap: 50px;
+                    .coupon{
+                        input{
+                         width: 150px;
+                        }
+                        div{
+                            margin: 10px 0;
+                            button{
+                                padding: 5px 20px ;
+                                width: 150px;
+                                border-radius: 5px;
+                            }
+                        }
+                    }
+                    .cartprices{
+                        .section-title{
+                            font-size: 16px;
+
+                        }
+                        .prices{
+                            margin: 20px 0;
+                            div{
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-bottom: 1px solid ;
+                            }
+
+                        }
+                        .total-block{
+                           
+                            .Total{
+                                font-size: 14px;
+                                display: flex;
+                                margin: 20px 0;
+                                align-items: center;
+                                justify-content: space-between;
+                                border-bottom: 1px solid ;
+                            }
+                            .btn-block{
+                                text-align: end;
+                                .btn-checkout{
+                                    color: white;
+                                    background-color: red;
+                                    padding: 10px 20px;
+                                    border-radius: 5px;
+                                    border: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

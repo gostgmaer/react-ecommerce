@@ -1,4 +1,8 @@
 .Products {
+    .disabled {
+        pointer-events:none; //This makes it not clickable
+        opacity:0.6;         //This grays it out to look disabled
+    }
 
     .productWrapper {
         margin: 50px 20px;
@@ -54,6 +58,30 @@
                 justify-content: space-between;
                 align-items: center;
                 gap: 20px;
+                .BropDownMenu{
+                    margin: 0 5px;
+
+                }
+                .sortProduct{
+                    display: flex;
+                    align-items: center;
+                    justify-content: start;
+                    gap: 20px;
+                    span{
+                        font-size: 18px;
+                        font-weight: bold;
+                    }
+                    div{
+                        font-size: 15px;
+                        font-weight: 500;
+                        color: rgb(69, 69, 69);
+                        cursor: pointer;
+                        padding: 5px 10px; 
+                        background-color: #c7c7c7;
+                        border-radius: 5px;
+                    }
+
+                }
 
                 .btn-group {
                     position: relative;
@@ -112,24 +140,47 @@
 
 .Pagination {
     margin: 20px 0;
+    background-color: #e0e0e0;
+    padding: 10px;
+    //border-radius: 5px;
 
     .Pagination-element {
-
-        .pagination-items {
-            margin: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       
+        .totalPagination{
             display: flex;
-            justify-content: end;
+            justify-content: space-between;
             align-items: center;
-
-
-            .page-item {
-                padding: 5px 10px;
-                border-radius: 0;
-                cursor: pointer;
+            .pageNumber{
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                align-items: center;
 
             }
-
+            .pagination-items {
+                margin: 0 20px;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                .active{
+                    background-color: #6C757D;
+                    color: white;
+                }
+    
+                .page-item {
+                    padding: 5px 10px;
+                    border-radius: 0;
+                    cursor: pointer;
+    
+                }
+    
+            }
         }
+
+       
 
     }
 }
@@ -158,3 +209,5 @@
         }
     }
 }
+
+
