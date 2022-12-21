@@ -1,3 +1,4 @@
+import React from "react";
 import SliderCard from "../../Components/inSlideCard/SliderCard";
 
 export const data = [

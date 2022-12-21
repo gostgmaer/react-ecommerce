@@ -1,7 +1,6 @@
-*{
+* {
   transition: all 0.5s;
 }
-
 
 body {
   margin: 0;
@@ -19,19 +18,18 @@ code {
 
 .btn {
   /* position: absolute; */
-  
+
   background-color: #efefef;
   color: rgb(37, 37, 37);
   cursor: pointer;
 
-  border-radius: 10px;
+  border-radius: 5px;
   border: 0.5px solid gray;
   /* //padding:15px; */
-  
 }
 
 .btn:hover {
-  background-color:#002ead;
+  background-color: #002ead;
   transition: 0.7s;
   color: white;
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { navitem } from "../../Assets/StaticData/navigation";
 import {
@@ -11,7 +11,14 @@ import {
 } from "react-icons/md";
 import "./Header.scss";
 import Anouncement from "../Anouncement/Anouncement";
+import CartBlock from "../Cart/CartBlock";
 const Header = () => {
+
+
+  const [openCart, setOpenCart] = useState(false);
+
+
+
   return (
     <header className="Header">
       <nav className="navigationheader">
@@ -54,11 +61,12 @@ const Header = () => {
           </Link>
 
           <div className="cart-icon">
-            <MdShoppingCart></MdShoppingCart>
+            <MdShoppingCart onClick={()=>setOpenCart(!openCart)}></MdShoppingCart>
             <span>5</span>
           </div>
         </div>
       </nav>
+     {openCart? <CartBlock></CartBlock>:''}
       <Anouncement></Anouncement>
     </header>
   );
