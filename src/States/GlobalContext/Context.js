@@ -17,12 +17,12 @@ const AppProvider = ({ children }) => {
   const [attributes, setAttributes] = useState("");
   const [gender, setGender] = useState("");
   const [discount, setDiscount] = useState("");
+  const [quantity, setQuantity] = useState(1);
   const [brand, setBrand] = useState("");
   const [avaliability, setAvaliability] = useState(null);
   const [sortproduct, setSortproduct] = useState("");
 
   const onclickOpenImageLightBox = (id) => {
-   
     setloading(true);
     setLightboxData(Data.sampleData.find((data) => data.ID === id));
     setIsImageLitebox(true);
@@ -36,6 +36,12 @@ const AppProvider = ({ children }) => {
     setisSidebar(false);
   };
 
+  const increaseQuantity = () => {
+    setQuantity(quantity + 1);
+  };
+  const decressQuantity = () => {
+    setQuantity(quantity < 2 ? 1 : quantity - 1);
+  };
   const calculateDiscount = (original, sale) => {
     let onePercent = original / 100;
     let diff = original - sale;
@@ -79,7 +85,7 @@ const AppProvider = ({ children }) => {
         avaliability,
         setAvaliability,
         sortproduct,
-        setSortproduct,
+        setSortproduct,quantity, setQuantity,increaseQuantity,decressQuantity
       }}>
       {children}
     </AppContext.Provider>

@@ -13,13 +13,13 @@
             margin: 50px 0;
 
             .CartTable {
-              
+
                 .table-responsive {
                     min-height: .01%;
                     overflow-x: auto;
-                    
-    
-    
+
+
+
                     .table {
                         width: 85%;
                         margin: auto;
@@ -27,7 +27,7 @@
                         background-color: #fff;
                         border-collapse: collapse;
                         border: 1px solid #ddd;
-    
+
                         thead {
                             th {
                                 border-bottom: 1px solid #ddd;
@@ -38,7 +38,7 @@
                                 text-align: center;
                             }
                         }
-    
+
                         tbody {
                             td {
                                 max-width: 20%;
@@ -47,28 +47,28 @@
                                 text-align: center;
                                 padding: 5px;
                                 line-height: 1.42857143;
-    
+
                                 border-top: 1px solid #ddd;
-                                span{
-                                    
-                                   
-                                }
-                                .quantity{
-                                    width: 20px;
-                                }
-                                img{
+
+                                span {}
+
+                                .quantity {
                                     width: 50px;
-    
                                 }
-                                div{
-    
+
+                                img {
+                                    width: 50px;
+
                                 }
-                                .aa-add-to-cart-btn{
+
+                                div {}
+
+                                .aa-add-to-cart-btn {
                                     display: flex;
                                     justify-content: center;
                                     align-items: center;
-                                   
-                                    span{
+
+                                    span {
                                         background-color: #ccc;
                                         padding: 5px 10px;
                                         border-radius: 5px;
@@ -78,6 +78,7 @@
                         }
                     }
                 }
+
                 // .table {
                 //     width: 100%;
                 //     tr {
@@ -120,54 +121,67 @@
             margin: 50px 50px 0 0;
 
             .CartRight {
-                .cartSummery{
+                .cartSummery {
                     margin: 50px 0;
                     display: flex;
                     flex-direction: column;
                     justify-content: space-around;
-                   // align-items: end;
+                    // align-items: end;
                     gap: 50px;
-                    .coupon{
-                        input{
-                         width: 150px;
+
+                    .coupon {
+                        input {
+                            width: 150px;
                         }
-                        div{
+
+                        div {
                             margin: 10px 0;
-                            button{
-                                padding: 5px 20px ;
+
+                            button {
+                                padding: 5px 20px;
                                 width: 150px;
                                 border-radius: 5px;
                             }
                         }
                     }
-                    .cartprices{
-                        .section-title{
-                            font-size: 16px;
+
+                    .cartprices {
+                        .section-title {
+                            font-size: 20px;
+                            margin: 0;
 
                         }
-                        .prices{
+
+                        .prices {
+                            font-size: 15px;
                             margin: 20px 0;
-                            div{
+                            font-weight: 500;
+
+                            div {
                                 display: flex;
                                 align-items: center;
                                 justify-content: space-between;
-                                border-bottom: 1px solid ;
+                                border-bottom: 1px solid;
                             }
 
                         }
-                        .total-block{
-                           
-                            .Total{
-                                font-size: 14px;
+
+                        .total-block {
+
+                            .Total {
+                                font-size: 18px;
                                 display: flex;
                                 margin: 20px 0;
+                                font-weight: 500;
                                 align-items: center;
                                 justify-content: space-between;
-                                border-bottom: 1px solid ;
+                                border-bottom: 1px solid;
                             }
-                            .btn-block{
+
+                            .btn-block {
                                 text-align: end;
-                                .btn-checkout{
+
+                                .btn-checkout {
                                     color: white;
                                     background-color: red;
                                     padding: 10px 20px;
