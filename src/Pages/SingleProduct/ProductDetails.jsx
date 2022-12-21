@@ -12,8 +12,16 @@ import {
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 
 const ProductDetails = () => {
-  const { loading, singleProduct, calculateDiscount, setSingleProduct } =
-    useGlobalContext();
+  const {
+    loading,
+    singleProduct,
+    calculateDiscount,
+    setSingleProduct,
+    quantity,
+    setQuantity,
+    increaseQuantity,
+    decressQuantity,
+  } = useGlobalContext();
 
   const ProductSizes = () => {
     return (
@@ -61,13 +69,13 @@ const ProductDetails = () => {
     return (
       <div className="quantity">
         <div className="cardincrease">
-          <button className="btn btn-p">
+          <button onClick={decressQuantity} className="btn btn-p">
             <MdMinimize></MdMinimize>
           </button>
 
-          <span className="value">1</span>
+          <span className="value">{quantity}</span>
 
-          <button className="btn btn-s">
+          <button onClick={increaseQuantity} className="btn btn-s">
             <MdAdd></MdAdd>
           </button>
         </div>
@@ -75,8 +83,7 @@ const ProductDetails = () => {
         <div className="cardbtn">
           {" "}
           <button className="btn btn-primary px-3">
-           
-          <MdShoppingCart></MdShoppingCart> Add To Cart
+            <MdShoppingCart></MdShoppingCart> Add To Cart
           </button>
         </div>
       </div>
@@ -125,7 +132,13 @@ const ProductDetails = () => {
           <QuantityCart></QuantityCart>
         </div>
         <div className="favrite">
-         <div> <MdFavorite></MdFavorite> <span>Add to Wishlist </span></div> <div><MdCompare></MdCompare> <span>Add to Compare</span></div>
+          <div>
+            {" "}
+            <MdFavorite></MdFavorite> <span>Add to Wishlist </span>
+          </div>{" "}
+          <div>
+            <MdCompare></MdCompare> <span>Add to Compare</span>
+          </div>
         </div>
         <div className="socialShareBlock">
           <strong className="text-dark mr-2">Share on:</strong>
@@ -133,9 +146,7 @@ const ProductDetails = () => {
             <a className="socialText" href="/">
               <MdFacebook></MdFacebook>
             </a>
-            <a className="socialText" href="/">
-             
-            </a>
+            <a className="socialText" href="/"></a>
             <a className="socialText" href="/">
               <MdFacebook></MdFacebook>
             </a>
