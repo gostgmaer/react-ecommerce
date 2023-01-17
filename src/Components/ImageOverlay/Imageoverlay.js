@@ -24,27 +24,27 @@ const Imageoverlay = () => {
   return (
     <>
       <div className="overlay-image-container">
-        <div class="overlaywrapper">
-          <div class="overlayHeading">
+        <div className="overlaywrapper">
+          <div className="overlayHeading">
             <h3></h3>
             <span className="dismiss" onClick={handleClick}>
               <MdClose></MdClose>
             </span>
           </div>
-          <div class="overlayBody">
-            <div class="overlaymainImage">
+          <div className="overlayBody">
+            <div className="overlaymainImage">
               <img
                 src={lightboxData?.newImage[imageIndex]}
-                class="main-img"
+                className="main-img"
                 alt="bigger pic"
               />
             </div>
-            <div class="overlayallimages">
+            <div className="overlayallimages">
               <ul>
                 {lightboxData?.["newImage"]?.map((img, index) => {
                   return (
                     <li onClick={() => setimageIndex(index)} key={index}>
-                      <img src={img} class="small-img" alt="" />
+                      <img src={img} className="small-img" alt="" />
                     </li>
                   );
                 })}
@@ -52,7 +52,7 @@ const Imageoverlay = () => {
             </div>
           </div>
 
-          <div class="arrow">
+          <div className="arrow">
             <span
               onClick={() =>
                 imageIndex === 0
@@ -71,7 +71,7 @@ const Imageoverlay = () => {
               <MdArrowRight></MdArrowRight>
             </span>
           </div>
-          <div class="overlayfooter"></div>
+          <div className="overlayfooter"></div>
         </div>
       </div>
     </>
