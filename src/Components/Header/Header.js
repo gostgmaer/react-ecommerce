@@ -12,9 +12,16 @@ import {
 import "./Header.scss";
 import Anouncement from "../Anouncement/Anouncement";
 import CartBlock from "../Cart/CartBlock";
-const Header = () => {
+import { connect, useSelector } from 'react-redux'
+import CartComponent from "../Cart/CartBlock";
+// import {cartReset,cartIncrease,cartDecrease} from '../Redux'
 
 
+
+
+
+const Header = (props) => {
+  // const cartCount = useSelector(state =>state.cart.count)
   const [openCart, setOpenCart] = useState(false);
 
 
@@ -26,7 +33,7 @@ const Header = () => {
           <div className="form-group">
             <select className="custom-select" name="language" id="language">
               <option defaultValue={'en'}>
-                {" "}
+             
                 En
               </option>
               <option value="es">Es</option>
@@ -62,17 +69,22 @@ const Header = () => {
 
           <div className="cart-icon">
             <MdShoppingCart onClick={()=>setOpenCart(!openCart)}></MdShoppingCart>
-            <span>5</span>
+            <span>{props.count}</span>
           </div>
         </div>
       </nav>
-     {openCart? <CartBlock></CartBlock>:''}
+     {openCart? <CartComponent></CartComponent>:''}
       <Anouncement></Anouncement>
     </header>
   );
 };
 
-export default Header;
+const mapStatetoprops =  state =>{
+  return {
+    count : state.cart.count
+  }
+}
+export default connect(mapStatetoprops)(Header)
 
 // const oldnav = ()=>{
 //     {/* <ul className='headerNav'>

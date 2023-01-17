@@ -1,4 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useParams } from "react-router-dom";
+// import { singleproduct } from "../../Assets/Data/Data";
+// single
+
 import {
   MdAdd,
   MdCompare,
@@ -10,8 +14,12 @@ import {
   MdShoppingCart,
 } from "react-icons/md";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
+import { addToCart } from "../../Redux/CartReducer";
+import { useDispatch } from "react-redux";
 
 const ProductDetails = () => {
+  const dispatch = useDispatch();
+  const productID = Number(useParams().id);
   const {
     loading,
     singleProduct,
@@ -22,6 +30,10 @@ const ProductDetails = () => {
     increaseQuantity,
     decressQuantity,
   } = useGlobalContext();
+
+  useEffect(() => {
+    console.log(singleProduct);
+  }, []);
 
   const ProductSizes = () => {
     return (
@@ -82,8 +94,21 @@ const ProductDetails = () => {
 
         <div className="cardbtn">
           {" "}
-          <button className="btn btn-primary px-3">
-            <MdShoppingCart></MdShoppingCart> Add To Cart
+          <button  onClick={() =>
+                dispatch(
+                  addToCart({
+                    id: singleProduct.id,
+                    title: singleProduct.Name,
+                    desc: singleProduct.Description,
+                    image: singleProduct?.Images,
+                    price: singleProduct["Regular price"],
+                    quantity,
+                  })
+                )
+              } className="btn btn-primary px-3">
+            <MdShoppingCart
+             ></MdShoppingCart>
+            Add To Cart
           </button>
         </div>
       </div>
