@@ -4,9 +4,9 @@
 .application-contain{
   min-height: calc(100vh - 110px);
   background-color: #efefef;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   overflow-x: hidden;
 }
 .App-logo {
