@@ -15,7 +15,7 @@ const WelcomeBlock = () => {
             volutpat.
           </p>{" "}
          <div className="welcomeBtn"> <a
-            href="/"
+            href="/about"
            
             className="btn"
            >
@@ -23,9 +23,9 @@ const WelcomeBlock = () => {
             <span>About us</span>{" "}
           </a>
           <a
-            href="/"
+            href="/products"
             target="_self"
-            className="btn"
+            className="btn shop"
            >
            
             <span>Shop now</span>{" "}

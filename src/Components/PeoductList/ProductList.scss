@@ -8,11 +8,19 @@
 }
 
 .productlistcontainer {
-    padding: 10px;
+    margin: 10px;
     .heading {
-        font-size: 24px;
+        font-size: 28px;
         color: rgb(41, 41, 41);
-        margin-top: 20px;
+        margin: 30px 0;
+        font-weight: 600;
+        &:hover{
+            text-decoration: underline red dashed;
+            text-underline-offset: 5px;
+          //  text-decoration-skip-ink: 10;
+          //  text-decoration-style: dashed;
+            
+        }
     }
 
     .ecommerce-pList {

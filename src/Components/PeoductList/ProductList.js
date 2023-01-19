@@ -18,7 +18,7 @@ const ProductList = ({ title }) => {
 
   return (
     <div className="productlistcontainer">
-      <div className="heading">{title === 0 && "Featured"} Products</div>
+      <div className="heading"><h2>{title === 1? "Featured":'Advance'} Products</h2></div>
 
       <div className="ecommerce-pList">
         <ul className="ProductList">

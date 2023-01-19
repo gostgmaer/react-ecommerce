@@ -25,12 +25,11 @@ const Slider = () => {
     <div className="Slider">
       <div className="sliderWrapper">
         <div className="sliderContainer">
-        
-          <img src={data[0].attributes.image.large} alt="" /> 
+         <img src={data[0].attributes.image.large} alt="" /> 
             <div className="infoContainer">
-
-              <SliderCard></SliderCard>
+              {/* <SliderCard></SliderCard> */}
             </div>
+         
           </div>
 
         

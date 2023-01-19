@@ -248,6 +248,7 @@
         color: rgb(255, 72, 0);
         div{
             display: flex;
+            cursor: pointer;
             justify-content: space-around;
             align-items: center;
             gap: 5px;
@@ -277,7 +278,7 @@
         .cardbtn {
           
           .btn {
-            width: 140px;
+           // width: 140px;
             border-radius: 5px;
             font-weight: 500;
             height: 32px;
@@ -291,6 +292,22 @@
 
     .socialShareBlock {
       margin: 10px;
+      .text-dark{
+        font-size: 32px;
+
+      }
+      .socialIcons{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        .socialText{
+          svg{
+            width: 25px;
+            height: 25px;
+
+          }
+        }
+      }
     }
 
     .description {
