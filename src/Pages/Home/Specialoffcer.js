@@ -10,28 +10,22 @@ const Specialoffcer = () => {
         />
       </div>
       <div className="spacialoffer-content">
-        <div className="wrap">
-          <div className="container">
-            <h4 className="elementor-heading-title elementor-size-default">
+      <div className="box-content">
+            <h4 className="elementor-heading-title">
               Limited Time Offer
-            </h4>{" "}
-          </div>
-          <div className="image-box-wrapper">
-            <div className="box-content">
+            </h4>
               <h2 className="box-title">Special Edition</h2>
               <p className="elementor-image-box-description">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
                 tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
               </p>
-            </div>
-            <h4 className="elementor-heading-title elementor-size-default">
+              <h3 className="elementor-size-default">
               Buy This T-shirt At 20% Discount, Use Code OFF20
-            </h4>
+            </h3>
+            <div className="btn-container">
+            <button className="elementor-button-text btn">Shop Now</button>
           </div>
-          <div className="container">
-            <span className="elementor-button-text">Shop Now</span>
-          </div>
-        </div>
+            </div>
       </div>
     </div>
   );

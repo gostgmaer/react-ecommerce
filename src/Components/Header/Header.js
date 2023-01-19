@@ -69,7 +69,7 @@ const Header = (props) => {
 
           <div className="cart-icon">
             <MdShoppingCart onClick={()=>setOpenCart(!openCart)}></MdShoppingCart>
-            <span>{props.count}</span>
+            <span>{1}</span>
           </div>
         </div>
       </nav>

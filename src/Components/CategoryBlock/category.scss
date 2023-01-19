@@ -15,6 +15,17 @@
     
         .col-l {
             flex: 2;
+           .row{
+            &:first-child{
+                background-color:#EFEFEF;
+                .col{
+                    .row{
+                        background-color: black;
+                    }
+
+                }
+            }
+           }
         }
         .row{
             flex: 1;
@@ -22,27 +33,38 @@
             gap: 10px;
             position: relative;
             overflow: hidden;
-            button{
+            background-color: black;
+            
+            .link{
                 position: absolute;
                 min-width: 100px;
+                width: -moz-fit-content;
                 width: fit-content;
                 cursor: pointer;
                 border: none;
                 background-color: white;
                 text-transform: uppercase;
                 font-weight: 500;
-                height: 50px;
+                height: 20px;
+                display: flex;
+                align-items: center;
                 padding: 10px;
                 top: 0;
                 bottom: 0;
                 left: 0;
                 right: 0;
                 margin: auto;
+                align-content: center;
+                justify-content: center;
             }
             img{
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                opacity: 0.5;
+                &:hover{
+                    opacity: 1;
+                }
             }
         }
     }

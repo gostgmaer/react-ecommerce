@@ -12,7 +12,10 @@ import {
   MdMinimize,
   MdPlusOne,
   MdShoppingCart,
+  MdYoutubeSearchedFor,
 } from "react-icons/md";
+
+import { FaInstagram,FaTwitter,FaYoutube,FaFacebook,FaFlickr } from "react-icons/fa";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import { addToCart } from "../../Redux/CartReducer";
 import { useDispatch } from "react-redux";
@@ -169,17 +172,20 @@ const ProductDetails = () => {
           <strong className="text-dark mr-2">Share on:</strong>
           <div className="socialIcons">
             <a className="socialText" href="/">
-              <MdFacebook></MdFacebook>
+              <FaFacebook></FaFacebook>
             </a>
             <a className="socialText" href="/"></a>
             <a className="socialText" href="/">
-              <MdFacebook></MdFacebook>
+              <FaTwitter></FaTwitter>
             </a>
             <a className="socialText" href="/">
-              <MdFacebook></MdFacebook>
+              <FaYoutube></FaYoutube>
             </a>
             <a className="socialText" href="/">
-              <MdFacebook></MdFacebook>
+              <FaInstagram></FaInstagram>
+            </a>
+            <a className="socialText" href="/">
+              <FaFlickr></FaFlickr>
             </a>
           </div>
         </div>
