@@ -24,18 +24,28 @@ const Slider = () => {
   return (
     <div className="Slider">
       <div className="sliderWrapper">
-        <div className="sliderContainer">
-         <img src={data[0].attributes.image.large} alt="" /> 
-            <div className="infoContainer">
-              {/* <SliderCard></SliderCard> */}
-            </div>
-         
-          </div>
+        <div className="sliderItems" style={{transform:` translateX(-${currentSlider*100}vw)`}}>
+        {
+          data.map(item=>(
+            <div className="sliderContainer">
+            <img src={item.attributes.image.large} alt="" /> 
+               <div className="infoContainer">
+                 {/* <SliderCard></SliderCard> */}
+               </div>
+            
+             </div>
+          ))
+        }
+        </div>
+       
+       
 
         
     
 
-        <div className="arrow">
+     
+      </div>
+      <div className="arrow">
           <div className="arrowin" onClick={SliderPrivious}>
             <MdOutlineArrowBack></MdOutlineArrowBack>
           </div>
@@ -43,7 +53,6 @@ const Slider = () => {
             <MdOutlineArrowForward></MdOutlineArrowForward>
           </div>
         </div>
-      </div>
     </div>
   );
 };
