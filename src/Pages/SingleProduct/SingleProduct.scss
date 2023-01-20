@@ -1,3 +1,5 @@
+@import './ProductTab//ProductTab.scss';
+
 .SingleProduct {
   width: 100vw;
 
@@ -31,6 +33,7 @@
   .reatedheading {
     font-size: 26px;
     font-weight: 600;
+    margin: 20px;
   }
 
   .relatedProductwrapper {
@@ -52,7 +55,7 @@
     float: left;
     list-style: none;
     height: 32px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgb(228, 228, 228);
     width: 100%;
   }
 
@@ -89,14 +92,7 @@
   }
 
   .tab_container {
-    border: 1px solid #333;
-    border-top: none;
-    clear: both;
-    padding: 1% 2%;
-    float: left;
-    // width: 100%;
-    background: #fff;
-    overflow: auto;
+    
   }
 
   .tab_content {

@@ -40,14 +40,21 @@
     .signup-form {
         width: 70%;
         margin-bottom: 15px;
+        input{
+            &::placeholder{
+                text-transform: capitalize;
+                font-size: 14px;
+            }
+        }
 
         div {
             display: flex;
             align-content: space-around;
             justify-content: center;
             align-items: center;
+            gap: 5px;
 
-            margin: 10px;
+           
 
             input {
                 width: 80%;
@@ -88,11 +95,12 @@
     }
 
     .alternative-signup {
-        font-size: 15px;
+        font-size: 14px;
+        text-transform: capitalize;
 
         a {
             color: rgb(0, 110, 255);
-            font-size: 16px;
+            font-size: 14px;
             cursor: pointer;
         }
     }

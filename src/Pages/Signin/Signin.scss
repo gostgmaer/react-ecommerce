@@ -76,6 +76,10 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
+            opacity: 0.7;
+            &:hover{
+                opacity: 1;
+            }
         }
     }
     .alternative-signup{
@@ -88,16 +92,24 @@
     }
     .login-alter-btn{
         margin: 10px;
-        button{
-            width: 30px;
-            height: 30px;
-            color: rgb(255, 255, 255);
-            background-color: rgb(0, 0, 0);
-            margin: 5px;
-            cursor: pointer;
-            border: none;
-            border-radius: 50%;
+       display: flex;
+       align-items: center;
+       gap: 10px;
+       svg{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        opacity: 0.8;
+        &:hover{
+            opacity: 1;
         }
+       }
+       .google{
+        color: orange;
+       }
+       .facebook{
+        color: rgb(0, 30, 255);
+       }
     }
     h4 {
         margin: 20px 0 5px 0;
