@@ -98,16 +98,17 @@ const ProductDetails = () => {
         </div>
 
         <div className="cardbtn">
-          {" "}
+         
           <button
             onClick={() =>
               dispatch(
                 addToCart({
-                  id: singleProduct.id,
-                  title: singleProduct.Name,
-                  desc: singleProduct.Description,
-                  image: singleProduct?.Images,
-                  price: singleProduct["Regular price"],
+                  id: singleProduct?.data.id,
+                  color:singleProduct?.data.attributes.color,
+                  title: singleProduct?.data.attributes.title,
+                  desc: singleProduct?.data.attributes.shortdesc,
+                  image: singleProduct?.data.attributes.productImage.data[0].attributes.url,
+                  price: (singleProduct?.data.attributes["salePrice"]?singleProduct?.data.attributes["salePrice"]:singleProduct?.data.attributes["regularPrice"]),
                   quantity,
                 })
               )

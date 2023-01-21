@@ -25,12 +25,16 @@ const AppProvider = ({ children }) => {
   const [avaliability, setAvaliability] = useState(null);
   const [sortproduct, setSortproduct] = useState("");
   const [products, setProducts] = useState(null);
+  const [openCart, setOpenCart] = useState(false);
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
     setLightboxData(Data.sampleData.find((data) => data.ID === id));
     setIsImageLitebox(true);
     setloading(false);
   };
+  const cartPanelHandle=()=>{
+    setOpenCart(!openCart)
+  }
 
   const getSingleProduct = async ()=>{
    
@@ -97,7 +101,14 @@ const AppProvider = ({ children }) => {
 
     return (diff / onePercent).toFixed(1);
   };
-
+  
+  const totalprice = (data) => {
+    let total = 0;
+    data.forEach((element) => {
+      total += element.quantity * element.price;
+    });
+    return total.toFixed(2);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -107,9 +118,9 @@ const AppProvider = ({ children }) => {
         setIsImageLitebox,
         setLightboxData,
         lightboxData,
-        isSidebar,
+        isSidebar,openCart,
         setisSidebar,
-        setkeyword,
+        setkeyword,totalprice,
         calculateDiscount,
         onclickOpenImageLightBox,
         attributes,ScrollToTop,
@@ -129,7 +140,7 @@ const AppProvider = ({ children }) => {
         setimageIndex,
         setloading,
         discount,
-        setDiscount,
+        setDiscount,cartPanelHandle,
         brand,
         setBrand,
         avaliability,
