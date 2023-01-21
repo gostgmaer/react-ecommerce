@@ -36,7 +36,7 @@ const CartComponent = () => {
     return (
       <React.Fragment>
         <h2>Product in your cart</h2>
-        {products?.map((item) => {
+      <div className="cartItems">  {products?.map((item) => {
           return (
             <div className="item" key={item.id}>
               <img src={`${baseURl + item?.image}`} alt="" />
@@ -54,7 +54,7 @@ const CartComponent = () => {
               </div>
             </div>
           );
-        })}
+        })}</div>
         <div className="total">
           <span>SUBTOTAL</span>
           <span>$ {totalprice(products)}</span>
