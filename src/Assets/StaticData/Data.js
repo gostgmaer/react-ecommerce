@@ -652,3 +652,1592 @@ export const products = [
     rating: { rate: 3.6, count: 145 },
   },
 ];
+
+export const strapiData ={
+  "data": [
+      {
+          "id": 1,
+          "attributes": {
+              "title": "Short hand T shirt One by one",
+              "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "longDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "color": "black",
+              "regularPrice": 253.54,
+              "salePrice": 124.33,
+              "uid": "product_00214",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T07:09:57.401Z",
+              "updatedAt": "2023-01-21T09:54:22.282Z",
+              "publishedAt": "2023-01-21T07:09:58.949Z",
+              "isSale": true,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 77,
+                          "attributes": {
+                              "name": "photo-1620799139834-6b8f844fbe61.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "thumbnail_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 7.12,
+                                      "url": "/uploads/thumbnail_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "medium_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 55.43,
+                                      "url": "/uploads/medium_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "small_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 28.9,
+                                      "url": "/uploads/small_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 85.05,
+                              "url": "/uploads/photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.535Z",
+                              "updatedAt": "2023-01-21T06:56:29.535Z"
+                          }
+                      },
+                      {
+                          "id": 76,
+                          "attributes": {
+                              "name": "photo-1620799140408-edc6dcb6d633.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "thumbnail_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 5.76,
+                                      "url": "/uploads/thumbnail_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "medium_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 49.59,
+                                      "url": "/uploads/medium_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "small_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 23.86,
+                                      "url": "/uploads/small_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799140408_edc6dcb6d633_8934442da7",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 82.22,
+                              "url": "/uploads/photo_1620799140408_edc6dcb6d633_8934442da7.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.358Z",
+                              "updatedAt": "2023-01-21T06:56:29.358Z"
+                          }
+                      },
+                      {
+                          "id": 74,
+                          "attributes": {
+                              "name": "photo-1620799140188-3b2a02fd9a77.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "thumbnail_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 5.94,
+                                      "url": "/uploads/thumbnail_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "medium_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 49.13,
+                                      "url": "/uploads/medium_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "small_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 24.87,
+                                      "url": "/uploads/small_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 78.45,
+                              "url": "/uploads/photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.221Z",
+                              "updatedAt": "2023-01-21T06:56:29.221Z"
+                          }
+                      },
+                      {
+                          "id": 59,
+                          "attributes": {
+                              "name": "photo-1564584217132-2271feaeb3c5.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "thumbnail_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 3.34,
+                                      "url": "/uploads/thumbnail_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "medium_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 24.02,
+                                      "url": "/uploads/medium_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "small_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 11.26,
+                                      "url": "/uploads/small_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 40.74,
+                              "url": "/uploads/photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:27.786Z",
+                              "updatedAt": "2023-01-21T06:56:27.786Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 1,
+                          "attributes": {
+                              "title": "Man",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category",
+                              "createdAt": "2023-01-21T07:05:47.250Z",
+                              "updatedAt": "2023-01-21T07:05:50.539Z",
+                              "publishedAt": "2023-01-21T07:05:50.529Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "id": 2,
+          "attributes": {
+              "title": "baby Firl Playing in Mattress Having Cool",
+              "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "longDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "color": "yellow",
+              "regularPrice": 1254.54,
+              "salePrice": 999.99,
+              "uid": "product-1",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T07:11:57.249Z",
+              "updatedAt": "2023-01-21T09:54:09.790Z",
+              "publishedAt": "2023-01-21T07:11:58.561Z",
+              "isSale": true,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 186,
+                          "attributes": {
+                              "name": "premium_photo-1663956102270-060b19a7daef.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1663956102270-060b19a7daef.jpeg",
+                                      "hash": "thumbnail_premium_photo_1663956102270_060b19a7daef_5d4d255648",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 12.6,
+                                      "url": "/uploads/thumbnail_premium_photo_1663956102270_060b19a7daef_5d4d255648.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1663956102270-060b19a7daef.jpeg",
+                                      "hash": "small_premium_photo_1663956102270_060b19a7daef_5d4d255648",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 44.05,
+                                      "url": "/uploads/small_premium_photo_1663956102270_060b19a7daef_5d4d255648.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1663956102270-060b19a7daef.jpeg",
+                                      "hash": "medium_premium_photo_1663956102270_060b19a7daef_5d4d255648",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 85.24,
+                                      "url": "/uploads/medium_premium_photo_1663956102270_060b19a7daef_5d4d255648.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1663956102270_060b19a7daef_5d4d255648",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 131.45,
+                              "url": "/uploads/premium_photo_1663956102270_060b19a7daef_5d4d255648.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:30.834Z",
+                              "updatedAt": "2023-01-21T07:07:18.371Z"
+                          }
+                      },
+                      {
+                          "id": 185,
+                          "attributes": {
+                              "name": "premium_photo-1672446464381-91df785dcfd7.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1672446464381-91df785dcfd7.jpeg",
+                                      "hash": "thumbnail_premium_photo_1672446464381_91df785dcfd7_89f032ebab",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 6.68,
+                                      "url": "/uploads/thumbnail_premium_photo_1672446464381_91df785dcfd7_89f032ebab.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1672446464381-91df785dcfd7.jpeg",
+                                      "hash": "medium_premium_photo_1672446464381_91df785dcfd7_89f032ebab",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 42.35,
+                                      "url": "/uploads/medium_premium_photo_1672446464381_91df785dcfd7_89f032ebab.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1672446464381-91df785dcfd7.jpeg",
+                                      "hash": "small_premium_photo_1672446464381_91df785dcfd7_89f032ebab",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 22.27,
+                                      "url": "/uploads/small_premium_photo_1672446464381_91df785dcfd7_89f032ebab.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1672446464381_91df785dcfd7_89f032ebab",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 65.65,
+                              "url": "/uploads/premium_photo_1672446464381_91df785dcfd7_89f032ebab.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:30.778Z",
+                              "updatedAt": "2023-01-21T07:01:30.778Z"
+                          }
+                      },
+                      {
+                          "id": 181,
+                          "attributes": {
+                              "name": "premium_photo-1665296634817-f89856055566.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 684,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1665296634817-f89856055566.jpeg",
+                                      "hash": "thumbnail_premium_photo_1665296634817_f89856055566_fe9e4478b5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 228,
+                                      "height": 156,
+                                      "size": 8.3,
+                                      "url": "/uploads/thumbnail_premium_photo_1665296634817_f89856055566_fe9e4478b5.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1665296634817-f89856055566.jpeg",
+                                      "hash": "small_premium_photo_1665296634817_f89856055566_fe9e4478b5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 342,
+                                      "size": 30.5,
+                                      "url": "/uploads/small_premium_photo_1665296634817_f89856055566_fe9e4478b5.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1665296634817-f89856055566.jpeg",
+                                      "hash": "medium_premium_photo_1665296634817_f89856055566_fe9e4478b5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 513,
+                                      "size": 59.77,
+                                      "url": "/uploads/medium_premium_photo_1665296634817_f89856055566_fe9e4478b5.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1665296634817_f89856055566_fe9e4478b5",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 93.43,
+                              "url": "/uploads/premium_photo_1665296634817_f89856055566_fe9e4478b5.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:30.487Z",
+                              "updatedAt": "2023-01-21T07:01:30.487Z"
+                          }
+                      },
+                      {
+                          "id": 180,
+                          "attributes": {
+                              "name": "premium_photo-1665296634747-aba82936c5ef.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 684,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1665296634747-aba82936c5ef.jpeg",
+                                      "hash": "thumbnail_premium_photo_1665296634747_aba82936c5ef_9424e30db9",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 228,
+                                      "height": 156,
+                                      "size": 8.37,
+                                      "url": "/uploads/thumbnail_premium_photo_1665296634747_aba82936c5ef_9424e30db9.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1665296634747-aba82936c5ef.jpeg",
+                                      "hash": "small_premium_photo_1665296634747_aba82936c5ef_9424e30db9",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 342,
+                                      "size": 29.97,
+                                      "url": "/uploads/small_premium_photo_1665296634747_aba82936c5ef_9424e30db9.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1665296634747-aba82936c5ef.jpeg",
+                                      "hash": "medium_premium_photo_1665296634747_aba82936c5ef_9424e30db9",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 513,
+                                      "size": 56.88,
+                                      "url": "/uploads/medium_premium_photo_1665296634747_aba82936c5ef_9424e30db9.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1665296634747_aba82936c5ef_9424e30db9",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 86.57,
+                              "url": "/uploads/premium_photo_1665296634747_aba82936c5ef_9424e30db9.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:30.309Z",
+                              "updatedAt": "2023-01-21T07:01:30.309Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 3,
+                          "attributes": {
+                              "title": "toy",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category-2",
+                              "createdAt": "2023-01-21T07:07:28.752Z",
+                              "updatedAt": "2023-01-21T07:07:29.961Z",
+                              "publishedAt": "2023-01-21T07:07:29.955Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "id": 3,
+          "attributes": {
+              "title": "Shirts for Man and Women Both Check it Once",
+              "shortdesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "longDesc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\nLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+              "color": "black",
+              "regularPrice": 152.99,
+              "salePrice": 99.99,
+              "uid": "product-2",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T09:05:49.228Z",
+              "updatedAt": "2023-01-21T09:54:15.733Z",
+              "publishedAt": "2023-01-21T09:05:50.557Z",
+              "isSale": true,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 77,
+                          "attributes": {
+                              "name": "photo-1620799139834-6b8f844fbe61.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "thumbnail_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 7.12,
+                                      "url": "/uploads/thumbnail_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "medium_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 55.43,
+                                      "url": "/uploads/medium_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799139834-6b8f844fbe61.jpeg",
+                                      "hash": "small_photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 28.9,
+                                      "url": "/uploads/small_photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799139834_6b8f844fbe61_a8a2dd4678",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 85.05,
+                              "url": "/uploads/photo_1620799139834_6b8f844fbe61_a8a2dd4678.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.535Z",
+                              "updatedAt": "2023-01-21T06:56:29.535Z"
+                          }
+                      },
+                      {
+                          "id": 76,
+                          "attributes": {
+                              "name": "photo-1620799140408-edc6dcb6d633.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "thumbnail_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 5.76,
+                                      "url": "/uploads/thumbnail_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "medium_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 49.59,
+                                      "url": "/uploads/medium_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799140408-edc6dcb6d633.jpeg",
+                                      "hash": "small_photo_1620799140408_edc6dcb6d633_8934442da7",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 23.86,
+                                      "url": "/uploads/small_photo_1620799140408_edc6dcb6d633_8934442da7.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799140408_edc6dcb6d633_8934442da7",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 82.22,
+                              "url": "/uploads/photo_1620799140408_edc6dcb6d633_8934442da7.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.358Z",
+                              "updatedAt": "2023-01-21T06:56:29.358Z"
+                          }
+                      },
+                      {
+                          "id": 74,
+                          "attributes": {
+                              "name": "photo-1620799140188-3b2a02fd9a77.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 751,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "thumbnail_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 208,
+                                      "height": 156,
+                                      "size": 5.94,
+                                      "url": "/uploads/thumbnail_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "medium_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 563,
+                                      "size": 49.13,
+                                      "url": "/uploads/medium_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1620799140188-3b2a02fd9a77.jpeg",
+                                      "hash": "small_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 376,
+                                      "size": 24.87,
+                                      "url": "/uploads/small_photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1620799140188_3b2a02fd9a77_11c4cd5b4a",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 78.45,
+                              "url": "/uploads/photo_1620799140188_3b2a02fd9a77_11c4cd5b4a.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:29.221Z",
+                              "updatedAt": "2023-01-21T06:56:29.221Z"
+                          }
+                      },
+                      {
+                          "id": 59,
+                          "attributes": {
+                              "name": "photo-1564584217132-2271feaeb3c5.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "thumbnail_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 3.34,
+                                      "url": "/uploads/thumbnail_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "medium_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 24.02,
+                                      "url": "/uploads/medium_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1564584217132-2271feaeb3c5.jpeg",
+                                      "hash": "small_photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 11.26,
+                                      "url": "/uploads/small_photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1564584217132_2271feaeb3c5_ec77ef9d6b",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 40.74,
+                              "url": "/uploads/photo_1564584217132_2271feaeb3c5_ec77ef9d6b.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:27.786Z",
+                              "updatedAt": "2023-01-21T06:56:27.786Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 2,
+                          "attributes": {
+                              "title": "Women",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category-1",
+                              "createdAt": "2023-01-21T07:07:01.475Z",
+                              "updatedAt": "2023-01-21T07:07:03.221Z",
+                              "publishedAt": "2023-01-21T07:07:03.216Z"
+                          }
+                      },
+                      {
+                          "id": 1,
+                          "attributes": {
+                              "title": "Man",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category",
+                              "createdAt": "2023-01-21T07:05:47.250Z",
+                              "updatedAt": "2023-01-21T07:05:50.539Z",
+                              "publishedAt": "2023-01-21T07:05:50.529Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "id": 4,
+          "attributes": {
+              "title": "Unstitched Viscose Rayon Suit Fabric Solid",
+              "shortdesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "longDesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "color": "blue",
+              "regularPrice": 235.12,
+              "salePrice": 199.99,
+              "uid": "product-3",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T09:59:48.923Z",
+              "updatedAt": "2023-01-21T09:59:50.056Z",
+              "publishedAt": "2023-01-21T09:59:50.052Z",
+              "isSale": true,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 108,
+                          "attributes": {
+                              "name": "photo-1508112669284-33e37093fc34.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1508112669284-33e37093fc34.jpeg",
+                                      "hash": "thumbnail_photo_1508112669284_33e37093fc34_dd887ebc1a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 7.3,
+                                      "url": "/uploads/thumbnail_photo_1508112669284_33e37093fc34_dd887ebc1a.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1508112669284-33e37093fc34.jpeg",
+                                      "hash": "small_photo_1508112669284_33e37093fc34_dd887ebc1a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 22.8,
+                                      "url": "/uploads/small_photo_1508112669284_33e37093fc34_dd887ebc1a.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1508112669284-33e37093fc34.jpeg",
+                                      "hash": "medium_photo_1508112669284_33e37093fc34_dd887ebc1a",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 41.88,
+                                      "url": "/uploads/medium_photo_1508112669284_33e37093fc34_dd887ebc1a.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1508112669284_33e37093fc34_dd887ebc1a",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 63.67,
+                              "url": "/uploads/photo_1508112669284_33e37093fc34_dd887ebc1a.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:23.445Z",
+                              "updatedAt": "2023-01-21T07:01:23.445Z"
+                          }
+                      },
+                      {
+                          "id": 109,
+                          "attributes": {
+                              "name": "photo-1513151233558-d860c5398176.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1513151233558-d860c5398176.jpeg",
+                                      "hash": "thumbnail_photo_1513151233558_d860c5398176_ff9222b1c3",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 6.36,
+                                      "url": "/uploads/thumbnail_photo_1513151233558_d860c5398176_ff9222b1c3.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1513151233558-d860c5398176.jpeg",
+                                      "hash": "medium_photo_1513151233558_d860c5398176_ff9222b1c3",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 30.28,
+                                      "url": "/uploads/medium_photo_1513151233558_d860c5398176_ff9222b1c3.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1513151233558-d860c5398176.jpeg",
+                                      "hash": "small_photo_1513151233558_d860c5398176_ff9222b1c3",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 17.34,
+                                      "url": "/uploads/small_photo_1513151233558_d860c5398176_ff9222b1c3.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1513151233558_d860c5398176_ff9222b1c3",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 45.24,
+                              "url": "/uploads/photo_1513151233558_d860c5398176_ff9222b1c3.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:23.533Z",
+                              "updatedAt": "2023-01-21T07:01:23.533Z"
+                          }
+                      },
+                      {
+                          "id": 112,
+                          "attributes": {
+                              "name": "photo-1517036723957-e2891b1b32ae.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1517036723957-e2891b1b32ae.jpeg",
+                                      "hash": "thumbnail_photo_1517036723957_e2891b1b32ae_673d5d2e02",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 8.88,
+                                      "url": "/uploads/thumbnail_photo_1517036723957_e2891b1b32ae_673d5d2e02.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1517036723957-e2891b1b32ae.jpeg",
+                                      "hash": "small_photo_1517036723957_e2891b1b32ae_673d5d2e02",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 34.87,
+                                      "url": "/uploads/small_photo_1517036723957_e2891b1b32ae_673d5d2e02.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1517036723957-e2891b1b32ae.jpeg",
+                                      "hash": "medium_photo_1517036723957_e2891b1b32ae_673d5d2e02",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 75.18,
+                                      "url": "/uploads/medium_photo_1517036723957_e2891b1b32ae_673d5d2e02.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1517036723957_e2891b1b32ae_673d5d2e02",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 127.95,
+                              "url": "/uploads/photo_1517036723957_e2891b1b32ae_673d5d2e02.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:23.980Z",
+                              "updatedAt": "2023-01-21T07:01:23.980Z"
+                          }
+                      },
+                      {
+                          "id": 113,
+                          "attributes": {
+                              "name": "photo-1517686748843-bb360cfc62b3.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1517686748843-bb360cfc62b3.jpeg",
+                                      "hash": "thumbnail_photo_1517686748843_bb360cfc62b3_cc9e3662a2",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 6.22,
+                                      "url": "/uploads/thumbnail_photo_1517686748843_bb360cfc62b3_cc9e3662a2.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1517686748843-bb360cfc62b3.jpeg",
+                                      "hash": "medium_photo_1517686748843_bb360cfc62b3_cc9e3662a2",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 40.91,
+                                      "url": "/uploads/medium_photo_1517686748843_bb360cfc62b3_cc9e3662a2.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1517686748843-bb360cfc62b3.jpeg",
+                                      "hash": "small_photo_1517686748843_bb360cfc62b3_cc9e3662a2",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 20.56,
+                                      "url": "/uploads/small_photo_1517686748843_bb360cfc62b3_cc9e3662a2.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1517686748843_bb360cfc62b3_cc9e3662a2",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 64.85,
+                              "url": "/uploads/photo_1517686748843_bb360cfc62b3_cc9e3662a2.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T07:01:24.047Z",
+                              "updatedAt": "2023-01-21T07:01:24.047Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 1,
+                          "attributes": {
+                              "title": "Man",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category",
+                              "createdAt": "2023-01-21T07:05:47.250Z",
+                              "updatedAt": "2023-01-21T07:05:50.539Z",
+                              "publishedAt": "2023-01-21T07:05:50.529Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "id": 5,
+          "attributes": {
+              "title": "Unstitched Lycra Blend Suit Fabric Solid",
+              "shortdesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "longDesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "color": "blue",
+              "regularPrice": 855.12,
+              "salePrice": 459.99,
+              "uid": "product-4",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T10:00:57.133Z",
+              "updatedAt": "2023-01-21T10:00:58.392Z",
+              "publishedAt": "2023-01-21T10:00:58.388Z",
+              "isSale": true,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 198,
+                          "attributes": {
+                              "name": "laura-chouette-q4Wrsho-t2E-unsplash.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 640,
+                              "height": 853,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_laura-chouette-q4Wrsho-t2E-unsplash.jpeg",
+                                      "hash": "thumbnail_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 117,
+                                      "height": 156,
+                                      "size": 2.95,
+                                      "url": "/uploads/thumbnail_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_laura-chouette-q4Wrsho-t2E-unsplash.jpeg",
+                                      "hash": "small_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 375,
+                                      "height": 500,
+                                      "size": 15.51,
+                                      "url": "/uploads/small_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_laura-chouette-q4Wrsho-t2E-unsplash.jpeg",
+                                      "hash": "medium_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 563,
+                                      "height": 750,
+                                      "size": 28.82,
+                                      "url": "/uploads/medium_laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5.jpeg"
+                                  }
+                              },
+                              "hash": "laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 34.42,
+                              "url": "/uploads/laura_chouette_q4_Wrsho_t2_E_unsplash_fd26d28df5.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T09:34:12.388Z",
+                              "updatedAt": "2023-01-21T09:34:12.388Z"
+                          }
+                      },
+                      {
+                          "id": 199,
+                          "attributes": {
+                              "name": "kai-gabriel-2s3GhhJz2uY-unsplash.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1920,
+                              "height": 2880,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_kai-gabriel-2s3GhhJz2uY-unsplash.jpeg",
+                                      "hash": "thumbnail_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 104,
+                                      "height": 156,
+                                      "size": 3.52,
+                                      "url": "/uploads/thumbnail_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d.jpeg"
+                                  },
+                                  "large": {
+                                      "name": "large_kai-gabriel-2s3GhhJz2uY-unsplash.jpeg",
+                                      "hash": "large_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 667,
+                                      "height": 1000,
+                                      "size": 53.79,
+                                      "url": "/uploads/large_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_kai-gabriel-2s3GhhJz2uY-unsplash.jpeg",
+                                      "hash": "medium_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 750,
+                                      "size": 33.94,
+                                      "url": "/uploads/medium_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_kai-gabriel-2s3GhhJz2uY-unsplash.jpeg",
+                                      "hash": "small_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 333,
+                                      "height": 500,
+                                      "size": 18.05,
+                                      "url": "/uploads/small_kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d.jpeg"
+                                  }
+                              },
+                              "hash": "kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 323.58,
+                              "url": "/uploads/kai_gabriel_2s3_Ghh_Jz2u_Y_unsplash_440d6b508d.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T09:34:12.627Z",
+                              "updatedAt": "2023-01-21T09:34:12.627Z"
+                          }
+                      },
+                      {
+                          "id": 200,
+                          "attributes": {
+                              "name": "raoul-croes-q3NX2NbbYmI-unsplash.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 640,
+                              "height": 960,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_raoul-croes-q3NX2NbbYmI-unsplash.jpeg",
+                                      "hash": "thumbnail_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 104,
+                                      "height": 156,
+                                      "size": 2.58,
+                                      "url": "/uploads/thumbnail_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_raoul-croes-q3NX2NbbYmI-unsplash.jpeg",
+                                      "hash": "medium_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 750,
+                                      "size": 24.07,
+                                      "url": "/uploads/medium_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_raoul-croes-q3NX2NbbYmI-unsplash.jpeg",
+                                      "hash": "small_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 333,
+                                      "height": 500,
+                                      "size": 13.47,
+                                      "url": "/uploads/small_raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158.jpeg"
+                                  }
+                              },
+                              "hash": "raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 33.54,
+                              "url": "/uploads/raoul_croes_q3_NX_2_Nbb_Ym_I_unsplash_3218bdf158.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T09:34:12.644Z",
+                              "updatedAt": "2023-01-21T09:34:12.644Z"
+                          }
+                      },
+                      {
+                          "id": 201,
+                          "attributes": {
+                              "name": "brian-lawson-jRztw-pVdyk-unsplash.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 2624,
+                              "height": 3936,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_brian-lawson-jRztw-pVdyk-unsplash.jpeg",
+                                      "hash": "thumbnail_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 104,
+                                      "height": 156,
+                                      "size": 4.44,
+                                      "url": "/uploads/thumbnail_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_brian-lawson-jRztw-pVdyk-unsplash.jpeg",
+                                      "hash": "medium_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 750,
+                                      "size": 56.96,
+                                      "url": "/uploads/medium_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_brian-lawson-jRztw-pVdyk-unsplash.jpeg",
+                                      "hash": "small_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 333,
+                                      "height": 500,
+                                      "size": 28.8,
+                                      "url": "/uploads/small_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de.jpeg"
+                                  },
+                                  "large": {
+                                      "name": "large_brian-lawson-jRztw-pVdyk-unsplash.jpeg",
+                                      "hash": "large_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 667,
+                                      "height": 1000,
+                                      "size": 97.14,
+                                      "url": "/uploads/large_brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de.jpeg"
+                                  }
+                              },
+                              "hash": "brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 1423.74,
+                              "url": "/uploads/brian_lawson_j_Rztw_p_Vdyk_unsplash_ee719c57de.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T09:34:12.646Z",
+                              "updatedAt": "2023-01-21T09:34:12.646Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 1,
+                          "attributes": {
+                              "title": "Man",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category",
+                              "createdAt": "2023-01-21T07:05:47.250Z",
+                              "updatedAt": "2023-01-21T07:05:50.539Z",
+                              "publishedAt": "2023-01-21T07:05:50.529Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      {
+          "id": 6,
+          "attributes": {
+              "title": "Solid/Plain Bollywood Lycra Blend Saree",
+              "shortdesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "longDesc": "Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.Integer sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.\nInteger sapien libero, malesuada a nisl et, malesuada mollis sem. Duis pharetra efficitur mi, eget convallis sem laoreet non. Nullam a ipsum sem. Maecenas vel lectus sit amet purus bibendum imperdiet ut vel libero. Ut ex eros, dapibus at venenatis eu, laoreet sed eros. Sed dignissim molestie mauris, ac varius eros ullamcorper tincidunt. Sed vitae dapibus metus. Sed tellus dolor, mollis eget lacus eu, maximus elementum urna. Nam quam dolor, vestibulum ac felis vel, semper dignissim justo. Suspendisse id turpis sapien. Integer imperdiet porta nisi, sed rutrum libero scelerisque nec.",
+              "color": "blue",
+              "regularPrice": 542.12,
+              "salePrice": null,
+              "uid": "product-5",
+              "isfeatured": true,
+              "createdAt": "2023-01-21T10:02:03.622Z",
+              "updatedAt": "2023-01-21T10:02:04.705Z",
+              "publishedAt": "2023-01-21T10:02:04.701Z",
+              "isSale": null,
+              "productImage": {
+                  "data": [
+                      {
+                          "id": 62,
+                          "attributes": {
+                              "name": "premium_photo-1661338918079-e6fc2e4519bb.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 668,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1661338918079-e6fc2e4519bb.jpeg",
+                                      "hash": "thumbnail_premium_photo_1661338918079_e6fc2e4519bb_346662fc13",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 9.91,
+                                      "url": "/uploads/thumbnail_premium_photo_1661338918079_e6fc2e4519bb_346662fc13.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1661338918079-e6fc2e4519bb.jpeg",
+                                      "hash": "medium_premium_photo_1661338918079_e6fc2e4519bb_346662fc13",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 501,
+                                      "size": 52.24,
+                                      "url": "/uploads/medium_premium_photo_1661338918079_e6fc2e4519bb_346662fc13.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1661338918079-e6fc2e4519bb.jpeg",
+                                      "hash": "small_premium_photo_1661338918079_e6fc2e4519bb_346662fc13",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 29.25,
+                                      "url": "/uploads/small_premium_photo_1661338918079_e6fc2e4519bb_346662fc13.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1661338918079_e6fc2e4519bb_346662fc13",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 77.67,
+                              "url": "/uploads/premium_photo_1661338918079_e6fc2e4519bb_346662fc13.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:28.111Z",
+                              "updatedAt": "2023-01-21T06:56:28.111Z"
+                          }
+                      },
+                      {
+                          "id": 63,
+                          "attributes": {
+                              "name": "photo-1508427953056-b00b8d78ebf5.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1508427953056-b00b8d78ebf5.jpeg",
+                                      "hash": "thumbnail_photo_1508427953056_b00b8d78ebf5_97bcdbdd43",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 8.59,
+                                      "url": "/uploads/thumbnail_photo_1508427953056_b00b8d78ebf5_97bcdbdd43.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1508427953056-b00b8d78ebf5.jpeg",
+                                      "hash": "small_photo_1508427953056_b00b8d78ebf5_97bcdbdd43",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 32.64,
+                                      "url": "/uploads/small_photo_1508427953056_b00b8d78ebf5_97bcdbdd43.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1508427953056-b00b8d78ebf5.jpeg",
+                                      "hash": "medium_photo_1508427953056_b00b8d78ebf5_97bcdbdd43",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 69.52,
+                                      "url": "/uploads/medium_photo_1508427953056_b00b8d78ebf5_97bcdbdd43.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1508427953056_b00b8d78ebf5_97bcdbdd43",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 116.64,
+                              "url": "/uploads/photo_1508427953056_b00b8d78ebf5_97bcdbdd43.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:28.121Z",
+                              "updatedAt": "2023-01-21T06:56:28.121Z"
+                          }
+                      },
+                      {
+                          "id": 64,
+                          "attributes": {
+                              "name": "photo-1602810319428-019690571b5b.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 667,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_photo-1602810319428-019690571b5b.jpeg",
+                                      "hash": "thumbnail_photo_1602810319428_019690571b5b_f46f9e422c",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 7.36,
+                                      "url": "/uploads/thumbnail_photo_1602810319428_019690571b5b_f46f9e422c.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_photo-1602810319428-019690571b5b.jpeg",
+                                      "hash": "small_photo_1602810319428_019690571b5b_f46f9e422c",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 46.78,
+                                      "url": "/uploads/small_photo_1602810319428_019690571b5b_f46f9e422c.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_photo-1602810319428-019690571b5b.jpeg",
+                                      "hash": "medium_photo_1602810319428_019690571b5b_f46f9e422c",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 500,
+                                      "size": 108.42,
+                                      "url": "/uploads/medium_photo_1602810319428_019690571b5b_f46f9e422c.jpeg"
+                                  }
+                              },
+                              "hash": "photo_1602810319428_019690571b5b_f46f9e422c",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 188.33,
+                              "url": "/uploads/photo_1602810319428_019690571b5b_f46f9e422c.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:28.153Z",
+                              "updatedAt": "2023-01-21T06:56:28.153Z"
+                          }
+                      },
+                      {
+                          "id": 67,
+                          "attributes": {
+                              "name": "premium_photo-1661370397692-ace3346feb27.jpeg",
+                              "alternativeText": null,
+                              "caption": null,
+                              "width": 1000,
+                              "height": 668,
+                              "formats": {
+                                  "thumbnail": {
+                                      "name": "thumbnail_premium_photo-1661370397692-ace3346feb27.jpeg",
+                                      "hash": "thumbnail_premium_photo_1661370397692_ace3346feb27_a511b822c4",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 234,
+                                      "height": 156,
+                                      "size": 6.38,
+                                      "url": "/uploads/thumbnail_premium_photo_1661370397692_ace3346feb27_a511b822c4.jpeg"
+                                  },
+                                  "medium": {
+                                      "name": "medium_premium_photo-1661370397692-ace3346feb27.jpeg",
+                                      "hash": "medium_premium_photo_1661370397692_ace3346feb27_a511b822c4",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 750,
+                                      "height": 501,
+                                      "size": 47.1,
+                                      "url": "/uploads/medium_premium_photo_1661370397692_ace3346feb27_a511b822c4.jpeg"
+                                  },
+                                  "small": {
+                                      "name": "small_premium_photo-1661370397692-ace3346feb27.jpeg",
+                                      "hash": "small_premium_photo_1661370397692_ace3346feb27_a511b822c4",
+                                      "ext": ".jpeg",
+                                      "mime": "image/jpeg",
+                                      "path": null,
+                                      "width": 500,
+                                      "height": 334,
+                                      "size": 22.11,
+                                      "url": "/uploads/small_premium_photo_1661370397692_ace3346feb27_a511b822c4.jpeg"
+                                  }
+                              },
+                              "hash": "premium_photo_1661370397692_ace3346feb27_a511b822c4",
+                              "ext": ".jpeg",
+                              "mime": "image/jpeg",
+                              "size": 82.26,
+                              "url": "/uploads/premium_photo_1661370397692_ace3346feb27_a511b822c4.jpeg",
+                              "previewUrl": null,
+                              "provider": "local",
+                              "provider_metadata": null,
+                              "createdAt": "2023-01-21T06:56:28.517Z",
+                              "updatedAt": "2023-01-21T06:56:28.517Z"
+                          }
+                      }
+                  ]
+              },
+              "categories": {
+                  "data": [
+                      {
+                          "id": 2,
+                          "attributes": {
+                              "title": "Women",
+                              "desc": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+                              "isfeature": true,
+                              "cateId": "category-1",
+                              "createdAt": "2023-01-21T07:07:01.475Z",
+                              "updatedAt": "2023-01-21T07:07:03.221Z",
+                              "publishedAt": "2023-01-21T07:07:03.216Z"
+                          }
+                      }
+                  ]
+              }
+          }
+      }
+  ],
+  "meta": {
+      "pagination": {
+          "page": 1,
+          "pageSize": 25,
+          "pageCount": 1,
+          "total": 6
+      }
+  }
+}

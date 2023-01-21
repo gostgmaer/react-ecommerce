@@ -9,6 +9,7 @@ import Products from '../../Pages/Products/Products'
 import Registration from '../../Pages/Registration/Registration'
 import Signin from '../../Pages/Signin/Signin'
 import SingleProduct from '../../Pages/SingleProduct/SingleProduct'
+import Thankyou from '../../Pages/Thankyou/Thankyou'
 import Wishlist from '../../Pages/Wishlist/Wishlist'
 
 
@@ -33,6 +34,7 @@ const AppNavigation = () => {
             <Route path='/products' element={<Products></Products>} ></Route>
             <Route path='/products/:id' element={<Products></Products>} ></Route>
             <Route path='/checkout' element={<Checkout></Checkout>}/>
+            <Route path='/thankyou' element={<Thankyou/>}></Route>
 
         </Routes>
         
