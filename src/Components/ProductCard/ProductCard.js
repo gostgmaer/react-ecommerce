@@ -48,11 +48,11 @@ const ProductCard = ({ item }) => {
               <img
                 src={
                   process.env.REACT_APP_URL +
-                  item.attributes.productImage.data[0].attributes.url
+                  item?.attributes.productImage.data[0].attributes.url
                 }
                 className={`imagezoom`}
                 onMouseOver={() => {
-                  item.newImage.length > 1 && setHoverImage(1);
+                  item?.attributes.productImage.data.length > 1 && setHoverImage(1);
                 }}
                 onMouseLeave={() => setHoverImage(0)}
                 alt=""

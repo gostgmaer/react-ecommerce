@@ -3,6 +3,7 @@ import { Data } from "../../Assets/StaticData/productFile";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 
 
+
 const LeftFilter = () => {
 
 
@@ -40,7 +41,7 @@ const LeftFilter = () => {
     avaliability,
     setAvaliability,
     sortproduct,
-    setSortproduct } = useGlobalContext()
+    setSortproduct, products,productID } = useGlobalContext()
 
 
 
@@ -51,7 +52,7 @@ const LeftFilter = () => {
   // }, []);
 
   let uniqueAges = Array.from(
-    new Set(Data?.sampleData?.map((item) => item.Categories))
+    new Set(products?.data?.map((item) => item.attributes.categories.data[0].attributes.title))
   );
   uniqueAges = uniqueAges.filter(function (e) {
     return e;

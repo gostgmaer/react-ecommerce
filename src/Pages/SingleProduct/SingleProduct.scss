@@ -144,11 +144,21 @@
 
       .Bigitem {
         position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #333;
 
         img {
           height: 320px;
           //  width: 320px;
+          opacity: 0.8;
+          width: 450px;
           object-fit: cover;
+          &:hover{
+            opacity: 1;
+          }
           // transition: 1s;
         }
       }
@@ -162,6 +172,7 @@
             cursor: pointer;
             img {
               height: 50px;
+              width: 75px;
               object-fit: cover;
             }
           }
@@ -174,7 +185,7 @@
         top: 45%;
         position: absolute;
         justify-content: space-between;
-        width: 100%;
+        width: 75%;
 
         div {
           cursor: pointer;
@@ -186,6 +197,10 @@
             height: 20px;
             padding: 5px;
             width: 20px;
+            opacity: 0.9;
+            &:hover{
+              opacity: 1;
+            }
           }
         }
       }
@@ -265,7 +280,7 @@
           gap: 10px;
           align-items: center;
 
-          button {
+          svg {
             cursor: pointer;
             border-radius: 5px;
             padding: 5px;

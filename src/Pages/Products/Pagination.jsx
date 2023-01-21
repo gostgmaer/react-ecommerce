@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 
 const Pagination = () => {
+    // const { } = useGlobalContext()
 
     const { openSidebar,
         closeSidebar,
@@ -20,7 +21,7 @@ const Pagination = () => {
         gender,
         setGender,
         loading,
-        singleProduct,
+       
         setSingleProduct,
         indexPage,
         setIndexPage,
@@ -38,7 +39,7 @@ const Pagination = () => {
         avaliability,
         setAvaliability,
         sortproduct,
-        setSortproduct } = useGlobalContext()
+        setSortproduct,singleProduct, products,productID } = useGlobalContext()
 
 
     useEffect(() => {

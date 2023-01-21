@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import { useParams } from "react-router-dom";
 // import { singleproduct } from "../../Assets/Data/Data";
 // single
@@ -15,14 +15,21 @@ import {
   MdYoutubeSearchedFor,
 } from "react-icons/md";
 
-import { FaInstagram,FaTwitter,FaYoutube,FaFacebook,FaFlickr } from "react-icons/fa";
+import {
+  FaInstagram,
+  FaTwitter,
+  FaYoutube,
+  FaFacebook,
+  FaFlickr,
+} from "react-icons/fa";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import { addToCart } from "../../Redux/CartReducer";
 import { useDispatch } from "react-redux";
+import { SocialData } from "../../Assets/StaticData/Data";
 
 const ProductDetails = () => {
   const dispatch = useDispatch();
-  const productID = Number(useParams().id);
+
   const {
     loading,
     singleProduct,
@@ -33,10 +40,6 @@ const ProductDetails = () => {
     increaseQuantity,
     decressQuantity,
   } = useGlobalContext();
-
-  useEffect(() => {
-    console.log(singleProduct);
-  }, []);
 
   const ProductSizes = () => {
     return (
@@ -84,33 +87,33 @@ const ProductDetails = () => {
     return (
       <div className="quantity">
         <div className="cardincrease">
-          <button onClick={decressQuantity} className="btn btn-p">
-            <MdMinimize></MdMinimize>
-          </button>
+      
+          <MdMinimize onClick={decressQuantity} className="btn btn-p"></MdMinimize>
 
           <span className="value">{quantity}</span>
 
-          <button onClick={increaseQuantity} className="btn btn-s">
-            <MdAdd></MdAdd>
-          </button>
+          
+            <MdAdd onClick={increaseQuantity}  className="btn btn-s"></MdAdd>
+         
         </div>
 
         <div className="cardbtn">
           {" "}
-          <button  onClick={() =>
-                dispatch(
-                  addToCart({
-                    id: singleProduct.id,
-                    title: singleProduct.Name,
-                    desc: singleProduct.Description,
-                    image: singleProduct?.Images,
-                    price: singleProduct["Regular price"],
-                    quantity,
-                  })
-                )
-              } className="btn btn-primary px-3">
-            <MdShoppingCart
-             ></MdShoppingCart>
+          <button
+            onClick={() =>
+              dispatch(
+                addToCart({
+                  id: singleProduct.id,
+                  title: singleProduct.Name,
+                  desc: singleProduct.Description,
+                  image: singleProduct?.Images,
+                  price: singleProduct["Regular price"],
+                  quantity,
+                })
+              )
+            }
+            className="btn btn-primary px-3">
+            <MdShoppingCart></MdShoppingCart>
             Add To Cart
           </button>
         </div>
@@ -132,15 +135,27 @@ const ProductDetails = () => {
   const PriceBlock = () => {
     return (
       <div className="priceBlock">
-        <div className="sale">$ {singleProduct?.["Sale price"]}</div>
-        <div className="regular">$ {singleProduct?.["Regular price"]}</div>
-        <span className="discount">
-          {calculateDiscount(
-            singleProduct?.["Regular price"],
-            singleProduct?.["Sale price"]
-          )}{" "}
-          % Off
-        </span>
+        {singleProduct?.data?.attributes["salePrice"] ? (
+          <Fragment>
+            <div className="sale">
+              $ {singleProduct?.data?.attributes["salePrice"]}
+            </div>
+            <div className="regular">
+              $ {singleProduct?.data?.attributes["regularPrice"]}
+            </div>
+            <span className="discount">
+              {calculateDiscount(
+                singleProduct?.data?.attributes["regularPrice"],
+                singleProduct?.data?.attributes["salePrice"]
+              )}{" "}
+              % Off
+            </span>
+          </Fragment>
+        ) : (
+          <div className="price">
+            $ {singleProduct?.data?.attributes["regularPrice"]}
+          </div>
+        )}
       </div>
     );
   };
@@ -148,10 +163,10 @@ const ProductDetails = () => {
   return (
     <div className="ProductDetails">
       <div className="detailsWrapper">
-        <div className="productTitle">{singleProduct?.Name}</div>
+        <div className="productTitle">{singleProduct?.data?.attributes?.title}</div>
         {/* <ReviewBlock></ReviewBlock> */}
         <PriceBlock></PriceBlock>
-        <p className="description">{singleProduct?.["Short description"]}</p>
+        <p className="description">{singleProduct?.data?.attributes.shortdesc.substring(0,140)}</p>
         {/* <div className='attributes'>
 
           </div> */}
@@ -161,9 +176,9 @@ const ProductDetails = () => {
         </div>
         <div className="favrite">
           <div>
-            {" "}
+        
             <MdFavorite></MdFavorite> <span>Add to Wishlist </span>
-          </div>{" "}
+          </div>
           <div>
             <MdCompare></MdCompare> <span>Add to Compare</span>
           </div>
@@ -171,22 +186,12 @@ const ProductDetails = () => {
         <div className="socialShareBlock">
           <strong className="text-dark mr-2">Share on:</strong>
           <div className="socialIcons">
-            <a className="socialText" href="/">
-              <FaFacebook></FaFacebook>
-            </a>
-            <a className="socialText" href="/"></a>
-            <a className="socialText" href="/">
-              <FaTwitter></FaTwitter>
-            </a>
-            <a className="socialText" href="/">
-              <FaYoutube></FaYoutube>
-            </a>
-            <a className="socialText" href="/">
-              <FaInstagram></FaInstagram>
-            </a>
-            <a className="socialText" href="/">
-              <FaFlickr></FaFlickr>
-            </a>
+          {SocialData.map(item=>(
+             <a key={item.id} target="_blank" rel="noreferrer" className="socialText" href={item.url}>
+             {item.icon}
+           </a>
+          ))}
+           
           </div>
         </div>
       </div>

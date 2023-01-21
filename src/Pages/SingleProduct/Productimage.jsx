@@ -2,21 +2,15 @@ import React from "react";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import { MdOutlineArrowBack, MdOutlineArrowForward } from "react-icons/md";
 import { Bars } from "react-loader-spinner";
+import { baseURl } from "../../Utility/APICALL/InvokeAPI";
 
 const Productimage = () => {
   const {
-    isImageLitebox,
-    setIsImageLitebox,
     loading,
     setloading,
-    setLightboxData,
     imageIndex,
     setimageIndex,
-    lightboxData,
-    calculateDiscount,
-    onclickOpenImageLightBox,
     singleProduct,
-    setSingleProduct,
   } = useGlobalContext();
   setloading(false);
   return (
@@ -25,18 +19,20 @@ const Productimage = () => {
         <div className="carousel-inner">
           <div className="smallImages">
             <ul className="imgsmall">
-              {singleProduct?.newImage?.map((image, index) => {
-                return (
-                  <li key={index} onClick={() => setimageIndex(index)}>
-                    {" "}
-                    <img
-                      className=""
-                      src={image}
-                      alt={`${singleProduct.Name} ${index}`}
-                    />
-                  </li>
-                );
-              })}
+              {singleProduct?.data?.attributes.productImage?.data.map(
+                (image, index) => {
+                  return (
+                    <li key={index} onClick={() => setimageIndex(index)}>
+                      {" "}
+                      <img
+                        className=""
+                        src={baseURl + image.attributes.url}
+                        alt={`${singleProduct?.data?.attributes.title} ${index}`}
+                      />
+                    </li>
+                  );
+                }
+              )}
             </ul>
           </div>
           <div className="Bigitem">
@@ -45,8 +41,12 @@ const Productimage = () => {
             ) : (
               <img
                 className="img-big"
-                src={singleProduct?.newImage[imageIndex]}
-                alt={singleProduct?.Name}
+                src={
+                  baseURl +
+                  singleProduct?.data?.attributes.productImage?.data[imageIndex]
+                    .attributes.url
+                }
+                alt={singleProduct?.data?.attributes.title}
               />
             )}
             <div className="arrow">
@@ -56,7 +56,10 @@ const Productimage = () => {
                   setloading(true);
 
                   imageIndex === 0
-                    ? setimageIndex(singleProduct?.newImage.length - 1)
+                    ? setimageIndex(
+                        singleProduct?.data?.attributes.productImage?.data
+                          .length - 1
+                      )
                     : setimageIndex(imageIndex - 1);
                   setloading(false);
                 }}>
@@ -67,13 +70,14 @@ const Productimage = () => {
                 className="arrowin"
                 onClick={() => {
                   setloading(true);
-                  imageIndex === singleProduct?.newImage.length - 1
+                  imageIndex ===
+                  singleProduct?.data?.attributes.productImage?.data.length - 1
                     ? setimageIndex(0)
                     : setimageIndex(imageIndex + 1);
                   setloading(false);
                 }}>
                 {" "}
-                <MdOutlineArrowForward></MdOutlineArrowForward>{" "}
+                <MdOutlineArrowForward></MdOutlineArrowForward>
               </div>
             </div>
           </div>

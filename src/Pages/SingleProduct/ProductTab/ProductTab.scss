@@ -17,7 +17,20 @@
     background: #fff;
     overflow: hidden;
     .Description {
-      .elementor-widget-wrap {
+      .DescWrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        // justify-content: center;
+        .heading-title{
+          font-size: 28px;
+          color: #212529;
+          font-weight: 700;
+        }
+        .Details{
+
+        }
       }
     }
     .DetailsContainer {

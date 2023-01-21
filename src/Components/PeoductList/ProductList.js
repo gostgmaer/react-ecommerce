@@ -14,37 +14,21 @@ import "./ProductList.scss";
 
 const ProductList = ({ title }) => {
   console.log(Data);
-  const { isImageLitebox, setIsImageLitebox, setLightboxData, lightboxData } =
+  const { isImageLitebox,products, setIsImageLitebox, setLightboxData, lightboxData } =
     useGlobalContext();
-  const [products, setProducts] = useState(null);
 
-  const getfeatureData = async (param) => {
-    const res = await InvokeAPI(
-      "products",
-      "get",
-      "",
-      "",
-      { populate: "*" },
-      ""
-    );
-    //  console.log(res);
-    setProducts(res);
-  };
+
+ 
   // eslint-disable-next-line no-undef
-  useEffect(() => {
-    getfeatureData();
-    console.log(products);
+ 
+  // useEffect(() => {
+  //   productClean();
+  // }, [products]);
 
-    productClean();
-  }, []);
-  useEffect(() => {
-    productClean();
-  }, [products]);
-
-  const productClean = () => {
-    const data = products?.data.filter((fItem) => fItem.attributes.isfeatured === title);
-    console.log(data);
-  };
+  // const productClean = () => {
+  //   const data = products?.data.filter((fItem) => fItem.attributes.isfeatured === title);
+  //   console.log(data);
+  // };
 
   
 

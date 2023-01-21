@@ -10,10 +10,11 @@ const InvokeAPI = async (
 ) => {
   const baseURL = process.env.REACT_APP_PRODUCT_BASE_URL;
   const token = process.env.REACT_APP_API_TOEKN;
+  const headerObj = { Authorization: `bearer ${token}` }
   const option = {
     method: type,
     url: baseURL + endpoint,
-    headers:{Authorization:`bearer ${token}`},
+    headers: { ...headerObj,...headerParams},
     params: queryParam,
     data: body,
   };
@@ -30,5 +31,4 @@ const InvokeAPI = async (
 };
 export default InvokeAPI;
 
-
-export const baseURl = process.env.REACT_APP_PRODUCT_BASE_URL;
+export const baseURl = process.env.REACT_APP_URL;

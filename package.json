@@ -40,7 +40,8 @@
     "timestamp-to-date": "^1.1.0",
     "uuid": "^9.0.0",
     "values.js": "^2.1.1",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yup": "^0.32.11"
   },
   "scripts": {
     "start": "react-scripts start",

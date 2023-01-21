@@ -1,5 +1,7 @@
 import React from "react";
 import SliderCard from "../../Components/inSlideCard/SliderCard";
+import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from 'react-icons/fa';
+import { FaFlickr } from 'react-icons/fa';
 
 export const data = [
   {
@@ -2241,3 +2243,29 @@ export const strapiData ={
       }
   }
 }
+export const SocialData=[{
+  "id": 1,
+  "socialMedia": "facebook",
+  "icon": <FaFacebook></FaFacebook>,
+  "url": "http://hc360.com/quis/turpis/eget.jsp?mi=eget&in=congue&porttitor=eget&pede=semper&justo=rutrum&eu=nulla&massa=nunc&donec=purus&dapibus=phasellus&duis=in&at=felis&velit=donec&eu=semper&est=sapien&congue=a&elementum=libero&in=nam&hac=dui&habitasse=proin&platea=leo&dictumst=odio&morbi=porttitor&vestibulum=id&velit=consequat&id=in&pretium=consequat&iaculis=ut&diam=nulla&erat=sed&fermentum=accumsan&justo=felis&nec=ut&condimentum=at&neque=dolor&sapien=quis&placerat=odio&ante=consequat&nulla=varius&justo=integer&aliquam=ac&quis=leo&turpis=pellentesque&eget=ultrices&elit=mattis&sodales=odio&scelerisque=donec&mauris=vitae&sit=nisi&amet=nam&eros=ultrices&suspendisse=libero&accumsan=non&tortor=mattis&quis=pulvinar&turpis=nulla&sed=pede&ante=ullamcorper"
+}, {
+  "id": 2,
+  "socialMedia": "twitter",
+  "icon": <FaTwitter></FaTwitter>,
+  "url": "https://sciencedaily.com/vestibulum/ante/ipsum/primis/in/faucibus/orci.jsp?adipiscing=lacus&molestie=purus&hendrerit=aliquet&at=at&vulputate=feugiat&vitae=non&nisl=pretium&aenean=quis&lectus=lectus&pellentesque=suspendisse&eget=potenti&nunc=in&donec=eleifend&quis=quam&orci=a&eget=odio&orci=in&vehicula=hac&condimentum=habitasse&curabitur=platea&in=dictumst&libero=maecenas&ut=ut&massa=massa&volutpat=quis&convallis=augue&morbi=luctus&odio=tincidunt&odio=nulla&elementum=mollis&eu=molestie&interdum=lorem&eu=quisque&tincidunt=ut&in=erat&leo=curabitur&maecenas=gravida&pulvinar=nisi&lobortis=at&est=nibh&phasellus=in&sit=hac&amet=habitasse&erat=platea&nulla=dictumst&tempus=aliquam&vivamus=augue&in=quam&felis=sollicitudin&eu=vitae&sapien=consectetuer&cursus=eget&vestibulum=rutrum&proin=at&eu=lorem&mi=integer&nulla=tincidunt&ac=ante&enim=vel&in=ipsum&tempor=praesent&turpis=blandit"
+}, {
+  "id": 3,
+  "socialMedia": "Pinterest",
+  "icon": <FaPinterest></FaPinterest>,
+  "url": "https://slashdot.org/lacus/at/turpis/donec/posuere.json?erat=tortor&id=quis&mauris=turpis&vulputate=sed&elementum=ante&nullam=vivamus&varius=tortor&nulla=duis&facilisi=mattis&cras=egestas&non=metus&velit=aenean&nec=fermentum&nisi=donec&vulputate=ut&nonummy=mauris&maecenas=eget&tincidunt=massa&lacus=tempor&at=convallis&velit=nulla&vivamus=neque&vel=libero&nulla=convallis&eget=eget&eros=eleifend&elementum=luctus&pellentesque=ultricies&quisque=eu&porta=nibh&volutpat=quisque&erat=id&quisque=justo&erat=sit&eros=amet&viverra=sapien&eget=dignissim&congue=vestibulum&eget=vestibulum&semper=ante&rutrum=ipsum&nulla=primis&nunc=in&purus=faucibus&phasellus=orci&in=luctus&felis=et&donec=ultrices&semper=posuere&sapien=cubilia&a=curae&libero=nulla&nam=dapibus&dui=dolor&proin=vel&leo=est&odio=donec&porttitor=odio&id=justo&consequat=sollicitudin&in=ut&consequat=suscipit&ut=a&nulla=feugiat&sed=et&accumsan=eros&felis=vestibulum&ut=ac&at=est&dolor=lacinia&quis=nisi&odio=venenatis&consequat=tristique&varius=fusce&integer=congue&ac=diam&leo=id&pellentesque=ornare&ultrices=imperdiet&mattis=sapien&odio=urna&donec=pretium"
+}, {
+  "id": 4,
+  "socialMedia": "Instagram",
+  "icon": <FaInstagram></FaInstagram>,
+  "url": "http://a8.net/cras/pellentesque/volutpat/dui/maecenas/tristique.xml?donec=ante&semper=ipsum&sapien=primis&a=in&libero=faucibus&nam=orci&dui=luctus&proin=et&leo=ultrices&odio=posuere&porttitor=cubilia&id=curae&consequat=donec&in=pharetra&consequat=magna&ut=vestibulum&nulla=aliquet&sed=ultrices&accumsan=erat&felis=tortor&ut=sollicitudin&at=mi&dolor=sit&quis=amet&odio=lobortis&consequat=sapien&varius=sapien&integer=non&ac=mi&leo=integer&pellentesque=ac&ultrices=neque&mattis=duis&odio=bibendum&donec=morbi&vitae=non&nisi=quam&nam=nec&ultrices=dui&libero=luctus&non=rutrum&mattis=nulla&pulvinar=tellus&nulla=in&pede=sagittis&ullamcorper=dui&augue=vel&a=nisl&suscipit=duis&nulla=ac&elit=nibh&ac=fusce&nulla=lacus&sed=purus&vel=aliquet&enim=at&sit=feugiat&amet=non&nunc=pretium&viverra=quis&dapibus=lectus&nulla=suspendisse&suscipit=potenti&ligula=in&in=eleifend&lacus=quam&curabitur=a&at=odio&ipsum=in&ac=hac&tellus=habitasse&semper=platea&interdum=dictumst&mauris=maecenas&ullamcorper=ut&purus=massa&sit=quis&amet=augue"
+}, {
+  "id": 5,
+  "socialMedia": "flicker",
+  "icon": <FaFlickr></FaFlickr>,
+  "url": "https://microsoft.com/in/quam.jpg?suspendisse=mauris&potenti=non&in=ligula&eleifend=pellentesque&quam=ultrices&a=phasellus&odio=id&in=sapien&hac=in&habitasse=sapien&platea=iaculis&dictumst=congue&maecenas=vivamus&ut=metus&massa=arcu&quis=adipiscing&augue=molestie&luctus=hendrerit&tincidunt=at&nulla=vulputate&mollis=vitae&molestie=nisl&lorem=aenean&quisque=lectus&ut=pellentesque&erat=eget&curabitur=nunc&gravida=donec&nisi=quis&at=orci&nibh=eget&in=orci&hac=vehicula&habitasse=condimentum&platea=curabitur&dictumst=in&aliquam=libero&augue=ut&quam=massa&sollicitudin=volutpat&vitae=convallis&consectetuer=morbi&eget=odio&rutrum=odio&at=elementum&lorem=eu&integer=interdum&tincidunt=eu&ante=tincidunt&vel=in&ipsum=leo&praesent=maecenas&blandit=pulvinar"
+}]
