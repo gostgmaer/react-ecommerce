@@ -14,6 +14,7 @@ import Anouncement from "../Anouncement/Anouncement";
 import CartBlock from "../Cart/CartBlock";
 import { connect, useSelector } from 'react-redux'
 import CartComponent from "../Cart/CartBlock";
+import { useGlobalContext } from "../../States/GlobalContext/Context";
 // import {cartReset,cartIncrease,cartDecrease} from '../Redux'
 
 
@@ -22,8 +23,9 @@ import CartComponent from "../Cart/CartBlock";
 
 const Header = (props) => {
   // const cartCount = useSelector(state =>state.cart.count)
-  const [openCart, setOpenCart] = useState(false);
-
+  const {cartPanelHandle,openCart} =  useGlobalContext()
+  // const [openCart, setOpenCart] = useState(false);
+  const products = useSelector((state) => state['cart'].products);
 
 
   return (
@@ -68,8 +70,8 @@ const Header = (props) => {
           </Link>
 
           <div className="cart-icon">
-            <MdShoppingCart onClick={()=>setOpenCart(!openCart)}></MdShoppingCart>
-            <span>{1}</span>
+            <MdShoppingCart onClick={cartPanelHandle}></MdShoppingCart>
+            <span>{products.length}</span>
           </div>
         </div>
       </nav>

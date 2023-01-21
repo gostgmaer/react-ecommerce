@@ -1,6 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSelector } from "react-redux";
 
 const CartRight = () => {
+  const products = useSelector((state) => state['cart'].products);
+const [subTotal, setsubTotal] = useState();
+const [shipping, setShipping] = useState(120);
+
+  // const subTotalReturn = ()=>{
+  //   let data
+  //  return products?.forEach(element => {
+  //     console.log(element.price );
+  //     data = element.price 
+  //   });
+  // }
+  const subTotalReturn = products.reduce((flag,item)=>(flag+(item.price*item.quantity)),0)
+  
+
+
   return (
     <div className="CartRight">
       <div className="cartSummery">
@@ -22,20 +38,20 @@ const CartRight = () => {
           <div className="prices">
             <div className="Subtotal">
               <p>Subtotal</p>
-              <p>$150</p>
+              <p>$ {subTotalReturn.toFixed(2)}</p>
             </div>
             <div className="Shipping">
               <p className="">Shipping</p>
-              <p className="">$10</p>
+              <p className="">${shipping}</p>
             </div>
           </div>
           <div className="total-block">
             <div className="Total">
               <p>Total</p>
-              <p>$160</p>
+              <p>$ {(shipping+subTotalReturn).toFixed(2)}</p>
             </div>
             <div className="btn-block">
-              <button className="btn btn-checkout">Proceed To Checkout</button>
+              <button onClick={()=>window.open('./checkout').self} className="btn btn-checkout">Proceed To Checkout</button>
             </div>
           </div>
         </div>

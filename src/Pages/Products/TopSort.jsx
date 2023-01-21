@@ -6,40 +6,7 @@ import { useGlobalContext } from "../../States/GlobalContext/Context";
 const TopSort = () => {
   
 
-    const { openSidebar,
-        closeSidebar,
-        isImageLitebox,
-        setIsImageLitebox,
-        setLightboxData,
-        lightboxData,
-        isSidebar,
-        setisSidebar,
-        setkeyword,
-        calculateDiscount,
-        onclickOpenImageLightBox,
-        attributes,
-        setAttributes,
-        gender,
-        setGender,
-        loading,
-        singleProduct,
-        setSingleProduct,
-        indexPage,
-        setIndexPage,
-        filterPrice,
-        setFilterPrice,
-        caterory,
-        setCaterory,
-        imageIndex,
-        setimageIndex,
-        setloading,
-        discount,
-        setDiscount,
-        brand,
-        setBrand,
-        avaliability,
-        setAvaliability,
-        sortproduct,
+    const {
         setSortproduct } = useGlobalContext()
 
 

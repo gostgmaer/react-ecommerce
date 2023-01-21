@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
+import { useLocation } from "react-router-dom";
 import { Data } from "../../Assets/StaticData/productFile";
+import InvokeAPI from "../../Utility/APICALL/InvokeAPI";
 // @ts-ignore
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
@@ -7,6 +9,7 @@ const AppProvider = ({ children }) => {
   const [isImageLitebox, setIsImageLitebox] = useState(false);
   const [lightboxData, setLightboxData] = useState(null);
   const [keyword, setkeyword] = useState("");
+  const [productID, setproductID] = useState();
   const [loading, setloading] = useState(true);
   const [singleProduct, setSingleProduct] = useState(null);
   const [imageIndex, setimageIndex] = useState(0);
@@ -21,13 +24,53 @@ const AppProvider = ({ children }) => {
   const [brand, setBrand] = useState("");
   const [avaliability, setAvaliability] = useState(null);
   const [sortproduct, setSortproduct] = useState("");
-
+  const [products, setProducts] = useState(null);
+  const [openCart, setOpenCart] = useState(false);
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
     setLightboxData(Data.sampleData.find((data) => data.ID === id));
     setIsImageLitebox(true);
     setloading(false);
   };
+  const cartPanelHandle=()=>{
+    setOpenCart(!openCart)
+  }
+
+  const getSingleProduct = async ()=>{
+   
+      const res = await InvokeAPI(
+        `products/${productID}`,
+        "get",
+        "",
+        "",
+        { populate: "*" },
+        ""
+      );
+     console.log(res);
+     setSingleProduct(res)
+     
+  }
+  const getfeatureData = async (param) => {
+    const res = await InvokeAPI(
+      "products",
+      "get",
+      "",
+      "",
+      { populate: "*" },
+      ""
+    );
+    //  console.log(res);
+    setProducts(res);
+  };
+  useEffect(() => {
+    getfeatureData();
+   
+  }, []);
+  useEffect(() => {
+    productID && getSingleProduct()
+  
+   
+  }, [productID]);
 
   const openSidebar = () => {
     setisSidebar(true);
@@ -35,6 +78,16 @@ const AppProvider = ({ children }) => {
   const closeSidebar = () => {
     setisSidebar(false);
   };
+
+  const ScrollToTop =()=>{
+    const {pathname}= useLocation()
+
+    useEffect(() => {
+      window.scrollTo(0,0);
+    
+    }, [pathname]);
+    return null;
+  }
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
@@ -45,9 +98,17 @@ const AppProvider = ({ children }) => {
   const calculateDiscount = (original, sale) => {
     let onePercent = original / 100;
     let diff = original - sale;
+
     return (diff / onePercent).toFixed(1);
   };
-
+  
+  const totalprice = (data) => {
+    let total = 0;
+    data.forEach((element) => {
+      total += element.quantity * element.price;
+    });
+    return total.toFixed(2);
+  };
   return (
     <AppContext.Provider
       value={{
@@ -57,14 +118,14 @@ const AppProvider = ({ children }) => {
         setIsImageLitebox,
         setLightboxData,
         lightboxData,
-        isSidebar,
+        isSidebar,openCart,
         setisSidebar,
-        setkeyword,
+        setkeyword,totalprice,
         calculateDiscount,
         onclickOpenImageLightBox,
-        attributes,
+        attributes,ScrollToTop,
         setAttributes,
-        gender,
+        gender,setproductID,
         setGender,
         loading,
         singleProduct,
@@ -72,14 +133,14 @@ const AppProvider = ({ children }) => {
         indexPage,
         setIndexPage,
         filterPrice,
-        setFilterPrice,
+        setFilterPrice,products,
         caterory,
         setCaterory,
         imageIndex,
         setimageIndex,
         setloading,
         discount,
-        setDiscount,
+        setDiscount,cartPanelHandle,
         brand,
         setBrand,
         avaliability,

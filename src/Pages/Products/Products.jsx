@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useGlobalContext } from '../../States/GlobalContext/Context'
 import LeftFilter from './LeftFilter'
 import Pagination from './Pagination'
 import ProductList from './ProductList'
@@ -11,6 +12,7 @@ import TopSort from './TopSort'
 
 
 const Products = () => {
+
 
 
 

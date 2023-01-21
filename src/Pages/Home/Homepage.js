@@ -1,6 +1,7 @@
 import React from 'react'
 import Category from '../../Components/CategoryBlock/Category.jsx'
 import Imageoverlay from '../../Components/ImageOverlay/Imageoverlay.js'
+import NewsLetter from '../../Components/Newsletter/NewsLetter.jsx'
 import ProductList from '../../Components/PeoductList/ProductList.js'
 import Popular from '../../Components/Popular/Popular.jsx'
 import Slider from '../../Components/Slider/Slider.jsx'
@@ -28,8 +29,9 @@ const Homepage = () => {
       {/* <Popular></Popular> */}
       <WelcomeBlock></WelcomeBlock>
       <Category></Category>
-      <ProductList title={1} ></ProductList>
+      <ProductList title={true} ></ProductList>
       <Specialoffcer></Specialoffcer>
+      <NewsLetter></NewsLetter>
       <QualityBlock></QualityBlock>
       
     

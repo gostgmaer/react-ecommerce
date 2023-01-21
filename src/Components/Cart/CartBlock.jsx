@@ -4,10 +4,15 @@ import { useDispatch, useSelector } from "react-redux";
 
 import "./CartBlock.scss";
 import { addToCart, removefromCart, resetCart } from "../../Redux/CartReducer";
+import { baseURl } from "../../Utility/APICALL/InvokeAPI";
+import { useGlobalContext } from "../../States/GlobalContext/Context";
+import { Link } from "react-router-dom";
 
 const CartComponent = () => {
-  const products = useSelector((state) => state.cart.products);
+  const products = useSelector((state) => state['cart'].products);
   const dispatch = useDispatch();
+ 
+  const {cartPanelHandle,openCart,totalprice} =  useGlobalContext()
 
   // const handlePayment = async ()=>{
   //   console.log(products);
@@ -24,30 +29,22 @@ const CartComponent = () => {
   //   }
   // }
 
-  const total = () => {
-    let total = 0;
-    products.forEach((element) => {
-      total += element.quantity * element.price;
-    });
-    return total.toFixed(2);
-  };
 
-  console.log(products);
+  
 
   const cartWrapper = () => {
     return (
       <React.Fragment>
         <h2>Product in your cart</h2>
-        {products?.map((item) => {
+      <div className="cartItems">  {products?.map((item) => {
           return (
-            <div className="item" key={item.ID}>
-              <img src={`${item?.image}`} alt="" />
+            <div className="item" key={item.id}>
+              <img src={`${baseURl + item?.image}`} alt="" />
               <div className="details">
-                <h3>{item.Name}</h3>
-                <p>{item["desc"].substring(0, 50)}</p>
+                <h3>{item.title.substring(0,32)}</h3>
+                <p>{`${item["desc"].substring(0, 65)}...`}</p>
                 <div className="price">
-                  {" "}
-                  {item.Published} X ${item["Regular price"]}{" "}
+                  {item.quantity} X ${item["price"]}
                 </div>
               </div>
               <div
@@ -57,15 +54,18 @@ const CartComponent = () => {
               </div>
             </div>
           );
-        })}
+        })}</div>
         <div className="total">
           <span>SUBTOTAL</span>
-          <span>$ {total()}</span>
+          <span>$ {totalprice(products)}</span>
         </div>
         <button className="checkout"> CheckOut Product </button>
-        <span className="reset" onClick={() => dispatch(resetCart())}>
+       <div className="bottom">
+       <span className="reset" onClick={() => dispatch(resetCart())}>
           Reset Cart
         </span>
+        <Link onClick={cartPanelHandle} to={'/cart'}>Cart</Link>
+       </div>
       </React.Fragment>
     );
   };
@@ -73,13 +73,12 @@ const CartComponent = () => {
   return (
     <div className="CartComponent">
       <div className="cartComponentWrapper">
-      {products.length ? (
-        cartWrapper()
-      ) : (
-        <div>Your Cart is empty Please add a Item</div>
-      )}
+        {products.length ? (
+          cartWrapper()
+        ) : (
+          <div>Your Cart is empty Please add a Item</div>
+        )}
       </div>
-      
     </div>
   );
 };

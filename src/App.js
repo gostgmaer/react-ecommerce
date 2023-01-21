@@ -8,11 +8,11 @@ import { useGlobalContext } from "./States/GlobalContext/Context";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
-  
-  const { isImageLitebox } = useGlobalContext();
+  const { isImageLitebox, ScrollToTop } = useGlobalContext();
 
   return (
     <div className="App">
+      <ScrollToTop/>
       <Header></Header>
       <main className="application-contain">
         <AppNavigation></AppNavigation>
