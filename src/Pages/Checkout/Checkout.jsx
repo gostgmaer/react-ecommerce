@@ -1,13 +1,17 @@
 import React, { Fragment, useState } from "react";
 import {
-  OrderSummery,
+
   Paymentoption,
   CouponOption,
   LoginBlock,
-  BillionDetails,
+ 
   ShippingDetails,
   BlockListsElement,
 } from "./Blocks";
+import BillingAddress from "./Blocks/BillingAddress";
+import OrderSummery from "./Blocks/OrderSummery";
+import PaymentOption from "./Blocks/PaymentOption";
+import { AppCheckoutProvider } from "./CheckContext";
 import "./Checkout.scss";
 const Checkout = () => {
 
@@ -21,38 +25,28 @@ const Checkout = () => {
     },
     {
       id: 2,
-      heading: "Client Login",
+      heading: "Customer Login",
       blockName: <LoginBlock></LoginBlock>,
     },
     {
       id: 3,
       heading: "Billing Details",
-      blockName: <BillionDetails></BillionDetails>,
-    },
-    {
-      id: 4,
-      heading: " Shippping Address",
-      blockName: <ShippingDetails></ShippingDetails>,
-    },
+      blockName: <BillingAddress></BillingAddress>,
+    }
   ];
-  const blocksData = [
-    {
-      id: 1,
-      heading: "Have a Coupon?",
-      blockName: <CouponOption></CouponOption>,
-    },
-  ];
+
 
 
 
   return (
+    <AppCheckoutProvider>
     <div className="checkout">
       <div className="checkoutWrapper">
         <div className="col-1">
           <div className="checkout-left">
             <div className="panel-group" id="accordion">
               {blocks.map((block) => {
-                console.log(block);
+             
                 return (
                   <BlockListsElement
                     key={block.id}
@@ -64,12 +58,12 @@ const Checkout = () => {
         </div>
         <div className="col-2">
           <div className="checkout-right">
-            <OrderSummery></OrderSummery>
-            <Paymentoption></Paymentoption>
+            <div className="CheckOutElements"><OrderSummery></OrderSummery>
+            <PaymentOption></PaymentOption></div>
           </div>
         </div>
       </div>
-    </div>
+    </div></AppCheckoutProvider>
   );
 };
 

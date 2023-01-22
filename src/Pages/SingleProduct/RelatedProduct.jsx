@@ -11,7 +11,7 @@ const RelatedProduct = ({ id }) => {
   const { singleProduct, products,productID } = useGlobalContext();
 
   const newAttributs = () => {
-    console.log(singleProduct, products);
+    // console.log(singleProduct, products);
     setArray(
       products?.data?.filter(
         (item) =>
@@ -22,7 +22,7 @@ const RelatedProduct = ({ id }) => {
   };
   useEffect(() => {
     newAttributs();
-    console.log(array);
+    // console.log(array);
   }, []);
 
   return (

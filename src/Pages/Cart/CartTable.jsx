@@ -7,7 +7,7 @@ import { useGlobalContext } from "../../States/GlobalContext/Context";
 import TableList from "./TableData";
 import { useSelector } from "react-redux";
 
-console.log(Data);
+// console.log(Data);
 
 const CartTable = () => {
   const [serachwishlist, setSerachwishlist] = useState("");
