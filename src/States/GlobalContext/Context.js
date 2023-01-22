@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { Data } from "../../Assets/StaticData/productFile";
+import { DataFile } from "../../Assets/StaticData/strapi-item-inputs";
 import InvokeAPI from "../../Utility/APICALL/InvokeAPI";
 // @ts-ignore
 const AppContext = React.createContext();
@@ -43,10 +44,10 @@ const AppProvider = ({ children }) => {
         "get",
         "",
         "",
-        { populate: "*" },
+        { populate: "*", },
         ""
       );
-     console.log(res);
+   
      setSingleProduct(res)
      
   }
@@ -101,6 +102,17 @@ const AppProvider = ({ children }) => {
 
     return (diff / onePercent).toFixed(1);
   };
+
+  const TaxCalculate = (base,rate)=>{
+    console.log((base/100)*rate);
+    return (base/100)*rate;
+
+
+  }
+  const TotalSum =(val1,val2)=>{
+    return Number(val1)+Number(val2)
+
+  }
   
   const totalprice = (data) => {
     let total = 0;
@@ -137,14 +149,14 @@ const AppProvider = ({ children }) => {
         caterory,
         setCaterory,
         imageIndex,
-        setimageIndex,
+        setimageIndex,TotalSum,
         setloading,
         discount,
         setDiscount,cartPanelHandle,
         brand,
         setBrand,
         avaliability,
-        setAvaliability,
+        setAvaliability,TaxCalculate,
         sortproduct,
         setSortproduct,quantity, setQuantity,increaseQuantity,decressQuantity
       }}>

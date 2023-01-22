@@ -13,7 +13,7 @@ import "./ProductList.scss";
 // @ts-ignore
 
 const ProductList = ({ title }) => {
-  console.log(Data);
+  // console.log(Data);
   const { isImageLitebox,products, setIsImageLitebox, setLightboxData, lightboxData } =
     useGlobalContext();
 

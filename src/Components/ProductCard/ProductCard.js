@@ -25,7 +25,7 @@ const ProductCard = ({ item }) => {
     calculateDiscount,
     onclickOpenImageLightBox,
   } = useGlobalContext();
-  console.log(item);
+  // console.log(item);
   // item["newImage"] = item["Images"].split(",");
 
   const [hoverImage, setHoverImage] = useState(0);

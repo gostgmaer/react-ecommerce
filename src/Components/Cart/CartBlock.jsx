@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const CartComponent = () => {
   const products = useSelector((state) => state['cart'].products);
   const dispatch = useDispatch();
- 
+//  console.log(products);
   const {cartPanelHandle,openCart,totalprice} =  useGlobalContext()
 
   // const handlePayment = async ()=>{
@@ -35,7 +35,7 @@ const CartComponent = () => {
   const cartWrapper = () => {
     return (
       <React.Fragment>
-        <h2>Product in your cart</h2>
+        <h2>Product in your cart</h2> 
       <div className="cartItems">  {products?.map((item) => {
           return (
             <div className="item" key={item.id}>
@@ -59,12 +59,16 @@ const CartComponent = () => {
           <span>SUBTOTAL</span>
           <span>$ {totalprice(products)}</span>
         </div>
-        <button className="checkout"> CheckOut Product </button>
+       <div className="buttonBlock">
+       <Link className="btn cart" onClick={cartPanelHandle} to={'/cart'}>View Cart</Link>
+       <Link to={'/checkout'} onClick={cartPanelHandle} className="checkout btn"> Checkout </Link>
+        
+       </div>
        <div className="bottom">
        <span className="reset" onClick={() => dispatch(resetCart())}>
           Reset Cart
         </span>
-        <Link onClick={cartPanelHandle} to={'/cart'}>Cart</Link>
+      
        </div>
       </React.Fragment>
     );
