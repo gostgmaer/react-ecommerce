@@ -86,8 +86,8 @@
       margin: 20px 0;
     }
     .cartItems{
-      height:  240px;
-      overflow-y: scroll;
+      max-height:  240px;
+      overflow-y: auto;
       background-color: white;
       &::-webkit-scrollbar {
         width: 2px;

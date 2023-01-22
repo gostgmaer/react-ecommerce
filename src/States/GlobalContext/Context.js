@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from "react";
 import { useLocation } from "react-router-dom";
 import { Data } from "../../Assets/StaticData/productFile";
+import { DataFile } from "../../Assets/StaticData/strapi-item-inputs";
 import InvokeAPI from "../../Utility/APICALL/InvokeAPI";
 // @ts-ignore
 const AppContext = React.createContext();
@@ -43,7 +44,7 @@ const AppProvider = ({ children }) => {
         "get",
         "",
         "",
-        { populate: "*" },
+        { populate: "*", },
         ""
       );
      console.log(res);
@@ -101,6 +102,7 @@ const AppProvider = ({ children }) => {
 
     return (diff / onePercent).toFixed(1);
   };
+  console.log(DataFile);
   
   const totalprice = (data) => {
     let total = 0;

@@ -1,30 +1,47 @@
-import React, { Fragment } from 'react'
-import { OrderSummery, Paymentoption, CouponOption, LoginBlock, BillionDetails, ShippingDetails } from './Blocks'
-import './Checkout.scss'
+import React, { Fragment, useState } from "react";
+import {
+  OrderSummery,
+  Paymentoption,
+  CouponOption,
+  LoginBlock,
+  BillionDetails,
+  ShippingDetails,
+  BlockListsElement,
+} from "./Blocks";
+import "./Checkout.scss";
 const Checkout = () => {
 
-  const blocks = [{
-    "id": 1,
-    "heading": "Have a Coupon?",
-    "blockName": <CouponOption></CouponOption>
-  }, {
-    "id": 2,
-    "heading": "Client Login",
-    "blockName": <LoginBlock></LoginBlock>
-  }, {
-    "id": 3,
-    "heading": "Billing Details",
-    "blockName": <BillionDetails></BillionDetails>
-  }, {
-    "id": 4,
-    "heading": " Shippping Address",
-    "blockName": <ShippingDetails></ShippingDetails>
-  }]
-  const blocksData = [{
-    "id": 1,
-    "heading": "Have a Coupon?",
-    "blockName": <CouponOption></CouponOption>
-  }]
+
+  
+  const blocks = [
+    {
+      id: 1,
+      heading: "Have a Coupon?",
+      blockName: <CouponOption></CouponOption>,
+    },
+    {
+      id: 2,
+      heading: "Client Login",
+      blockName: <LoginBlock></LoginBlock>,
+    },
+    {
+      id: 3,
+      heading: "Billing Details",
+      blockName: <BillionDetails></BillionDetails>,
+    },
+    {
+      id: 4,
+      heading: " Shippping Address",
+      blockName: <ShippingDetails></ShippingDetails>,
+    },
+  ];
+  const blocksData = [
+    {
+      id: 1,
+      heading: "Have a Coupon?",
+      blockName: <CouponOption></CouponOption>,
+    },
+  ];
 
 
 
@@ -35,18 +52,13 @@ const Checkout = () => {
           <div className="checkout-left">
             <div className="panel-group" id="accordion">
               {blocks.map((block) => {
+                console.log(block);
                 return (
-                  <div key={block.id} className={`panel-default aa-checkout-${block.id}`}>
-                    <div className="panel-heading">
-                      <h4 className="panel-title">{block.heading}</h4>
-                    </div>
-                    <div className={`panel-collapse in`}> {block.blockName} </div>
-
-                  </div>
-                )
+                  <BlockListsElement
+                    key={block.id}
+                    block={block}></BlockListsElement>
+                );
               })}
-
-
             </div>
           </div>
         </div>
@@ -54,13 +66,12 @@ const Checkout = () => {
           <div className="checkout-right">
             <OrderSummery></OrderSummery>
             <Paymentoption></Paymentoption>
-
           </div>
         </div>
       </div>
-    </div >
-  )
-}
+    </div>
+  );
+};
 
-export default Checkout
+export default Checkout;
 // @ts-ignore

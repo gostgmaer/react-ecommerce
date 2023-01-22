@@ -11,7 +11,7 @@ import { Link } from "react-router-dom";
 const CartComponent = () => {
   const products = useSelector((state) => state['cart'].products);
   const dispatch = useDispatch();
- 
+ console.log(products);
   const {cartPanelHandle,openCart,totalprice} =  useGlobalContext()
 
   // const handlePayment = async ()=>{

@@ -24,10 +24,15 @@
                         background-color: #fff;
                         border: 1px solid transparent;
                         border-radius: 0;
+                        padding: 20px;
                         -webkit-box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
                         box-shadow: 0 1px 1px rgb(0 0 0 / 5%);
                         border-color: #ddd;
                        // margin-bottom: 0;
+                       display: flex;
+                       flex-direction: column;
+                       align-items: flex-start;
+                       gap: 20px;
 
                         .panel-heading {
                             // padding: 10px 15px;
@@ -46,12 +51,80 @@
                                 // font-size: 16px;
                                 color: inherit;
                                 font-size: 18px;
-                                padding: 20px 15px;
+                              //  padding: 20px 15px;
                             }
                         }
 
                         .panel-collapse {
-                            display: none;
+                           background-color: #ddd;
+                           width: 100%;
+                          // padding: 10px;
+                          .panel-body{
+                            padding: 10px;
+                           
+                          }
+                        }
+                    }
+                    .aa-checkout-2{
+                        .panel-body{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            align-items: flex-start;
+                            input{
+                                width: 50%;
+                                padding: 5px;
+                            }
+                            .rememberme{ 
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                gap: 20px;
+                                width: 200px;
+                               input{
+                                width: 20px;
+                                
+                               }
+                               span{
+                                width: 150px;
+                               }
+                            }
+                            .aa-browse-btn{
+                                padding: 5px 20px;
+                                background-color: blue;
+                                color: #fff;
+                            }
+                        }
+                    }
+                    .aa-checkout-3{
+                        .panel-body{
+                            display: flex;
+                            flex-direction: column;
+                            gap: 10px;
+                            align-items: flex-start;
+                            input{
+                                width: 50%;
+                                padding: 5px;
+                            }
+                            .rememberme{ 
+                                display: flex;
+                                align-items: center;
+                                justify-content: flex-start;
+                                gap: 20px;
+                                width: 200px;
+                               input{
+                                width: 20px;
+                                
+                               }
+                               span{
+                                width: 150px;
+                               }
+                            }
+                            .aa-browse-btn{
+                                padding: 5px 20px;
+                                background-color: blue;
+                                color: #fff;
+                            }
                         }
                     }
                 }
