@@ -1,18 +1,32 @@
 import React, { Fragment, useState } from "react";
 import { CountryList } from "../../../Assets/StaticData/CountryList";
+import { useCheckoutContext } from "../CheckContext";
 
 const BillingAddress = () => {
-  const [fname, setFname] = useState("");
-  const [lname, setLname] = useState("");
-  const [Company, setCompany] = useState("");
-  const [country, setCountry] = useState("");
-  const [streetAdd, setStreetAdd] = useState("");
-  const [suit, setSuit] = useState("");
-  const [city, setCity] = useState("");
-  const [distric, setDistric] = useState("");
-  const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
-  const [pin, setPin] = useState("");
+  const {
+    fname,
+    setFname,
+    lname,
+    setLname,
+    Company,
+    setCompany,
+    country,
+    setCountry,
+    streetAdd,
+    setStreetAdd,
+    suit,
+    setSuit,
+    city,
+    setCity,
+    distric,
+    setDistric,
+    email,
+    setEmail,
+    phone,
+    setPhone,
+    pin,
+    setPin,
+  } = useCheckoutContext();
 
   return (
     <Fragment>
@@ -45,10 +59,10 @@ const BillingAddress = () => {
           </div>
 
           <div className="aa-checkout-single-bill">
-            <select value={country} onChange={(e) => setCountry(e.target.value)}>
-              <option value={0}>
-                Select Your Country
-              </option>
+            <select
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}>
+              <option value={0}>Select Your Country</option>
               {CountryList.data.map((item) => (
                 <option key={item.CountryCode} value={item.CountryCode}>
                   {item.CountryName}
