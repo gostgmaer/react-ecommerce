@@ -1,4 +1,5 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
 import { useGlobalContext } from '../../States/GlobalContext/Context'
 import LeftFilter from './LeftFilter'
 import Pagination from './Pagination'
@@ -12,12 +13,29 @@ import TopSort from './TopSort'
 
 
 const Products = () => {
+  const id = (useParams().id);
 
+  const {
+    isImageLitebox,
+    setIsImageLitebox,
+    loading,
+    setloading,
+    setLightboxData,getfeatureData,getCategoriesData,
+    lightboxData,
+    calculateDiscount,
+  } = useGlobalContext();
 
+  const productsParam ={
+    "[filters][categories][title][$eq]":id
+  }
+  const saleParam ={
+    "[filters][isSale][$eq]":true
+  }
 
-
-
-
+  useEffect(() => {
+    id==='sale'? getfeatureData(saleParam):getfeatureData(productsParam);
+    getCategoriesData();
+  }, [id]);
   return (
     <div className='Products'>
       <div className="productWrapper">

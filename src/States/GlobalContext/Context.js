@@ -3,6 +3,7 @@ import { useLocation } from "react-router-dom";
 import { Data } from "../../Assets/StaticData/productFile";
 import { DataFile } from "../../Assets/StaticData/strapi-item-inputs";
 import InvokeAPI from "../../Utility/APICALL/InvokeAPI";
+
 // @ts-ignore
 const AppContext = React.createContext();
 const AppProvider = ({ children }) => {
@@ -11,7 +12,7 @@ const AppProvider = ({ children }) => {
   const [lightboxData, setLightboxData] = useState(null);
   const [keyword, setkeyword] = useState("");
   const [productID, setproductID] = useState();
-  const [loading, setloading] = useState(true);
+  const [loading, setloading] = useState(false);
   const [singleProduct, setSingleProduct] = useState(null);
   const [imageIndex, setimageIndex] = useState(0);
   const [indexPage, setIndexPage] = useState(1);
@@ -27,16 +28,26 @@ const AppProvider = ({ children }) => {
   const [sortproduct, setSortproduct] = useState("");
   const [products, setProducts] = useState(null);
   const [openCart, setOpenCart] = useState(false);
+  const [wishList, setWishList] = useState(null);
+  const [categories, setCategories] = useState(null);
+
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
-    setLightboxData(Data.sampleData.find((data) => data.ID === id));
+    setLightboxData(products?.data.find((item) => item.id === id));
     setIsImageLitebox(true);
     setloading(false);
+    console.log(lightboxData);
   };
   const cartPanelHandle=()=>{
     setOpenCart(!openCart)
   }
 
+  const addToWishList =(id)=>{
+    let data = products?.data.find((item) => item.id === id);
+    setWishList(data)
+    console.log(wishList);
+
+  }
   const getSingleProduct = async ()=>{
    
       const res = await InvokeAPI(
@@ -52,8 +63,26 @@ const AppProvider = ({ children }) => {
      
   }
   const getfeatureData = async (param) => {
+
+  
     const res = await InvokeAPI(
       "products",
+      "get",
+      "",
+      "",
+      {...{ populate: "*" },...param},
+      ""
+    );
+    //  console.log(res);
+    setProducts(res);
+  };
+
+ 
+
+
+  const getCategoriesData = async (param) => {
+    const res = await InvokeAPI(
+      "categories",
       "get",
       "",
       "",
@@ -61,17 +90,11 @@ const AppProvider = ({ children }) => {
       ""
     );
     //  console.log(res);
-    setProducts(res);
+    setCategories(res);
   };
-  useEffect(() => {
-    getfeatureData();
-   
-  }, []);
-  useEffect(() => {
-    productID && getSingleProduct()
-  
-   
-  }, [productID]);
+
+
+
 
   const openSidebar = () => {
     setisSidebar(true);
@@ -104,7 +127,7 @@ const AppProvider = ({ children }) => {
   };
 
   const TaxCalculate = (base,rate)=>{
-    console.log((base/100)*rate);
+   // console.log((base/100)*rate);
     return (base/100)*rate;
 
 
@@ -130,7 +153,7 @@ const AppProvider = ({ children }) => {
         setIsImageLitebox,
         setLightboxData,
         lightboxData,
-        isSidebar,openCart,
+        isSidebar,openCart,categories,getSingleProduct,
         setisSidebar,
         setkeyword,totalprice,
         calculateDiscount,
@@ -139,14 +162,14 @@ const AppProvider = ({ children }) => {
         setAttributes,
         gender,setproductID,
         setGender,
-        loading,
+        loading,addToWishList,getfeatureData,
         singleProduct,
-        setSingleProduct,
+        setSingleProduct,getCategoriesData,
         indexPage,
         setIndexPage,
         filterPrice,
         setFilterPrice,products,
-        caterory,
+        caterory,productID,
         setCaterory,
         imageIndex,
         setimageIndex,TotalSum,

@@ -6,19 +6,24 @@ import React from "react";
 import Imageoverlay from "./Components/ImageOverlay/Imageoverlay";
 import { useGlobalContext } from "./States/GlobalContext/Context";
 import Footer from "./Components/Footer/Footer";
+import { Bars } from "react-loader-spinner";
 
 function App() {
-  const { isImageLitebox, ScrollToTop } = useGlobalContext();
+  const { isImageLitebox, ScrollToTop,loading } = useGlobalContext();
 
   return (
     <div className="App">
       <ScrollToTop/>
       <Header></Header>
-      <main className="application-contain">
+      {
+        loading?<Bars></Bars>:<main className="application-contain">
         <AppNavigation></AppNavigation>
         {isImageLitebox ? <Imageoverlay></Imageoverlay> : ""}
       </main>
+      }
+      
       <Footer></Footer>
+      
     </div>
   );
 }

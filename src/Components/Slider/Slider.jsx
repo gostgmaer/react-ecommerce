@@ -27,7 +27,7 @@ const Slider = () => {
         <div className="sliderItems" style={{transform:` translateX(-${currentSlider*100}vw)`}}>
         {
           data.map(item=>(
-            <div className="sliderContainer">
+            <div key={item.id} className="sliderContainer">
             <img src={item.attributes.image.large} alt="" /> 
                <div className="infoContainer">
                  {/* <SliderCard></SliderCard> */}
