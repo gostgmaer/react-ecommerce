@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Category from '../../Components/CategoryBlock/Category.jsx'
 import Imageoverlay from '../../Components/ImageOverlay/Imageoverlay.js'
 import NewsLetter from '../../Components/Newsletter/NewsLetter.jsx'
@@ -18,10 +18,15 @@ const Homepage = () => {
     setIsImageLitebox,
     loading,
     setloading,
-    setLightboxData,
+    setLightboxData,getfeatureData,getCategoriesData,
     lightboxData,
     calculateDiscount,
   } = useGlobalContext();
+
+  useEffect(() => {
+    getfeatureData();
+    getCategoriesData();
+  }, []);
   return (
     <div className='Homepage'>
       <div className='homeWrapper'>

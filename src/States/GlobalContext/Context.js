@@ -29,6 +29,7 @@ const AppProvider = ({ children }) => {
   const [products, setProducts] = useState(null);
   const [openCart, setOpenCart] = useState(false);
   const [wishList, setWishList] = useState(null);
+  const [categories, setCategories] = useState(null);
 
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
@@ -62,8 +63,26 @@ const AppProvider = ({ children }) => {
      
   }
   const getfeatureData = async (param) => {
+
+  
     const res = await InvokeAPI(
       "products",
+      "get",
+      "",
+      "",
+      {...{ populate: "*" },...param},
+      ""
+    );
+    //  console.log(res);
+    setProducts(res);
+  };
+
+ 
+
+
+  const getCategoriesData = async (param) => {
+    const res = await InvokeAPI(
+      "categories",
       "get",
       "",
       "",
@@ -71,17 +90,11 @@ const AppProvider = ({ children }) => {
       ""
     );
     //  console.log(res);
-    setProducts(res);
+    setCategories(res);
   };
-  useEffect(() => {
-    getfeatureData();
-   
-  }, []);
-  useEffect(() => {
-    productID && getSingleProduct()
-  
-   
-  }, [productID]);
+
+
+
 
   const openSidebar = () => {
     setisSidebar(true);
@@ -140,7 +153,7 @@ const AppProvider = ({ children }) => {
         setIsImageLitebox,
         setLightboxData,
         lightboxData,
-        isSidebar,openCart,
+        isSidebar,openCart,categories,getSingleProduct,
         setisSidebar,
         setkeyword,totalprice,
         calculateDiscount,
@@ -149,14 +162,14 @@ const AppProvider = ({ children }) => {
         setAttributes,
         gender,setproductID,
         setGender,
-        loading,addToWishList,
+        loading,addToWishList,getfeatureData,
         singleProduct,
-        setSingleProduct,
+        setSingleProduct,getCategoriesData,
         indexPage,
         setIndexPage,
         filterPrice,
         setFilterPrice,products,
-        caterory,
+        caterory,productID,
         setCaterory,
         imageIndex,
         setimageIndex,TotalSum,

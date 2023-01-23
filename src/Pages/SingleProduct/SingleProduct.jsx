@@ -12,26 +12,36 @@ import "./SingleProduct.scss";
 
 const SingleProduct = () => {
   const id = Number(useParams().id);
-
   // @ts-ignore
-  const { loading, singleProduct,setproductID, setSingleProduct } = useGlobalContext();
+  const {
+    loading,
+    productID,
+    getSingleProduct,
+    singleProduct,
+    setproductID,
+    getfeatureData,
+    setSingleProduct,
+  } = useGlobalContext();
 
   useEffect(() => {
-    setproductID(id)
+    setproductID(id);
     setSingleProduct(...Data.sampleData.filter((data) => data.ID === id));
   }, [id]);
+
+  useEffect(() => {
+    productID && getSingleProduct();
+    getfeatureData();
+  }, [productID]);
 
   return (
     <div className="SingleProduct">
       <div className="productWrapper">
         <div className="row rowTop">
           <div className="col">
-          <SingleProductimage></SingleProductimage>
+            <SingleProductimage></SingleProductimage>
           </div>
           <div className="col">
-            <ProductDetails
-           
-              ></ProductDetails>
+            <ProductDetails></ProductDetails>
           </div>
         </div>
         <div className="row">
