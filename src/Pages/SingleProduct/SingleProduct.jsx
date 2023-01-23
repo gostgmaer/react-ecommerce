@@ -4,7 +4,8 @@ import { products } from "../../Assets/StaticData/Data";
 import { Data } from "../../Assets/StaticData/productFile";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import ProductDetails from "./ProductDetails";
-import Productimage from "./Productimage";
+import SingleProductimage from "./Productimage";
+
 import ProductTabContainer from "./ProductTabContainer";
 import RelatedProduct from "./RelatedProduct";
 import "./SingleProduct.scss";
@@ -25,23 +26,19 @@ const SingleProduct = () => {
       <div className="productWrapper">
         <div className="row rowTop">
           <div className="col">
-            <Productimage
-              // @ts-ignore
-              ></Productimage>
+          <SingleProductimage></SingleProductimage>
           </div>
           <div className="col">
             <ProductDetails
-              // @ts-ignore
+           
               ></ProductDetails>
           </div>
         </div>
         <div className="row">
-          <ProductTabContainer
-            // @ts-ignore
-            id={id}></ProductTabContainer>
+          <ProductTabContainer></ProductTabContainer>
         </div>
         <div className="row">
-          <RelatedProduct id={id}></RelatedProduct>
+          <RelatedProduct></RelatedProduct>
         </div>
       </div>
     </div>

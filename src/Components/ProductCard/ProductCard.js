@@ -8,13 +8,17 @@ import {
   MdShoppingCart,
   // @ts-ignore
 } from "react-icons/md";
+import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
+import { addToCart } from "../../Redux/CartReducer";
 // import { products } from "../../Assets/StaticData/Data";
 // import { Data } from "../../Assets/StaticData/productFile";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import Imageoverlay from "../ImageOverlay/Imageoverlay";
 import "./ProductCard.scss";
 const ProductCard = ({ item }) => {
+  const products = useSelector((state) => state["cart"].products);
+  const dispatch = useDispatch();
   const {
     isImageLitebox,
     setIsImageLitebox,
@@ -24,8 +28,14 @@ const ProductCard = ({ item }) => {
     lightboxData,
     calculateDiscount,
     onclickOpenImageLightBox,
+    setSingleProduct,addToWishList,
+    quantity,
+    setQuantity,
+    increaseQuantity,
+    decressQuantity,
   } = useGlobalContext();
   // console.log(item);
+
   // item["newImage"] = item["Images"].split(",");
 
   const [hoverImage, setHoverImage] = useState(0);
@@ -48,11 +58,12 @@ const ProductCard = ({ item }) => {
               <img
                 src={
                   process.env.REACT_APP_URL +
-                  item?.attributes.productImage.data[0].attributes.url
+                  item?.attributes?.productImage.data[0].attributes.url
                 }
                 className={`imagezoom`}
                 onMouseOver={() => {
-                  item?.attributes.productImage.data.length > 1 && setHoverImage(1);
+                  item?.attributes?.productImage.data.length > 1 &&
+                    setHoverImage(1);
                 }}
                 onMouseLeave={() => setHoverImage(0)}
                 alt=""
@@ -64,7 +75,7 @@ const ProductCard = ({ item }) => {
             <div className="product-category">
               {item.attributes.categories.data[0].attributes.title}{" "}
             </div>
-            <a href="/" className="product-title">
+            <a href={`/product/${item.id}`} className="product-title">
               {item.attributes.title.substring(0, 24)}...
             </a>
             <div className="price">
@@ -101,11 +112,28 @@ const ProductCard = ({ item }) => {
             </div>
             <div className="itembtn">
               <ul>
-                <li className="wishlist">
+                <li className="wishlist" onClick={()=>addToWishList(item.id)}>
                   <MdFavorite></MdFavorite>
                 </li>
                 <li className="bag">
-                  <MdShoppingCart></MdShoppingCart>
+                  <MdShoppingCart
+                    onClick={() =>
+                      dispatch(
+                        addToCart({
+                          id: item?.id,
+                          color: item?.attributes.color,
+                          title: item?.attributes.title,
+                          desc: item?.attributes.shortdesc,
+                          image:
+                            item?.attributes.productImage.data[0].attributes
+                              .url,
+                          price: item?.attributes["salePrice"]
+                            ? item?.attributes["salePrice"]
+                            : item?.attributes["regularPrice"],
+                          quantity,
+                        })
+                      )
+                    }></MdShoppingCart>
                 </li>
                 <li
                   className="viewItem"

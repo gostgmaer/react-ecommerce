@@ -4,14 +4,14 @@ import React, { useState } from "react";
 import { MdArrowRight, MdClose, MdOutlineArrowLeft } from "react-icons/md";
 import { Bars } from "react-loader-spinner";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
+import { baseURl } from "../../Utility/APICALL/InvokeAPI";
 import "./Imageoverlay.scss";
 
 const Imageoverlay = () => {
+  const [imageIndex, setimageIndex] = useState(0);
   const {
     isImageLitebox,
     setIsImageLitebox,
-    imageIndex,
-    setimageIndex,
     loading,
     setloading,
     setLightboxData,
@@ -34,17 +34,18 @@ const Imageoverlay = () => {
           <div className="overlayBody">
             <div className="overlaymainImage">
               <img
-                src={lightboxData?.newImage[imageIndex]}
+              
+                src={ `${baseURl+lightboxData?.attributes?.productImage?.data[imageIndex].attributes.url}`}
                 className="main-img"
                 alt="bigger pic"
               />
             </div>
             <div className="overlayallimages">
               <ul>
-                {lightboxData?.["newImage"]?.map((img, index) => {
+                {lightboxData?.attributes?.productImage?.data.map((img, index) => {
                   return (
                     <li onClick={() => setimageIndex(index)} key={index}>
-                      <img src={img} className="small-img" alt="" />
+                      <img src={`${baseURl+img?.attributes.url}`} className="small-img" alt="" />
                     </li>
                   );
                 })}
@@ -56,7 +57,7 @@ const Imageoverlay = () => {
             <span
               onClick={() =>
                 imageIndex === 0
-                  ? setimageIndex(lightboxData.newImage.length - 1)
+                  ? setimageIndex(lightboxData?.attributes?.productImage?.data.length - 1)
                   : setimageIndex(imageIndex - 1)
               }>
               <MdOutlineArrowLeft></MdOutlineArrowLeft>
@@ -64,7 +65,7 @@ const Imageoverlay = () => {
 
             <span
               onClick={() =>
-                imageIndex === lightboxData.newImage.length - 1
+                imageIndex === lightboxData?.attributes?.productImage?.data.length - 1
                   ? setimageIndex(0)
                   : setimageIndex(imageIndex + 1)
               }>

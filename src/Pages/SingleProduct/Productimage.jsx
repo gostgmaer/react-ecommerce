@@ -1,18 +1,12 @@
 import React from "react";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 import { MdOutlineArrowBack, MdOutlineArrowForward } from "react-icons/md";
-import { Bars } from "react-loader-spinner";
 import { baseURl } from "../../Utility/APICALL/InvokeAPI";
 
-const Productimage = () => {
-  const {
-    loading,
-    setloading,
-    imageIndex,
-    setimageIndex,
-    singleProduct,
-  } = useGlobalContext();
-  setloading(false);
+const SingleProductimage = () => {
+  const { imageIndex, setimageIndex, singleProduct } =
+    useGlobalContext();
+  //console.log(singleProduct);
   return (
     <div className="Productimage">
       <div className="carousel">
@@ -26,7 +20,7 @@ const Productimage = () => {
                       {" "}
                       <img
                         className=""
-                        src={baseURl + image.attributes.url}
+                        src={baseURl+image.attributes.url}
                         alt={`${singleProduct?.data?.attributes.title} ${index}`}
                       />
                     </li>
@@ -36,10 +30,7 @@ const Productimage = () => {
             </ul>
           </div>
           <div className="Bigitem">
-            {loading ? (
-              <Bars width={200} />
-            ) : (
-              <img
+            { <img
                 className="img-big"
                 src={
                   baseURl +
@@ -47,13 +38,12 @@ const Productimage = () => {
                     .attributes.url
                 }
                 alt={singleProduct?.data?.attributes.title}
-              />
-            )}
+              />}
             <div className="arrow">
               <div
                 className="arrowin"
                 onClick={() => {
-                  setloading(true);
+                  
 
                   imageIndex === 0
                     ? setimageIndex(
@@ -61,7 +51,7 @@ const Productimage = () => {
                           .length - 1
                       )
                     : setimageIndex(imageIndex - 1);
-                  setloading(false);
+                
                 }}>
                 {" "}
                 <MdOutlineArrowBack></MdOutlineArrowBack>{" "}
@@ -69,12 +59,12 @@ const Productimage = () => {
               <div
                 className="arrowin"
                 onClick={() => {
-                  setloading(true);
+                 
                   imageIndex ===
                   singleProduct?.data?.attributes.productImage?.data.length - 1
                     ? setimageIndex(0)
                     : setimageIndex(imageIndex + 1);
-                  setloading(false);
+               
                 }}>
                 {" "}
                 <MdOutlineArrowForward></MdOutlineArrowForward>
@@ -87,4 +77,4 @@ const Productimage = () => {
   );
 };
 
-export default Productimage;
+export default SingleProductimage;
