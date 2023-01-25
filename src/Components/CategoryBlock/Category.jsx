@@ -5,7 +5,7 @@ import { baseURl } from "../../Utility/APICALL/InvokeAPI";
 import "./category.scss";
 
 const Category = () => {
-  const { categories } = useGlobalContext();
+  const { categories,setCaterory } = useGlobalContext();
 
   return (
     <div className="Category">
@@ -30,7 +30,7 @@ const Category = () => {
               alt=""
             />
             <Link
-              className="link"
+              className="link" onClick={()=>setCaterory(categories?.data[0].attributes?.title)}
               to={`/products/${categories?.data[0].attributes?.title.toLowerCase()}`}>
               {categories?.data[0].attributes?.title}
             </Link>{" "}
@@ -47,7 +47,7 @@ const Category = () => {
               alt=""
             />
             <Link
-              className="link"
+              className="link" onClick={()=>setCaterory(categories?.data[1].attributes?.title)}
               to={`/products/${categories?.data[1].attributes?.title.toLowerCase()}`}>
               {categories?.data[1].attributes?.title}
             </Link>{" "}
@@ -66,7 +66,7 @@ const Category = () => {
                   alt=""
                 />
                 <Link
-                  className="link"
+                  className="link" onClick={()=>setCaterory(categories?.data[2].attributes?.title)}
                   to={`/products/${categories?.data[2].attributes?.title.toLowerCase()}`}>
                   {categories?.data[2].attributes?.title}
                 </Link>{" "}
@@ -83,7 +83,7 @@ const Category = () => {
                   alt=""
                 />
                 <Link
-                  className="link"
+                  className="link" onClick={()=>setCaterory(categories?.data[3].attributes?.title)}
                   to={`/products/${categories?.data[3].attributes?.title.toLowerCase()}`}>
                   {categories?.data[3].attributes?.title}
                 </Link>{" "}
@@ -100,7 +100,7 @@ const Category = () => {
               alt=""
             />
             <Link
-              className="link"
+              className="link" onClick={()=>setCaterory(categories?.data[4].attributes?.title)}
               to={`/products/${categories?.data[4].attributes?.title.toLowerCase()}`}>
               {categories?.data[4].attributes?.title}
             </Link>{" "}
