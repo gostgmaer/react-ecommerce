@@ -1,7 +1,11 @@
 import React from "react";
+import { useSelector } from "react-redux";
 import { useCheckoutContext } from "../CheckContext";
 
 const PaymentOption = () => {
+ 
+
+  const products = useSelector((state) => state["cart"].products);
   const {
     fname,
     setFname,
@@ -19,7 +23,7 @@ const PaymentOption = () => {
     setCity,
     distric,
     setDistric,
-    email,
+    email,TaxCalculate,TotalSum,
     setEmail,
     phone,
     setPhone,

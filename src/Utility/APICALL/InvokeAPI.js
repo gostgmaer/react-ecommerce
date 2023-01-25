@@ -32,3 +32,10 @@ const InvokeAPI = async (
 export default InvokeAPI;
 
 export const baseURl = process.env.REACT_APP_URL;
+export const cleanQueryparam = (query) => {
+  return Object.keys(query).forEach(
+    (key) =>
+      (query[key] === "" || query[key] == null || query[key] === undefined) &&
+      delete query[key]
+  );
+};

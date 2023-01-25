@@ -16,7 +16,7 @@ const AppProvider = ({ children }) => {
   const [singleProduct, setSingleProduct] = useState(null);
   const [imageIndex, setimageIndex] = useState(0);
   const [indexPage, setIndexPage] = useState(1);
-  const [filterPrice, setFilterPrice] = useState(0);
+  const [filterPrice, setFilterPrice] = useState(10);
   const [caterory, setCaterory] = useState("");
   const [tag, setTag] = useState("");
   const [attributes, setAttributes] = useState("");
@@ -25,7 +25,7 @@ const AppProvider = ({ children }) => {
   const [quantity, setQuantity] = useState(1);
   const [brand, setBrand] = useState("");
   const [avaliability, setAvaliability] = useState(null);
-  const [sortproduct, setSortproduct] = useState("");
+  const [sortproduct, setSortproduct] = useState(null);
   const [products, setProducts] = useState(null);
   const [openCart, setOpenCart] = useState(false);
   const [wishList, setWishList] = useState(null);
@@ -38,47 +38,39 @@ const AppProvider = ({ children }) => {
     setloading(false);
     console.log(lightboxData);
   };
-  const cartPanelHandle=()=>{
-    setOpenCart(!openCart)
-  }
+  const cartPanelHandle = () => {
+    setOpenCart(!openCart);
+  };
 
-  const addToWishList =(id)=>{
+  const addToWishList = (id) => {
     let data = products?.data.find((item) => item.id === id);
-    setWishList(data)
+    setWishList(data);
     console.log(wishList);
+  };
+  const getSingleProduct = async () => {
+    const res = await InvokeAPI(
+      `products/${productID}`,
+      "get",
+      "",
+      "",
+      { populate: "*" },
+      ""
+    );
 
-  }
-  const getSingleProduct = async ()=>{
-   
-      const res = await InvokeAPI(
-        `products/${productID}`,
-        "get",
-        "",
-        "",
-        { populate: "*", },
-        ""
-      );
-   
-     setSingleProduct(res)
-     
-  }
+    setSingleProduct(res);
+  };
   const getfeatureData = async (param) => {
-
-  
     const res = await InvokeAPI(
       "products",
       "get",
       "",
       "",
-      {...{ populate: "*" },...param},
+      { ...{ populate: "*" }, ...param },
       ""
     );
     //  console.log(res);
     setProducts(res);
   };
-
- 
-
 
   const getCategoriesData = async (param) => {
     const res = await InvokeAPI(
@@ -93,9 +85,6 @@ const AppProvider = ({ children }) => {
     setCategories(res);
   };
 
-
-
-
   const openSidebar = () => {
     setisSidebar(true);
   };
@@ -103,15 +92,14 @@ const AppProvider = ({ children }) => {
     setisSidebar(false);
   };
 
-  const ScrollToTop =()=>{
-    const {pathname}= useLocation()
+  const ScrollToTop = () => {
+    const { pathname } = useLocation();
 
     useEffect(() => {
-      window.scrollTo(0,0);
-    
+      window.scrollTo(0, 0);
     }, [pathname]);
     return null;
-  }
+  };
 
   const increaseQuantity = () => {
     setQuantity(quantity + 1);
@@ -126,17 +114,14 @@ const AppProvider = ({ children }) => {
     return (diff / onePercent).toFixed(1);
   };
 
-  const TaxCalculate = (base,rate)=>{
-   // console.log((base/100)*rate);
-    return (base/100)*rate;
+  const TaxCalculate = (base, rate) => {
+    // console.log((base/100)*rate);
+    return (base / 100) * rate;
+  };
+  const TotalSum = (val1, val2) => {
+    return Number(val1) + Number(val2);
+  };
 
-
-  }
-  const TotalSum =(val1,val2)=>{
-    return Number(val1)+Number(val2)
-
-  }
-  
   const totalprice = (data) => {
     let total = 0;
     data.forEach((element) => {
@@ -153,35 +138,53 @@ const AppProvider = ({ children }) => {
         setIsImageLitebox,
         setLightboxData,
         lightboxData,
-        isSidebar,openCart,categories,getSingleProduct,
+        isSidebar,
+        openCart,
+        categories,
+        getSingleProduct,
         setisSidebar,
-        setkeyword,totalprice,
+        setkeyword,
+        totalprice,
         calculateDiscount,
         onclickOpenImageLightBox,
-        attributes,ScrollToTop,
+        attributes,
+        ScrollToTop,
         setAttributes,
-        gender,setproductID,
+        gender,
+        setproductID,
         setGender,
-        loading,addToWishList,getfeatureData,
+        loading,
+        addToWishList,
+        getfeatureData,
         singleProduct,
-        setSingleProduct,getCategoriesData,
+        setSingleProduct,
+        getCategoriesData,
         indexPage,
         setIndexPage,
         filterPrice,
-        setFilterPrice,products,
-        caterory,productID,
+        setFilterPrice,
+        products,
+        caterory,
+        productID,
         setCaterory,
         imageIndex,
-        setimageIndex,TotalSum,
+        setimageIndex,
+        TotalSum,
         setloading,
         discount,
-        setDiscount,cartPanelHandle,
+        setDiscount,
+        cartPanelHandle,
         brand,
         setBrand,
         avaliability,
-        setAvaliability,TaxCalculate,
+        setAvaliability,
+        TaxCalculate,
         sortproduct,
-        setSortproduct,quantity, setQuantity,increaseQuantity,decressQuantity
+        setSortproduct,
+        quantity,
+        setQuantity,
+        increaseQuantity,
+        decressQuantity,
       }}>
       {children}
     </AppContext.Provider>

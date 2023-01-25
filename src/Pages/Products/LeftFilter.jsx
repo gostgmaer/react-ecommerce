@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Data } from "../../Assets/StaticData/productFile";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
+import { cleanQueryparam } from "../../Utility/APICALL/InvokeAPI";
 
 
 
@@ -40,10 +41,13 @@ const LeftFilter = () => {
     setBrand,
     avaliability,
     setAvaliability,
-    sortproduct,
+    sortproduct,categories,getfeatureData,
     setSortproduct, products,productID } = useGlobalContext()
 
+ 
+   
 
+  
 
   // useEffect(() => {
 
@@ -51,20 +55,20 @@ const LeftFilter = () => {
   //   console.log(caterory);
   // }, []);
 
-  let uniqueAges = Array.from(
-    new Set(products?.data?.map((item) => item.attributes.categories.data[0].attributes.title))
-  );
-  uniqueAges = uniqueAges.filter(function (e) {
-    return e;
-  });
+  // let uniqueAges = Array.from(
+  //   new Set(products?.data?.map((item) => item.attributes.categories.data[0].attributes.title))
+  // );
+  // uniqueAges = uniqueAges.filter(function (e) {
+  //   return e;
+  // });
 
   return (
     <div className="LeftFilter">
       <div className="bycategories">
         <p className="left-heading">Filter by Categories</p>
         <ul>
-          {uniqueAges.map((item, index) => (
-            <li key={index}> <button onClick={(e) => setCaterory(item)}>{item}</button></li>
+          {categories?.data.map((item) => (
+            <li key={item.id}> <button onClick={(e) => setCaterory(item.attributes.title)}>{item.attributes.title}</button></li>
           ))}
         </ul>
       </div>
@@ -77,8 +81,9 @@ const LeftFilter = () => {
             max={10000}
             onChange={e => setFilterPrice(e.target.value)}
             value={filterPrice}
-            min={5}
+            min={10}
           />
+          <p className="priceRange"><span>min:10</span><span>max:10000</span></p>
           <input type="text" value={filterPrice} onChange={e => setFilterPrice(e.target.value)} className="form-text field" />
         </div>
       </div>
