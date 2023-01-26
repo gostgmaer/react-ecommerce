@@ -29,7 +29,7 @@ const AppNavigation = () => {
             path="/product/:id"
             element={<SingleProduct></SingleProduct>}></Route>
           <Route path="/cart" element={<CartPage></CartPage>}></Route>
-          <Route path="/products" element={<Products></Products>}></Route>
+          <Route path="/shop" element={<Products></Products>}></Route>
           <Route path="/products/:id" element={<Products></Products>}></Route>
           <Route path="/checkout" element={<Checkout></Checkout>} />
           <Route path="/thankyou" element={<Thankyou />}></Route>

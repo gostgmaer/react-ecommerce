@@ -23,7 +23,7 @@ const WelcomeBlock = () => {
             <span>About us</span>{" "}
           </a>
           <a
-            href="/products"
+            href="/shop"
             target="_self"
             className="btn shop"
            >
