@@ -30,6 +30,10 @@ const AppProvider = ({ children }) => {
   const [openCart, setOpenCart] = useState(false);
   const [wishList, setWishList] = useState(null);
   const [categories, setCategories] = useState(null);
+  const [isCOnfirm, setIsCOnfirm] = useState(false);
+
+
+
 
   const onclickOpenImageLightBox = (id) => {
     setloading(true);
@@ -177,7 +181,7 @@ const AppProvider = ({ children }) => {
         brand,
         setBrand,
         avaliability,
-        setAvaliability,
+        setAvaliability,isCOnfirm, setIsCOnfirm,
         TaxCalculate,
         sortproduct,
         setSortproduct,

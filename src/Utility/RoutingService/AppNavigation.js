@@ -4,6 +4,7 @@ import { Bars } from "react-loader-spinner";
 import { Route, Routes } from "react-router-dom";
 import CartPage from "../../Pages/Cart/CartPage";
 import Checkout from "../../Pages/Checkout/Checkout";
+import ForgetPassword from "../../Pages/ForgetPassword/ForgetPassword";
 import Homepage from "../../Pages/Home/Homepage";
 import Product from "../../Pages/Product/Product";
 import Products from "../../Pages/Products/Products";
@@ -29,10 +30,11 @@ const AppNavigation = () => {
             path="/product/:id"
             element={<SingleProduct></SingleProduct>}></Route>
           <Route path="/cart" element={<CartPage></CartPage>}></Route>
-          <Route path="/products" element={<Products></Products>}></Route>
+          <Route path="/shop" element={<Products></Products>}></Route>
           <Route path="/products/:id" element={<Products></Products>}></Route>
           <Route path="/checkout" element={<Checkout></Checkout>} />
           <Route path="/thankyou" element={<Thankyou />}></Route>
+          <Route path="/forget-password" element={<ForgetPassword />}></Route>
         </Routes>
     
     </React.Fragment>

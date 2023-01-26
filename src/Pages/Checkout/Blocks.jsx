@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from "react";
+import { Link } from "react-router-dom";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 
 export const BlockListsElement = ({ block }) => {
@@ -129,9 +130,9 @@ export const LoginBlock = () => {
         </button>
         
         <p className="aa-lost-password">
-          <a href="https://www.free-css.com/free-css-templates">
+          <Link to="https://www.free-css.com/free-css-templates">
             Lost your password?
-          </a>
+          </Link>
         </p>
       </div>
     </Fragment>
@@ -178,7 +179,7 @@ export const ShippingDetails = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="aa-checkout-single-bill">
-              <textarea value={8} cols="8" rows="3">
+              <textarea value={8} cols={8} rows={3}>
                 Address*
               </textarea>
             </div>
@@ -236,7 +237,7 @@ export const ShippingDetails = () => {
         <div className="row">
           <div className="col-md-12">
             <div className="aa-checkout-single-bill">
-              <textarea value={8} cols="8" rows="3">
+              <textarea value={8} cols={8} rows={3}>
                 Special Notes
               </textarea>
             </div>

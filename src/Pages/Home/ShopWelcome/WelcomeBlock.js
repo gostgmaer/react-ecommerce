@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import '../Homepage.scss'
 
 
@@ -14,22 +15,22 @@ const WelcomeBlock = () => {
             nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
             volutpat.
           </p>{" "}
-         <div className="welcomeBtn"> <a
-            href="/about"
+         <div className="welcomeBtn"> <Link
+            to="/about"
            
             className="btn"
            >
             {" "}
             <span>About us</span>{" "}
-          </a>
-          <a
-            href="/products"
+          </Link>
+          <Link
+            to="/shop"
             target="_self"
             className="btn shop"
            >
            
             <span>Shop now</span>{" "}
-          </a></div>
+          </Link></div>
         </div>
     </div>
   );
