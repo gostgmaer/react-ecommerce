@@ -23,7 +23,7 @@ import {
   FaFlickr,
 } from "react-icons/fa";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
-import { addToCart } from "../../Redux/CartReducer";
+import { addToCart,addToWishlist } from "../../Redux/CartReducer";
 import { useDispatch } from "react-redux";
 import { SocialData } from "../../Assets/StaticData/Data";
 
@@ -87,28 +87,30 @@ const ProductDetails = () => {
     return (
       <div className="quantity">
         <div className="cardincrease">
-      
-          <MdMinimize onClick={decressQuantity} className="btn btn-p"></MdMinimize>
+          <MdMinimize
+            onClick={decressQuantity}
+            className="btn btn-p"></MdMinimize>
 
           <span className="value">{quantity}</span>
 
-          
-            <MdAdd onClick={increaseQuantity}  className="btn btn-s"></MdAdd>
-         
+          <MdAdd onClick={increaseQuantity} className="btn btn-s"></MdAdd>
         </div>
 
         <div className="cardbtn">
-         
           <button
             onClick={() =>
               dispatch(
                 addToCart({
                   id: singleProduct?.data.id,
-                  color:singleProduct?.data.attributes.color,
+                  color: singleProduct?.data.attributes.color,
                   title: singleProduct?.data.attributes.title,
                   desc: singleProduct?.data.attributes.shortdesc,
-                  image: singleProduct?.data.attributes.productImage.data[0].attributes.url,
-                  price: (singleProduct?.data.attributes["salePrice"]?singleProduct?.data.attributes["salePrice"]:singleProduct?.data.attributes["regularPrice"]),
+                  image:
+                    singleProduct?.data.attributes.productImage.data[0]
+                      .attributes.url,
+                  price: singleProduct?.data.attributes["salePrice"]
+                    ? singleProduct?.data.attributes["salePrice"]
+                    : singleProduct?.data.attributes["regularPrice"],
                   quantity,
                 })
               )
@@ -164,10 +166,14 @@ const ProductDetails = () => {
   return (
     <div className="ProductDetails">
       <div className="detailsWrapper">
-        <div className="productTitle">{singleProduct?.data?.attributes?.title}</div>
+        <div className="productTitle">
+          {singleProduct?.data?.attributes?.title}
+        </div>
         {/* <ReviewBlock></ReviewBlock> */}
         <PriceBlock></PriceBlock>
-        <p className="description">{singleProduct?.data?.attributes.shortdesc.substring(0,140)}</p>
+        <p className="description">
+          {singleProduct?.data?.attributes.shortdesc.substring(0, 140)}
+        </p>
         {/* <div className='attributes'>
 
           </div> */}
@@ -176,9 +182,25 @@ const ProductDetails = () => {
           <QuantityCart></QuantityCart>
         </div>
         <div className="favrite">
-          <div>
-        
-            <MdFavorite></MdFavorite> <span>Add to Wishlist </span>
+          <div  onClick={() =>
+              dispatch(
+                addToWishlist({
+                  id: singleProduct?.data.id,
+                  color: singleProduct?.data.attributes.color,
+                  title: singleProduct?.data.attributes.title,
+                  isStock:singleProduct?.data.attributes.isstock,
+                  desc: singleProduct?.data.attributes.shortdesc,
+                  image:
+                    singleProduct?.data.attributes.productImage.data[0]
+                      .attributes.url,
+                  price: singleProduct?.data.attributes["salePrice"]
+                    ? singleProduct?.data.attributes["salePrice"]
+                    : singleProduct?.data.attributes["regularPrice"],
+                  quantity,
+                })
+              )
+            }>
+            <MdFavorite ></MdFavorite> <span>Add to Wishlist </span>
           </div>
           <div>
             <MdCompare></MdCompare> <span>Add to Compare</span>
@@ -187,12 +209,16 @@ const ProductDetails = () => {
         <div className="socialShareBlock">
           <strong className="text-dark mr-2">Share on:</strong>
           <div className="socialIcons">
-          {SocialData.map(item=>(
-             <a key={item.id} target="_blank" rel="noreferrer" className="socialText" href={item.url}>
-             {item.icon}
-           </a>
-          ))}
-           
+            {SocialData.map((item) => (
+              <a
+                key={item.id}
+                target="_blank"
+                rel="noreferrer"
+                className="socialText"
+                href={item.url}>
+                {item.icon}
+              </a>
+            ))}
           </div>
         </div>
       </div>
