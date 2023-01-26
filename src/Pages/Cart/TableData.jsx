@@ -27,7 +27,7 @@ const TableList = ({ item }) => {
       <tr>
         <td>
           <button onClick={(e) => dispatch(removefromCart(item.id))}>
-            {" "}
+           
             <MdClose className="close"></MdClose>
           </button>
         </td>

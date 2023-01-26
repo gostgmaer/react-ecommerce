@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ item }) => {
     return (
@@ -16,11 +17,11 @@ const Card = ({ item }) => {
                         <h2 className="uppercase">
                             <strong>{item.title}</strong>
                         </h2>
-                        <a
-                            className="button white is-outline" href="/"
+                        <Link
+                            className="button white is-outline" to="/shop"
                         >
                             <span>Shop now</span>
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>

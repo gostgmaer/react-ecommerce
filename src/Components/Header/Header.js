@@ -12,21 +12,18 @@ import {
 import "./Header.scss";
 import Anouncement from "../Anouncement/Anouncement";
 import CartBlock from "../Cart/CartBlock";
-import { connect, useSelector } from 'react-redux'
+import { connect, useSelector } from "react-redux";
 import CartComponent from "../Cart/CartBlock";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
 // import {cartReset,cartIncrease,cartDecrease} from '../Redux'
 
-
-
-
-
 const Header = (props) => {
   // const cartCount = useSelector(state =>state.cart.count)
-  const {cartPanelHandle,openCart} =  useGlobalContext()
+  const { cartPanelHandle, openCart } = useGlobalContext();
   // const [openCart, setOpenCart] = useState(false);
-  const products = useSelector((state) => state['cart'].products);
+  const products = useSelector((state) => state["cart"].products);
 
+  const wishlist = useSelector((state) => state["cart"].wishlist);
 
   return (
     <header className="Header">
@@ -34,10 +31,7 @@ const Header = (props) => {
         <div className="headerLeft">
           <div className="form-group">
             <select className="custom-select" name="language" id="language">
-              <option defaultValue={'en'}>
-             
-                En
-              </option>
+              <option defaultValue={"en"}>En</option>
               <option value="es">Es</option>
               <option value="hi">Hi</option>
             </select>
@@ -66,27 +60,30 @@ const Header = (props) => {
             <MdPerson></MdPerson>
           </Link>
           <Link to={"/wishlist"} className="btn">
-            <MdFavorite></MdFavorite>
+            <div className="wishList-icon">
+              <MdFavorite></MdFavorite>
+              <span  >{wishlist.length}</span>
+            </div>
           </Link>
 
           <div className="cart-icon">
             <MdShoppingCart onClick={cartPanelHandle}></MdShoppingCart>
-            <span>{products.length}</span>
+            <span>{products?.length}</span>
           </div>
         </div>
       </nav>
-     {openCart? <CartComponent></CartComponent>:''}
+      {openCart ? <CartComponent></CartComponent> : ""}
       <Anouncement></Anouncement>
     </header>
   );
 };
 
-const mapStatetoprops =  state =>{
+const mapStatetoprops = (state) => {
   return {
-    count : state.cart.count
-  }
-}
-export default connect(mapStatetoprops)(Header)
+    count: state.cart.count,
+  };
+};
+export default connect(mapStatetoprops)(Header);
 
 // const oldnav = ()=>{
 //     {/* <ul className='headerNav'>

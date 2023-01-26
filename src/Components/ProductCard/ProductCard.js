@@ -10,7 +10,7 @@ import {
 } from "react-icons/md";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
-import { addToCart } from "../../Redux/CartReducer";
+import { addToCart,addToWishlist } from "../../Redux/CartReducer";
 // import { products } from "../../Assets/StaticData/Data";
 // import { Data } from "../../Assets/StaticData/productFile";
 import { useGlobalContext } from "../../States/GlobalContext/Context";
@@ -18,6 +18,8 @@ import Imageoverlay from "../ImageOverlay/Imageoverlay";
 import "./ProductCard.scss";
 const ProductCard = ({ item }) => {
   const products = useSelector((state) => state["cart"].products);
+  const wishlist = useSelector((state) => state["cart"].wishlist);
+
   const dispatch = useDispatch();
   const {
     isImageLitebox,
@@ -112,7 +114,23 @@ const ProductCard = ({ item }) => {
             </div>
             <div className="itembtn">
               <ul>
-                <li className="wishlist" onClick={()=>addToWishList(item.id)}>
+                <li className="wishlist"  onClick={() =>
+                      dispatch(
+                        addToWishlist({
+                          id: item?.id,
+                          color: item?.attributes.color,
+                          title: item?.attributes.title,
+                          desc: item?.attributes.shortdesc,
+                          image:
+                            item?.attributes.productImage.data[0].attributes
+                              .url,
+                          price: item?.attributes["salePrice"]
+                            ? item?.attributes["salePrice"]
+                            : item?.attributes["regularPrice"]
+                        
+                        })
+                      )
+                    }>
                   <MdFavorite></MdFavorite>
                 </li>
                 <li className="bag">
