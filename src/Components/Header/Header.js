@@ -62,13 +62,13 @@ const Header = (props) => {
           <Link to={"/wishlist"} className="btn">
             <div className="wishList-icon">
               <MdFavorite></MdFavorite>
-              <span>{wishlist.length}</span>
+              <span  >{wishlist.length}</span>
             </div>
           </Link>
 
           <div className="cart-icon">
             <MdShoppingCart onClick={cartPanelHandle}></MdShoppingCart>
-            <span>{products.length}</span>
+            <span>{products?.length}</span>
           </div>
         </div>
       </nav>
