@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const CartRight = () => {
   const products = useSelector((state) => state['cart'].products);
@@ -51,7 +52,7 @@ const [shipping, setShipping] = useState(120);
               <p>$ {(shipping+subTotalReturn).toFixed(2)}</p>
             </div>
             <div className="btn-block">
-              <button onClick={()=>window.open('./checkout').self} className="btn btn-checkout">Proceed To Checkout</button>
+              <Link to={'/checkout'}  className="btn btn-checkout">Proceed To Checkout</Link>
             </div>
           </div>
         </div>

@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector } from "react-redux";
+import ConfirmpaymentModal from "../../../Components/PaymentConfirm/ConfirmpaymentModal";
+import { useGlobalContext } from "../../../States/GlobalContext/Context";
 import { useCheckoutContext } from "../CheckContext";
 
 const PaymentOption = () => {
+ 
+  const {isCOnfirm, setIsCOnfirm} =useGlobalContext()
  
 
   const products = useSelector((state) => state["cart"].products);
@@ -45,13 +49,19 @@ const PaymentOption = () => {
       country: country,
       street: streetAdd,
     };
-    console.log(obj);
+    const object ={
+      products:products,address:obj
+    }
+    console.log(object);
+    setIsCOnfirm(true)
   };
   return (
     <div className="PaymentOption">
       <button onClick={handleSubmit} className=" btn submitPayment">
         Payment
       </button>
+      
+
     </div>
   );
 };

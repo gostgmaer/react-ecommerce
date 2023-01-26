@@ -18,7 +18,7 @@ const Products = () => {
     setloading,
     setLightboxData,
     getfeatureData,
-    getCategoriesData,
+    getCategoriesData,avaliability,
     lightboxData,
     filterPrice,
     sortproduct,
@@ -29,6 +29,7 @@ const Products = () => {
   const newParams = {
     "[filters][categories][title][$eq]": caterory,
     "[filters][regularPrice][$gte]": filterPrice,
+    "[filters][isstock][$eq]": avaliability,
     "[filters][regularPrice][$lte]": 10000,
     "[filters][isSale][$eq]": id==='sale' ? true : "",
     sort: [sortproduct],
@@ -38,7 +39,7 @@ const Products = () => {
 
   useEffect(() => {
     getfeatureData(newParams);
-  }, [id, caterory, filterPrice, sortproduct]);
+  }, [id, caterory, filterPrice, sortproduct,avaliability]);
   useEffect(() => {
     getCategoriesData();
   }, []);
