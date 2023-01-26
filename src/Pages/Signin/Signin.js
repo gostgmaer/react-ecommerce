@@ -25,7 +25,7 @@ const Signin = () => {
             <MdLock></MdLock>
             <input type="text" placeholder="Type your password" />
           </div>
-          <p className="fpass">Forgot password?</p>
+          <Link to={'/forget-password'} className="fpass">Forgot password?</Link>
         </div>
         <div className="login-form-btn">
      

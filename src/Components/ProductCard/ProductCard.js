@@ -75,9 +75,9 @@ const ProductCard = ({ item }) => {
             <div className="product-category">
               {item.attributes.categories.data[0].attributes.title}{" "}
             </div>
-            <a href={`/product/${item.id}`} className="product-title">
+            <Link to={`/product/${item.id}`} className="product-title">
               {item.attributes.title.substring(0, 24)}...
-            </a>
+            </Link>
             <div className="price">
               {item.attributes["salePrice"] ? (
                 <Fragment>
